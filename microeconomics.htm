@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | AP Microeconomics</title>
+
+<meta name="description" content="Master AP Microeconomics through detailed lessons, chapter guides, market analysis, economic models, AP exam preparation, and real-world applications.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+
+    background:
+    linear-gradient(
+    rgba(30,58,95,.85),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.highlight-box{
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+.highlight-box h3{
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="microeconomics.html">AP Microeconomics</a></li>
+<li><a href="macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="exam-prep.html">Exam Prep</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>AP Microeconomics</h1>
+
+<p>
+
+Master the economic principles that explain how consumers,
+businesses, workers, and governments make decisions.
+Explore markets, pricing, competition, efficiency,
+consumer behavior, and real-world economic systems through
+a rigorous AP-level curriculum.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Course Overview</h2>
+
+<p>
+
+AP Microeconomics focuses on the behavior of individual
+economic decision-makers. Students learn how consumers,
+producers, firms, and governments interact within markets
+and how those interactions determine prices, production,
+and resource allocation.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Microeconomics examines how scarce resources are allocated
+among competing uses. Individuals must make choices about
+how to spend their income, firms must determine what goods
+and services to produce, and governments must decide how
+to regulate markets and provide public goods.
+
+</p>
+
+<br>
+
+<p>
+
+Throughout this course, students develop analytical skills
+used by economists to evaluate market outcomes and policy
+decisions. Concepts such as opportunity cost, marginal
+analysis, elasticity, production costs, and market
+structures form the foundation of economic reasoning.
+
+</p>
+
+<br>
+
+<p>
+
+Students will also learn how economic models can be used
+to predict behavior, explain market outcomes, and evaluate
+the effectiveness of public policies. These analytical
+tools are valuable not only for AP exam success but also
+for future studies in business, finance, public policy,
+law, entrepreneurship, and economics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Why Study Microeconomics?</h2>
+
+<p>
+
+Microeconomics provides practical insights into many of the
+choices people make every day. Understanding economic
+principles allows students to evaluate decisions more
+effectively and better understand the world around them.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Consumer Decisions</h3>
+<p>
+Learn why consumers purchase certain goods and how prices,
+income, and preferences influence demand.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Business Strategy</h3>
+<p>
+Understand how firms determine prices, maximize profits,
+and compete in different market structures.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Government Policy</h3>
+<p>
+Analyze taxation, subsidies, regulations, and policies
+designed to improve economic outcomes.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Market Efficiency</h3>
+<p>
+Explore how markets allocate resources and when market
+failures may require intervention.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="highlight-box">
+
+<h3>What You Will Learn</h3>
+
+<p>
+
+By completing AP Microeconomics, students will develop
+a strong understanding of market systems, consumer
+behavior, firm decision-making, labor markets, market
+failures, and public policy analysis. These concepts
+serve as essential building blocks for advanced study
+in economics and related fields.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Outcomes</h2>
+
+<p>
+
+Upon completing this course, students should be able to
+apply economic reasoning to a wide variety of situations
+and evaluate economic decisions using data, graphs, and
+analytical models.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Economic Reasoning</h3>
+<p>
+Apply marginal analysis, opportunity cost, and incentives
+to economic decision-making.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Graph Analysis</h3>
+<p>
+Interpret and construct AP-level economic graphs accurately.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Market Evaluation</h3>
+<p>
+Analyze competitive and imperfectly competitive markets.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Policy Assessment</h3>
+<p>
+Evaluate government policies and their economic impacts.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Data Interpretation</h3>
+<p>
+Use quantitative information to support economic conclusions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>AP Exam Readiness</h3>
+<p>
+Develop the skills necessary to succeed on both MCQs and FRQs.
+</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Microeconomics Chapter Roadmap</h2>
+
+<p>
+
+The AP Microeconomics curriculum is divided into seven major units.
+Each chapter builds on previous concepts and prepares students for
+more advanced economic analysis. The following roadmap outlines the
+core topics, estimated study times, and AP Exam relevance for each chapter.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Chapter 5</h3>
+
+<h4 style="color:var(--secondary);">
+Elasticity, Taxation, and Consumer Choice
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Intermediate
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 6–8 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Price Elasticity of Demand</li>
+<li>Income Elasticity</li>
+<li>Cross-Price Elasticity</li>
+<li>Consumer Surplus</li>
+<li>Producer Surplus</li>
+<li>Taxes and Tariffs</li>
+<li>Utility Maximization</li>
+<li>Consumer Choice Theory</li>
+</ul>
+
+<br>
+
+<p>
+
+Students learn how consumers respond to price changes and how government policies influence market outcomes.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 6</h3>
+
+<h4 style="color:var(--secondary);">
+Costs of Production
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Intermediate
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 5–7 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Fixed Costs</li>
+<li>Variable Costs</li>
+<li>Total Costs</li>
+<li>Average Costs</li>
+<li>Marginal Costs</li>
+<li>Economic Profit</li>
+<li>Accounting Profit</li>
+<li>Short Run vs Long Run</li>
+</ul>
+
+<br>
+
+<p>
+
+Students explore how firms make production decisions and evaluate profitability.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 7</h3>
+
+<h4 style="color:var(--secondary);">
+Perfect Competition
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Advanced
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 7–9 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Characteristics of Perfect Competition</li>
+<li>Profit Maximization</li>
+<li>Market Equilibrium</li>
+<li>Short-Run Profit</li>
+<li>Long-Run Equilibrium</li>
+<li>Efficiency</li>
+<li>Firm Supply Curves</li>
+</ul>
+
+<br>
+
+<p>
+
+Students analyze highly competitive markets and understand efficient resource allocation.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 8</h3>
+
+<h4 style="color:var(--secondary);">
+Monopoly
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Advanced
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 7–10 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Barriers to Entry</li>
+<li>Monopoly Pricing</li>
+<li>Profit Maximization</li>
+<li>Deadweight Loss</li>
+<li>Natural Monopolies</li>
+<li>Price Discrimination</li>
+<li>Government Regulation</li>
+</ul>
+
+<br>
+
+<p>
+
+Students investigate how monopolies operate and evaluate their effects on consumers and markets.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Exam Connections</h2>
+
+<p>
+
+Many AP Exam questions require students to connect concepts across multiple chapters. Understanding these relationships is essential for success on both the multiple-choice and free-response sections.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Key AP Skills Developed
+</h3>
+
+<ul style="margin-left:25px;">
+
+<li>Graph interpretation and analysis</li>
+
+<li>Economic reasoning using marginal analysis</li>
+
+<li>Application of elasticity concepts</li>
+
+<li>Consumer and producer surplus calculations</li>
+
+<li>Cost and revenue analysis</li>
+
+<li>Market structure comparisons</li>
+
+<li>Policy evaluation and economic efficiency assessment</li>
+
+<li>Written economic explanations for FRQs</li>
+
+</ul>
+
+<br>
+
+<p>
+
+The AP Exam frequently combines multiple concepts into a single question. For example, students may need to analyze how a tax affects elasticity, consumer surplus, producer surplus, and market equilibrium simultaneously.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>How These Chapters Connect</h2>
+
+<p>
+
+Each chapter builds directly upon previous learning. Mastering foundational concepts makes advanced topics significantly easier to understand.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Chapter 5 introduces elasticity and consumer behavior, providing insight into how individuals respond to economic incentives.
+
+</p>
+
+<br>
+
+<p>
+
+Chapter 6 shifts focus to firms and production decisions, introducing cost structures and profit analysis.
+
+</p>
+
+<br>
+
+<p>
+
+Chapters 7 and 8 compare competitive and monopolistic markets, allowing students to evaluate different market outcomes and levels of efficiency.
+
+</p>
+
+<br>
+
+<p>
+
+Together, these chapters establish the analytical framework needed for later topics such as oligopoly, labor markets, and government intervention.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Additional Course Guidance</h2>
+
+<p>
+
+Students who approach AP Microeconomics strategically often perform significantly better on assessments and the AP Exam.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Practice Graphs Frequently</h3>
+
+<p>
+
+Graph analysis appears throughout nearly every AP Microeconomics unit. Consistent graph practice builds confidence and accuracy.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Focus on Cause and Effect</h3>
+
+<p>
+
+Economic reasoning relies heavily on understanding how one change creates multiple market outcomes.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Master Vocabulary</h3>
+
+<p>
+
+Precise terminology is essential for earning points on FRQs and communicating economic concepts effectively.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Think Like an Economist</h3>
+
+<p>
+
+Always consider incentives, trade-offs, opportunity costs, and marginal benefits when evaluating decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Advanced Microeconomics Chapters</h2>
+
+<p>
+
+The final chapters of AP Microeconomics explore imperfect competition, labor markets, and market failures. These topics integrate concepts from earlier units and frequently appear on AP Exams.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Chapter 9</h3>
+
+<h4 style="color:var(--secondary);">
+Monopolistic Competition and Oligopoly
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Advanced
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 8–10 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Monopolistic Competition</li>
+<li>Product Differentiation</li>
+<li>Excess Capacity</li>
+<li>Oligopoly Markets</li>
+<li>Game Theory</li>
+<li>Prisoner's Dilemma</li>
+<li>Strategic Decision-Making</li>
+<li>Market Concentration</li>
+</ul>
+
+<br>
+
+<p>
+
+Students examine how firms compete when markets are not perfectly competitive and how strategic interactions influence business decisions.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 10</h3>
+
+<h4 style="color:var(--secondary);">
+Resource Markets and Labor
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Advanced
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 7–9 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Derived Demand</li>
+<li>Marginal Revenue Product</li>
+<li>Labor Markets</li>
+<li>Wage Determination</li>
+<li>Human Capital</li>
+<li>Monopsony</li>
+<li>Income Distribution</li>
+<li>Labor Market Equilibrium</li>
+</ul>
+
+<br>
+
+<p>
+
+Students learn how workers are compensated and how firms determine the quantity of labor and resources to employ.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 11</h3>
+
+<h4 style="color:var(--secondary);">
+Government and Market Failure
+</h4>
+
+<br>
+
+<p>
+<strong>Difficulty:</strong> Advanced
+</p>
+
+<p>
+<strong>Estimated Study Time:</strong> 8–10 Hours
+</p>
+
+<br>
+
+<p>
+<strong>Topics Covered:</strong>
+</p>
+
+<ul style="margin-left:25px;">
+<li>Externalities</li>
+<li>Public Goods</li>
+<li>Common Resources</li>
+<li>Government Regulation</li>
+<li>Subsidies</li>
+<li>Taxes and Incentives</li>
+<li>Environmental Policy</li>
+<li>Market Efficiency</li>
+</ul>
+
+<br>
+
+<p>
+
+Students evaluate situations where markets fail to allocate resources efficiently and analyze possible government solutions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Recommended Study Path</h2>
+
+<p>
+
+Following a structured progression through the course improves understanding and retention of AP Microeconomics concepts.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 1: Consumer Behavior & Elasticity
+</h3>
+
+<p>
+
+Begin with Chapter 5 and develop a strong understanding of elasticity, consumer choice, and surplus analysis.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 2: Production & Costs
+</h3>
+
+<p>
+
+Study how firms make production decisions and analyze profit-maximizing behavior.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 3: Market Structures
+</h3>
+
+<p>
+
+Compare perfect competition, monopoly, monopolistic competition, and oligopoly.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 4: Resource Markets
+</h3>
+
+<p>
+
+Learn how labor markets operate and how wages are determined.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 5: Government & Market Failure
+</h3>
+
+<p>
+
+Finish by studying externalities, public goods, and policy solutions to inefficiencies.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Microeconomics Success Strategies</h2>
+
+<p>
+
+Students who consistently apply these strategies often perform better in class and on the AP Exam.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Draw Graphs Repeatedly</h3>
+
+<p>
+
+Practice drawing and labeling graphs from memory until they become second nature.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Focus on Marginal Analysis</h3>
+
+<p>
+
+Many AP questions require understanding how small changes affect decision-making.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Practice AP FRQs</h3>
+
+<p>
+
+Written responses improve significantly when students complete timed practice regularly.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Use Real Examples</h3>
+
+<p>
+
+Apply concepts to businesses, markets, and current economic events.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Review Mistakes</h3>
+
+<p>
+
+Carefully analyze incorrect answers to strengthen conceptual understanding.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Master Vocabulary</h3>
+
+<p>
+
+Accurate economic terminology is critical for earning FRQ points.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Final Course Summary</h2>
+
+<p>
+
+AP Microeconomics provides students with a powerful framework for understanding decision-making, markets, and resource allocation.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Throughout this course, students learn how consumers maximize utility, how firms maximize profits, and how markets coordinate economic activity. They explore competitive and imperfectly competitive market structures, labor markets, and the role of government intervention.
+
+</p>
+
+<br>
+
+<p>
+
+The analytical tools developed in AP Microeconomics help students evaluate policies, understand business behavior, and interpret economic events. These skills remain valuable in higher education, professional careers, and everyday decision-making.
+
+</p>
+
+<br>
+
+<p>
+
+By mastering the concepts presented in Chapters 5–11 and engaging in regular practice, students can build the confidence and expertise necessary to excel on the AP Microeconomics Exam.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div style="max-width:1200px; margin:auto;">
+
+<h2 style="margin-bottom:20px;">
+EconoVerse AP
+</h2>
+
+<p>
+
+Helping students master AP Economics through comprehensive lessons, real-world applications, exam preparation resources, and structured learning pathways.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
