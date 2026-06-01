@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | AP Economics Overview</title>
+
+<meta name="description" content="Comprehensive AP Economics Overview covering AP Microeconomics, AP Macroeconomics, exam structure, study strategies, scoring, and learning pathways.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.timeline{
+    border-left:4px solid var(--accent);
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:35px;
+}
+
+.timeline-item h4{
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="microeconomics.html">AP Microeconomics</a></li>
+<li><a href="macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="exam-prep.html">Exam Prep</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>AP Economics Overview</h1>
+
+<p>
+
+Develop a deep understanding of economic principles,
+decision-making, markets, national economies, and public policy.
+This overview serves as your roadmap for mastering both
+AP Microeconomics and AP Macroeconomics and preparing
+effectively for the AP Exam.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>What Is AP Economics?</h2>
+<p>
+AP Economics is a rigorous college-level program developed by the College Board.
+Students may take AP Microeconomics, AP Macroeconomics, or both courses together.
+These courses introduce economic reasoning and analytical thinking while helping
+students understand how individuals, businesses, governments, and entire economies
+make decisions under conditions of scarcity.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economics is often described as the study of choices. Because resources are limited
+while wants are unlimited, societies must constantly determine how resources should
+be allocated. AP Economics explores these decisions through models, graphs, data
+analysis, and real-world applications.
+
+</p>
+
+<br>
+
+<p>
+
+Students who complete AP Economics gain valuable skills in critical thinking,
+problem-solving, data interpretation, and policy evaluation. These skills are useful
+for future studies in business, finance, political science, public policy,
+international relations, entrepreneurship, and many other fields.
+
+</p>
+
+<br>
+
+<p>
+
+Throughout the course, students learn how markets function, why governments
+intervene in economic activity, how inflation and unemployment affect citizens,
+and how monetary and fiscal policy influence economic performance.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Microeconomics</h2>
+<p>
+AP Microeconomics focuses on individual markets and economic decision-making.
+Students analyze how consumers and firms interact and how prices coordinate
+economic activity.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Supply and Demand</h3>
+<p>
+Learn how prices are determined through market interactions.
+Analyze shifts in supply and demand and their impact on equilibrium.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Elasticity</h3>
+<p>
+Measure how responsive consumers and producers are to changes
+in prices, income, and related goods.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Consumer Choice</h3>
+<p>
+Study utility maximization, budget constraints,
+and rational decision-making.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Production Costs</h3>
+<p>
+Explore fixed costs, variable costs,
+marginal analysis, and profit maximization.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Market Structures</h3>
+<p>
+Compare perfect competition, monopoly,
+oligopoly, and monopolistic competition.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Market Failure</h3>
+<p>
+Investigate externalities, public goods,
+and government intervention.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Microeconomics helps explain many everyday decisions. Why do airlines use
+dynamic pricing? Why are luxury goods often less sensitive to price changes?
+Why do some markets become dominated by only a few firms? These questions
+are central to AP Microeconomics.
+
+</p>
+
+<p>
+
+Students learn to use graphs extensively throughout the course. Supply and demand
+diagrams, cost curves, production possibilities curves, and market structure
+models form the foundation of AP Microeconomic analysis.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>AP Macroeconomics</h2>
+<p>
+AP Macroeconomics examines the economy as a whole. Rather than focusing on individual consumers and firms, macroeconomics studies aggregate economic performance, national income, inflation, unemployment, economic growth, fiscal policy, monetary policy, and international trade.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>National Economic Accounts</h3>
+<p>
+Measure economic activity using Gross Domestic Product (GDP), real GDP, nominal GDP, and other national accounting indicators.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Inflation & Unemployment</h3>
+<p>
+Analyze changes in price levels, labor market conditions, and their impact on economic stability.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Aggregate Demand & Supply</h3>
+<p>
+Study economy-wide spending and production to understand economic fluctuations and business cycles.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Fiscal Policy</h3>
+<p>
+Learn how government spending and taxation influence economic growth, inflation, and employment.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Monetary Policy</h3>
+<p>
+Understand how central banks manage interest rates and money supply to stabilize the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>International Economics</h3>
+<p>
+Explore exchange rates, comparative advantage, globalization, and international trade relationships.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Macroeconomics provides a framework for understanding major economic events such as recessions, financial crises, inflationary periods, and economic expansions. Policymakers rely on macroeconomic analysis when making decisions that affect millions of people.
+
+</p>
+
+<br>
+
+<p>
+
+Students learn how economic indicators are measured, why economies experience business cycles, and how governments and central banks respond to changing economic conditions. Understanding these concepts helps students evaluate current events through an economic lens.
+
+</p>
+
+<br>
+
+<p>
+
+The AP Macroeconomics curriculum emphasizes graphical analysis, including aggregate demand and aggregate supply models, Phillips Curves, money market graphs, foreign exchange markets, and loanable funds markets.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Economics Exam Structure</h2>
+<p>
+Both AP Microeconomics and AP Macroeconomics exams follow a similar format designed to assess conceptual understanding, analytical reasoning, graph interpretation, and economic problem-solving abilities.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Exam Components
+</h3>
+
+<p>
+
+The AP Economics examinations consist of two primary sections: Multiple Choice Questions (MCQs) and Free Response Questions (FRQs). Together, these sections evaluate students' ability to apply economic concepts in a variety of contexts.
+
+</p>
+
+<br>
+
+<p>
+
+Students are expected not only to recall definitions and formulas but also to analyze scenarios, interpret graphical information, calculate economic measures, and explain relationships among variables.
+
+</p>
+
+<br>
+
+<p>
+
+Success on the AP Exam requires a strong understanding of economic models combined with the ability to apply those models to unfamiliar situations.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Section I</h3>
+<p>
+Multiple Choice Questions (MCQs)
+</p>
+</div>
+
+<div class="info-card">
+<h3>Section II</h3>
+<p>
+Free Response Questions (FRQs)
+</p>
+</div>
+
+<div class="info-card">
+<h3>Skills Tested</h3>
+<p>
+Analysis, Graph Interpretation, Economic Reasoning, and Quantitative Thinking
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple Choice Questions (MCQs)</h2>
+<p>
+The multiple-choice section evaluates students' understanding of economic concepts and their ability to apply those concepts efficiently under timed conditions.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+MCQs make up a significant portion of the AP Economics score. Questions frequently involve economic scenarios, charts, graphs, calculations, and conceptual analysis.
+
+</p>
+
+<br>
+
+<p>
+
+Students must carefully identify the economic principle being tested and avoid relying solely on memorization. Many questions require several logical steps before reaching the correct answer.
+
+</p>
+
+<br>
+
+<p>
+
+Common MCQ topics include:
+
+</p>
+
+<ul style="margin-left:25px; margin-top:15px;">
+<li>Supply and Demand Analysis</li>
+<li>Elasticity Calculations</li>
+<li>Consumer and Producer Surplus</li>
+<li>Production Costs</li>
+<li>Market Structures</li>
+<li>GDP and National Income Accounting</li>
+<li>Inflation Measurement</li>
+<li>Unemployment Analysis</li>
+<li>Fiscal and Monetary Policy</li>
+<li>International Trade</li>
+<li>Exchange Rates</li>
+</ul>
+
+<br>
+
+<p>
+
+Strong MCQ performance requires regular practice, careful reading, and familiarity with AP-style question wording. Students should learn to eliminate incorrect options and identify key economic terminology quickly.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free Response Questions (FRQs)</h2>
+<p>
+The Free Response section measures students' ability to apply economic reasoning through written explanations, calculations, and graph analysis.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+FRQs are often considered the most challenging component of the AP Economics exam because they require students to communicate economic reasoning clearly and accurately.
+
+</p>
+
+<br>
+
+<p>
+
+Many FRQs present economic scenarios involving households, firms, governments, or entire economies. Students must explain economic outcomes using appropriate terminology and support their answers with economic logic.
+
+</p>
+
+<br>
+
+<p>
+
+Graphical analysis is frequently included. Students may be asked to draw, label, shift, or interpret economic graphs and explain resulting changes in equilibrium outcomes.
+
+</p>
+
+<br>
+
+<p>
+
+Successful FRQ responses generally demonstrate:
+
+</p>
+
+<ul style="margin-left:25px; margin-top:15px;">
+<li>Accurate use of economic terminology</li>
+<li>Clear cause-and-effect reasoning</li>
+<li>Correct graph interpretation</li>
+<li>Appropriate calculations</li>
+<li>Logical explanations supported by economic theory</li>
+</ul>
+
+<br>
+
+<p>
+
+One of the most effective preparation strategies is completing timed FRQ practice while comparing responses to official scoring guidelines.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Scoring Breakdown</h2>
+<p>
+Understanding how the AP Economics exam is scored helps students prioritize preparation and maximize performance.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Multiple Choice</h3>
+<p>
+Approximately 66% of the overall exam score comes from the multiple-choice section.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Free Response</h3>
+<p>
+Approximately 34% of the overall exam score comes from free-response questions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Final AP Score</h3>
+<p>
+Scores are converted into the AP scale ranging from 1 to 5.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+AP Score Scale
+</h3>
+
+<p>
+
+5 — Extremely Well Qualified
+
+</p>
+
+<p>
+
+4 — Well Qualified
+
+</p>
+
+<p>
+
+3 — Qualified
+
+</p>
+
+<p>
+
+2 — Possibly Qualified
+
+</p>
+
+<p>
+
+1 — No Recommendation
+
+</p>
+
+<br>
+
+<p>
+
+Many colleges award credit or advanced placement for scores of 3, 4, or 5, although policies vary by institution. Students should research the requirements of colleges they are interested in attending.
+
+</p>
+
+<br>
+
+<p>
+
+The highest-scoring students typically demonstrate strong conceptual understanding, excellent graph analysis skills, efficient problem-solving abilities, and consistent performance across both MCQs and FRQs.
+
+</p>
+
+</div>
+
+</section>
