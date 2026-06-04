@@ -1,0 +1,547 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Introduction & Foundations</title>
+
+<meta name="description" content="Introduction and foundational economic concepts for AP Economics. Covers Chapters 1-4 including AP Exam Overview, The Discipline of Economics, Economic Systems, and Demand & Supply Basics.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.chapter-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.chapter-card:hover{
+    transform:translateY(-8px);
+}
+
+.chapter-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.chapter-meta{
+    margin-top:15px;
+    font-size:.95rem;
+    color:#64748B;
+}
+
+.glass-card{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="introduction.html">Introduction</a></li>
+<li><a href="microeconomics.html">Microeconomics</a></li>
+<li><a href="macroeconomics.html">Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Introduction & Foundations</h1>
+
+<p>
+
+Build the economic foundation required for AP success.
+These introductory chapters establish the core concepts,
+models, and analytical skills used throughout AP
+Microeconomics and AP Macroeconomics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>Foundation Course Structure</h2>
+
+<p>
+
+Before studying AP Microeconomics and AP Macroeconomics,
+students should master the introductory concepts that
+form the basis of all economic reasoning.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="chapter-card">
+
+<h3>Chapter 1</h3>
+
+<p>
+The AP Tests in Microeconomics and Macroeconomics
+</p>
+
+<div class="chapter-meta">
+
+Topics:
+<ul>
+<li>Course Introduction</li>
+<li>Micro vs Macro</li>
+<li>Exam Structure</li>
+<li>MCQs & FRQs</li>
+<li>Study Resources</li>
+</ul>
+
+</div>
+
+<br>
+
+<a href="introduction/chapter1.html" class="btn btn-primary">
+Open Chapter
+</a>
+
+</div>
+
+<div class="chapter-card">
+
+<h3>Chapter 2</h3>
+
+<p>
+The Discipline of Economics
+</p>
+
+<div class="chapter-meta">
+
+<ul>
+<li>Economics Defined</li>
+<li>Scarcity</li>
+<li>Resources</li>
+<li>Opportunity Cost</li>
+<li>Comparative Advantage</li>
+<li>PPF Analysis</li>
+</ul>
+
+</div>
+
+<br>
+
+<a href="introduction/chapter2.html" class="btn btn-primary">
+Open Chapter
+</a>
+
+</div>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="grid">
+
+<div class="chapter-card">
+
+<h3>Chapter 3</h3>
+
+<p>
+Economic Systems
+</p>
+
+<div class="chapter-meta">
+
+<ul>
+<li>Fundamental Economic Issues</
+```
+```html
+<section>
+
+<div class="section-title">
+<h2>Recommended Study Path</h2>
+
+<p>
+The Introduction & Foundations unit should be completed before beginning AP Microeconomics or AP Macroeconomics. These chapters establish the economic reasoning skills, vocabulary, and analytical tools used throughout the entire AP Economics curriculum.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 1: Understand the AP Economics Program
+</h3>
+
+<p>
+Begin with Chapter 1 to understand the structure of AP Microeconomics and AP Macroeconomics, exam expectations, scoring methods, and effective preparation strategies.
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 2: Learn Economic Thinking
+</h3>
+
+<p>
+Master scarcity, opportunity cost, comparative advantage, and resource allocation concepts from Chapter 2.
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 3: Explore Economic Systems
+</h3>
+
+<p>
+Study how societies organize production, distribute resources, and answer fundamental economic questions in Chapter 3.
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 4: Master Supply & Demand
+</h3>
+
+<p>
+Complete Chapter 4 carefully because supply and demand concepts appear repeatedly throughout both AP Economics courses and AP examinations.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Success Strategies for New Economics Students</h2>
+
+<p>
+Strong habits developed during the introduction unit often determine long-term success in AP Economics.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="chapter-card">
+<h3>Practice Graphs</h3>
+<p>
+Become comfortable drawing and interpreting graphs. Graph analysis is one of the most important AP Economics skills.
+</p>
+</div>
+
+<div class="chapter-card">
+<h3>Learn Vocabulary</h3>
+<p>
+Economic terminology is precise. Consistent vocabulary review improves understanding and exam performance.
+</p>
+</div>
+
+<div class="chapter-card">
+<h3>Use Real Examples</h3>
+<p>
+Connect economic concepts to current events, businesses, government policies, and everyday decisions.
+</p>
+</div>
+
+<div class="chapter-card">
+<h3>Review Frequently</h3>
+<p>
+Short, regular review sessions are more effective than cramming before assessments.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Foundation Course Summary</h2>
+
+<p>
+Chapters 1–4 provide the framework for everything students will encounter later in AP Microeconomics and AP Macroeconomics.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Students begin by understanding the AP Economics curriculum and examination structure. They then learn the fundamental economic problem of scarcity and how opportunity cost influences decision-making.
+
+</p>
+
+<br>
+
+<p>
+
+Next, students examine different economic systems and investigate how societies answer questions concerning production, distribution, and consumption.
+
+</p>
+
+<br>
+
+<p>
+
+Finally, students study supply and demand, the foundation of market analysis and one of the most frequently tested topics on AP Economics exams.
+
+</p>
+
+<br>
+
+<p>
+
+By mastering these introductory chapters, students develop the analytical skills and conceptual understanding needed for success throughout the remainder of the EconoVerse AP curriculum.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Building strong economic foundations through structured learning, real-world applications, and AP-focused preparation.
+</p>
+
+<br>
+
+<p>
+Introduction & Foundations • Chapters 1–4
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
