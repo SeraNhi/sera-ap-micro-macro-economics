@@ -186,9 +186,22 @@ section{
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.info-card h3{
-    color:var(--primary);
-    margin-bottom:12px;
+.course-navigation{
+    background:#ffffff;
+}
+
+.course-navigation .info-card{
+    text-align:center;
+    transition:.3s;
+}
+
+.course-navigation .info-card:hover{
+    transform:translateY(-8px);
+}
+
+.course-navigation .btn{
+    display:inline-block;
+}
 }
 
 .timeline{
@@ -278,6 +291,55 @@ effectively for the AP Exam.
 </div>
 
 </header>
+
+<section class="course-navigation">
+
+<div class="section-title">
+<h2>Your Learning Path</h2>
+<p>
+Follow the AP Economics curriculum in the recommended order.
+Start with foundational concepts, then progress into AP Microeconomics and AP Macroeconomics.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>📘 Introduction & Foundations</h3>
+<p>
+Chapters 1–4 build the economic foundations needed for success in both AP courses.
+</p>
+<br>
+<a href="introduction.html" class="btn btn-primary">
+Start Introduction
+</a>
+</div>
+
+<div class="info-card">
+<h3>📈 AP Microeconomics</h3>
+<p>
+Chapters 5–11 explore markets, consumer behavior, firms, costs, and market structures.
+</p>
+<br>
+<a href="microeconomics.html" class="btn btn-primary">
+Go to Microeconomics
+</a>
+</div>
+
+<div class="info-card">
+<h3>🌎 AP Macroeconomics</h3>
+<p>
+Chapters 12–19 cover GDP, inflation, unemployment, fiscal policy, monetary policy, and trade.
+</p>
+<br>
+<a href="macroeconomics.html" class="btn btn-primary">
+Go to Macroeconomics
+</a>
+</div>
+
+</div>
+
+</section>
 
 <section>
 
