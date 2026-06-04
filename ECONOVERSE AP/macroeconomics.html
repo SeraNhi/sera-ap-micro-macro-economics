@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | AP Macroeconomics</title>
+
+<meta name="description" content="Master AP Macroeconomics through detailed lessons, economic models, policy analysis, national accounts, inflation, unemployment, growth, and AP exam preparation.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+
+    background:
+    linear-gradient(
+    rgba(30,58,95,.85),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.highlight-box{
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+.highlight-box h3{
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="microeconomics.html">AP Microeconomics</a></li>
+<li><a href="macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="exam-prep.html">Exam Prep</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>AP Macroeconomics</h1>
+
+<p>
+
+Explore the big picture of economics by studying national economies,
+economic growth, inflation, unemployment, fiscal policy, monetary policy,
+international trade, and the forces that shape global prosperity.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Course Overview</h2>
+
+<p>
+
+AP Macroeconomics examines the behavior and performance of entire economies.
+Students learn how governments, central banks, businesses, and consumers interact
+to influence economic activity, employment, production, and price stability.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Macroeconomics focuses on economy-wide outcomes rather than individual markets.
+Students analyze Gross Domestic Product (GDP), inflation, unemployment,
+economic growth, and international trade while developing a deeper understanding
+of how economic systems function.
+
+</p>
+
+<br>
+
+<p>
+
+The course introduces powerful analytical tools that economists use to explain
+business cycles, recessions, inflationary periods, and long-term economic growth.
+Students learn how government policies and central bank actions influence
+economic performance and financial stability.
+
+</p>
+
+<br>
+
+<p>
+
+Throughout AP Macroeconomics, students build critical-thinking skills by
+evaluating economic data, interpreting graphs, and applying economic models
+to real-world events occurring in national and global economies.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Why Study Macroeconomics?</h2>
+
+<p>
+
+Macroeconomics helps explain many of the most important issues facing countries
+around the world, including economic growth, inflation, unemployment, trade,
+and financial stability.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Economic Growth</h3>
+<p>
+Understand how nations increase productivity, raise living standards,
+and improve long-term prosperity.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Inflation Analysis</h3>
+<p>
+Learn why prices rise, how inflation is measured, and how policymakers
+attempt to maintain price stability.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Employment</h3>
+<p>
+Study labor markets, unemployment trends, and policies designed
+to support job creation.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Government Policy</h3>
+<p>
+Evaluate fiscal and monetary policies used to stabilize economies
+during periods of recession and expansion.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Global Trade</h3>
+<p>
+Explore international trade, comparative advantage,
+exchange rates, and globalization.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Financial Systems</h3>
+<p>
+Examine money, banking, central banks, and the role of financial
+institutions in modern economies.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="highlight-box">
+
+<h3>What You Will Learn</h3>
+
+<p>
+
+By completing AP Macroeconomics, students will develop a comprehensive
+understanding of economic performance, public policy, financial systems,
+and international economics. These concepts provide valuable foundations
+for business, finance, political science, public policy, and economics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Outcomes</h2>
+
+<p>
+
+Students who successfully complete AP Macroeconomics should be able to
+analyze national economic performance, evaluate public policies,
+and interpret economic data using professional economic frameworks.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Economic Measurement</h3>
+<p>
+Analyze GDP, inflation, unemployment, and other key economic indicators.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Graph Interpretation</h3>
+<p>
+Interpret aggregate demand and aggregate supply models accurately.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Policy Evaluation</h3>
+<p>
+Assess fiscal and monetary policy decisions using economic reasoning.
+</p>
+</div>
+
+<div class="info-card">
+<h3>International Analysis</h3>
+<p>
+Evaluate trade relationships and exchange rate movements.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Quantitative Skills</h3>
+<p>
+Use economic data and calculations to support conclusions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>AP Exam Readiness</h3>
+<p>
+Develop the analytical skills required for AP-level MCQs and FRQs.
+</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Macroeconomics Chapter Roadmap</h2>
+
+<p>
+
+The AP Macroeconomics curriculum is organized into eight major units that explore economic measurement, stabilization policies, growth, and international economics. Each chapter builds upon previous concepts and prepares students for AP-level economic analysis.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Chapter 12</h3>
+
+<h4 style="color:var(--secondary);">
+National Economic Accounts
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Intermediate</p>
+
+<p><strong>Estimated Study Time:</strong> 6–8 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Gross Domestic Product (GDP)</li>
+<li>Nominal GDP</li>
+<li>Real GDP</li>
+<li>GDP Deflator</li>
+<li>National Income Accounting</li>
+<li>Expenditure Approach</li>
+<li>Economic Indicators</li>
+<li>Limitations of GDP</li>
+</ul>
+
+<br>
+
+<p>
+
+Students learn how economists measure economic performance and evaluate national production.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 13</h3>
+
+<h4 style="color:var(--secondary);">
+Inflation and Unemployment
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Intermediate</p>
+
+<p><strong>Estimated Study Time:</strong> 6–8 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Consumer Price Index (CPI)</li>
+<li>Inflation Rates</li>
+<li>Types of Inflation</li>
+<li>Unemployment Measurement</li>
+<li>Natural Rate of Unemployment</li>
+<li>Business Cycles</li>
+<li>Phillips Curve</li>
+<li>Labor Market Analysis</li>
+</ul>
+
+<br>
+
+<p>
+
+Students examine how inflation and unemployment affect economic stability and living standards.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 14</h3>
+
+<h4 style="color:var(--secondary);">
+Aggregate Demand and Aggregate Supply
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Advanced</p>
+
+<p><strong>Estimated Study Time:</strong> 8–10 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Aggregate Demand (AD)</li>
+<li>Short-Run Aggregate Supply (SRAS)</li>
+<li>Long-Run Aggregate Supply (LRAS)</li>
+<li>Economic Equilibrium</li>
+<li>Demand Shocks</li>
+<li>Supply Shocks</li>
+<li>Inflationary Gaps</li>
+<li>Recessionary Gaps</li>
+</ul>
+
+<br>
+
+<p>
+
+Students learn the most important macroeconomic model used throughout the AP course.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 15</h3>
+
+<h4 style="color:var(--secondary);">
+Fiscal Policy
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Advanced</p>
+
+<p><strong>Estimated Study Time:</strong> 7–9 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Government Spending</li>
+<li>Taxation</li>
+<li>Budget Deficits</li>
+<li>Budget Surpluses</li>
+<li>Fiscal Stimulus</li>
+<li>Automatic Stabilizers</li>
+<li>Fiscal Multipliers</li>
+<li>Crowding Out</li>
+</ul>
+
+<br>
+
+<p>
+
+Students evaluate how governments attempt to stabilize economies through fiscal actions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Exam Connections</h2>
+
+<p>
+
+The AP Macroeconomics Exam emphasizes the ability to connect multiple economic concepts, interpret graphs, and evaluate policy decisions using economic reasoning.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Core AP Skills Developed
+</h3>
+
+<ul style="margin-left:25px;">
+
+<li>Economic data interpretation</li>
+
+<li>GDP and inflation calculations</li>
+
+<li>Aggregate Demand and Aggregate Supply analysis</li>
+
+<li>Fiscal policy evaluation</li>
+
+<li>Graph construction and interpretation</li>
+
+<li>Cause-and-effect reasoning</li>
+
+<li>Policy recommendation analysis</li>
+
+<li>FRQ writing and economic justification</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Many AP questions require students to analyze how multiple economic variables interact. For example, students may need to explain how inflation affects unemployment, how fiscal policy shifts aggregate demand, or how economic growth influences living standards.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>How These Chapters Connect</h2>
+
+<p>
+
+Understanding the relationships between these chapters is essential for mastering AP Macroeconomics.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Chapter 12 introduces economic measurement tools such as GDP and national income accounting. These indicators help economists evaluate economic performance.
+
+</p>
+
+<br>
+
+<p>
+
+Chapter 13 builds on those measurements by analyzing inflation and unemployment, two of the most important macroeconomic challenges.
+
+</p>
+
+<br>
+
+<p>
+
+Chapter 14 integrates these concepts into the Aggregate Demand and Aggregate Supply model, providing a framework for understanding economy-wide fluctuations.
+
+</p>
+
+<br>
+
+<p>
+
+Chapter 15 examines how governments use fiscal policy to influence aggregate demand, reduce unemployment, and stabilize economic growth.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Additional Course Guidance</h2>
+
+<p>
+
+Developing strong macroeconomic reasoning requires consistent practice with graphs, economic data, and policy analysis.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Master Economic Indicators</h3>
+
+<p>
+
+Become comfortable interpreting GDP, inflation, unemployment, and growth data.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Practice AD-AS Models</h3>
+
+<p>
+
+The Aggregate Demand and Aggregate Supply model appears frequently throughout the AP curriculum.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Connect Policies to Outcomes</h3>
+
+<p>
+
+Always consider how policy changes affect output, employment, and price levels.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Analyze Real Events</h3>
+
+<p>
+
+Apply macroeconomic concepts to current economic conditions and global developments.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Advanced Macroeconomics Chapters</h2>
+
+<p>
+
+The final units of AP Macroeconomics focus on financial systems, monetary policy, economic growth, and international economics. These chapters connect domestic economic performance with global economic activity.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Chapter 16</h3>
+
+<h4 style="color:var(--secondary);">
+Money and Banking
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Advanced</p>
+
+<p><strong>Estimated Study Time:</strong> 7–9 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Functions of Money</li>
+<li>Money Supply</li>
+<li>Commercial Banking</li>
+<li>Fractional Reserve Banking</li>
+<li>Money Creation Process</li>
+<li>Financial Assets</li>
+<li>Loanable Funds Market</li>
+<li>Banking System Operations</li>
+</ul>
+
+<br>
+
+<p>
+
+Students learn how money circulates through the economy and how banks influence economic activity.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 17</h3>
+
+<h4 style="color:var(--secondary);">
+Monetary Policy
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Advanced</p>
+
+<p><strong>Estimated Study Time:</strong> 8–10 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Federal Reserve System</li>
+<li>Open Market Operations</li>
+<li>Reserve Requirements</li>
+<li>Discount Rate</li>
+<li>Money Market Graphs</li>
+<li>Interest Rates</li>
+<li>Expansionary Monetary Policy</li>
+<li>Contractionary Monetary Policy</li>
+</ul>
+
+<br>
+
+<p>
+
+Students evaluate how central banks influence inflation, unemployment, and economic growth.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 18</h3>
+
+<h4 style="color:var(--secondary);">
+Economic Growth
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Intermediate</p>
+
+<p><strong>Estimated Study Time:</strong> 6–8 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Long-Run Economic Growth</li>
+<li>Human Capital</li>
+<li>Physical Capital</li>
+<li>Technological Progress</li>
+<li>Productivity</li>
+<li>Investment</li>
+<li>Economic Development</li>
+<li>Living Standards</li>
+</ul>
+
+<br>
+
+<p>
+
+Students explore the factors that determine long-term prosperity and rising standards of living.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Chapter 19</h3>
+
+<h4 style="color:var(--secondary);">
+International Trade and Exchange Rates
+</h4>
+
+<br>
+
+<p><strong>Difficulty:</strong> Advanced</p>
+
+<p><strong>Estimated Study Time:</strong> 8–10 Hours</p>
+
+<br>
+
+<p><strong>Topics Covered:</strong></p>
+
+<ul style="margin-left:25px;">
+<li>Comparative Advantage</li>
+<li>Trade Benefits</li>
+<li>Balance of Payments</li>
+<li>Foreign Exchange Market</li>
+<li>Currency Appreciation</li>
+<li>Currency Depreciation</li>
+<li>Trade Policies</li>
+<li>Global Economic Integration</li>
+</ul>
+
+<br>
+
+<p>
+
+Students analyze how countries interact through trade and how exchange rates affect economic outcomes.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Recommended Study Path</h2>
+
+<p>
+
+Following a logical progression through AP Macroeconomics helps students build strong conceptual understanding and improve exam performance.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 1: Economic Measurement
+</h3>
+
+<p>
+
+Begin with GDP, national income accounting, inflation, and unemployment to understand how economic performance is measured.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 2: Aggregate Demand & Supply
+</h3>
+
+<p>
+
+Master the AD-AS model because it serves as the foundation for many AP Macroeconomics topics.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 3: Fiscal & Monetary Policy
+</h3>
+
+<p>
+
+Learn how governments and central banks influence economic activity and stabilize business cycles.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 4: Growth & Development
+</h3>
+
+<p>
+
+Study the factors that contribute to long-term economic growth and rising living standards.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 5: International Economics
+</h3>
+
+<p>
+
+Finish by exploring trade, exchange rates, and the interconnected global economy.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Macroeconomics Success Strategies</h2>
+
+<p>
+
+Students who excel on the AP Exam typically combine conceptual understanding with consistent practice and review.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Practice Graph Analysis</h3>
+
+<p>
+
+AD-AS, Money Market, Loanable Funds, and Foreign Exchange graphs appear frequently on AP assessments.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Connect Policies to Outcomes</h3>
+
+<p>
+
+Always identify how policy changes influence output, employment, inflation, and interest rates.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Review Economic Indicators</h3>
+
+<p>
+
+GDP, inflation, and unemployment data form the basis of many AP questions.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Write Complete Explanations</h3>
+
+<p>
+
+FRQs reward students who clearly explain economic relationships and support conclusions with reasoning.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Follow Current Events</h3>
+
+<p>
+
+News stories provide valuable examples of macroeconomic concepts in action.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Take Practice Exams</h3>
+
+<p>
+
+Timed practice helps improve accuracy, confidence, and exam endurance.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Final Course Summary</h2>
+
+<p>
+
+AP Macroeconomics provides a framework for understanding how economies function at the national and global levels.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Throughout this course, students learn how economists measure economic performance, analyze inflation and unemployment, evaluate fiscal and monetary policy, and explain long-run economic growth.
+
+</p>
+
+<br>
+
+<p>
+
+The course also explores international trade, financial systems, and exchange rates, providing students with a comprehensive understanding of modern economies.
+
+</p>
+
+<br>
+
+<p>
+
+By mastering the concepts presented in Chapters 12–19 and engaging in regular practice, students can develop strong analytical skills and prepare effectively for success on the AP Macroeconomics Exam.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div style="max-width:1200px; margin:auto;">
+
+<h2 style="margin-bottom:20px;">
+EconoVerse AP
+</h2>
+
+<p>
+
+Helping students master AP Economics through comprehensive lessons, economic analysis, exam preparation resources, and real-world applications.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
