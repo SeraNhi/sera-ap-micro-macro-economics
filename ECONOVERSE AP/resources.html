@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Study Resources</title>
+
+<meta name="description" content="Access AP Economics study resources including formula sheets, vocabulary guides, graph interpretation tools, flashcards, study schedules, and exam preparation materials.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.85),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.resource-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.resource-card:hover{
+    transform:translateY(-8px);
+}
+
+.resource-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.formula-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+.formula-table th,
+.formula-table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+.formula-table th{
+    background:var(--primary);
+    color:white;
+}
+
+.highlight{
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="microeconomics.html">AP Microeconomics</a></li>
+<li><a href="macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="exam-prep.html">Exam Prep</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>AP Economics Study Resources</h1>
+
+<p>
+
+Access carefully organized learning materials, formula sheets,
+vocabulary guides, graph interpretation tools, flashcards,
+study planners, and exam preparation resources designed to help
+students succeed in AP Microeconomics and AP Macroeconomics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Resources Overview</h2>
+
+<p>
+
+This resource center serves as a one-stop hub for AP Economics students.
+Whether you need help reviewing formulas, understanding graphs,
+memorizing vocabulary, or preparing for the AP Exam,
+these resources are designed to support your learning journey.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+<h3>Formula Sheets</h3>
+<p>
+Quick-reference equations and economic relationships frequently tested on AP Exams.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Vocabulary Guides</h3>
+<p>
+Comprehensive economic terminology organized by topic and unit.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Graph Tutorials</h3>
+<p>
+Visual guides explaining how to analyze and interpret AP Economics graphs.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Study Schedules</h3>
+<p>
+Structured learning plans for long-term preparation and final review.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Formula Sheet</h2>
+
+<p>
+
+Although AP Economics emphasizes conceptual understanding,
+students should be familiar with key formulas and calculations.
+The following reference guide summarizes commonly used equations.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<table class="formula-table">
+
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Price Elasticity of Demand</td>
+<td>% Change in Quantity Demanded ÷ % Change in Price</td>
+<td>Measures responsiveness to price changes.</td>
+</tr>
+
+<tr>
+<td>Income Elasticity</td>
+<td>% Change in Quantity ÷ % Change in Income</td>
+<td>Measures response to income changes.</td>
+</tr>
+
+<tr>
+<td>Cross-Price Elasticity</td>
+<td>% Change in Quantity of Good A ÷ % Change in Price of Good B</td>
+<td>Measures relationship between goods.</td>
+</tr>
+
+<tr>
+<td>Total Revenue</td>
+<td>Price × Quantity</td>
+<td>Calculates firm revenue.</td>
+</tr>
+
+<tr>
+<td>Economic Profit</td>
+<td>Total Revenue − Total Cost</td>
+<td>Measures profitability.</td>
+</tr>
+
+<tr>
+<td>GDP</td>
+<td>C + I + G + (X − M)</td>
+<td>Measures total economic output.</td>
+</tr>
+
+<tr>
+<td>Inflation Rate</td>
+<td>((New CPI − Old CPI) ÷ Old CPI) × 100</td>
+<td>Measures changes in price levels.</td>
+</tr>
+
+<tr>
+<td>Unemployment Rate</td>
+<td>(Unemployed ÷ Labor Force) × 100</td>
+<td>Measures labor market conditions.</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="highlight">
+
+<h2 style="margin-bottom:20px;">
+Formula Mastery Tip
+</h2>
+
+<p>
+
+Do not simply memorize formulas. Focus on understanding what each formula measures,
+why economists use it, and how it connects to real-world economic decisions.
+The AP Exam frequently tests interpretation and application rather than calculation alone.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Economics Vocabulary Guide</h2>
+
+<p>
+
+A strong command of economic vocabulary is essential for AP success. Students should be able to define, identify, and apply these terms in both multiple-choice and free-response questions.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+<h3>Microeconomics Terms</h3>
+<ul style="margin-left:20px;">
+<li>Scarcity</li>
+<li>Opportunity Cost</li>
+<li>Elasticity</li>
+<li>Consumer Surplus</li>
+<li>Producer Surplus</li>
+<li>Marginal Cost</li>
+<li>Marginal Revenue</li>
+<li>Market Equilibrium</li>
+<li>Deadweight Loss</li>
+<li>Externality</li>
+</ul>
+</div>
+
+<div class="resource-card">
+<h3>Macroeconomics Terms</h3>
+<ul style="margin-left:20px;">
+<li>GDP</li>
+<li>Inflation</li>
+<li>Deflation</li>
+<li>Unemployment</li>
+<li>Aggregate Demand</li>
+<li>Aggregate Supply</li>
+<li>Fiscal Policy</li>
+<li>Monetary Policy</li>
+<li>Economic Growth</li>
+<li>Exchange Rate</li>
+</ul>
+</div>
+
+<div class="resource-card">
+<h3>Exam Vocabulary Strategy</h3>
+<p>
+
+Create flashcards for unfamiliar terms and review them regularly. Focus on understanding how terms relate to one another rather than memorizing isolated definitions.
+
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Graph Interpretation Guide</h2>
+
+<p>
+
+Graph analysis is one of the most important skills in AP Economics. Students should be comfortable identifying shifts, equilibrium changes, and policy impacts.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Supply and Demand Graphs
+</h3>
+
+<p>
+
+Supply and demand graphs are foundational to AP Microeconomics. Students should identify equilibrium price and quantity, explain shifts, and evaluate market outcomes.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Cost Curves
+</h3>
+
+<p>
+
+Understand the relationships between marginal cost, average total cost, average variable cost, and average fixed cost. These curves are frequently used to analyze firm behavior.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Aggregate Demand & Aggregate Supply
+</h3>
+
+<p>
+
+The AD-AS model is central to AP Macroeconomics. Students must recognize how economic events and government policies shift aggregate demand and aggregate supply.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Money Market & Loanable Funds
+</h3>
+
+<p>
+
+These graphs help explain interest rates, monetary policy, investment decisions, and financial markets.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Graph Analysis Checklist</h2>
+
+<p>
+
+Use this checklist whenever analyzing an economics graph.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+<h3>Step 1</h3>
+<p>
+Identify the graph type and the variables represented on each axis.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Step 2</h3>
+<p>
+Determine whether a curve shifts or whether movement occurs along a curve.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Step 3</h3>
+<p>
+Identify the new equilibrium and compare it with the original equilibrium.
+</p>
+</div>
+
+<div class="resource-card">
+<h3>Step 4</h3>
+<p>
+Explain the economic reasoning behind the change using correct terminology.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>PDF Resource Library</h2>
+
+<p>
+
+Build your personal AP Economics resource collection using these recommended study materials.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<h3>Formula Reference Packet</h3>
+
+<p>
+
+A comprehensive collection of AP Economics formulas, calculations, and quick-reference guides.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Vocabulary Workbook</h3>
+
+<p>
+
+An organized glossary containing major AP Microeconomics and Macroeconomics terminology.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Graph Practice Packet</h3>
+
+<p>
+
+Includes supply and demand, cost curves, AD-AS models, money markets, and foreign exchange diagrams.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>FRQ Writing Guide</h3>
+
+<p>
+
+Step-by-step explanations for constructing strong AP Economics free-response answers.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Exam Review Notes</h3>
+
+<p>
+
+Condensed chapter summaries covering major concepts and exam-tested material.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Economic Data Workbook</h3>
+
+<p>
+
+Practice interpreting tables, statistics, and economic indicators frequently seen on AP Exams.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Economics Flashcards</h2>
+
+<p>
+
+Flashcards are an effective way to reinforce key concepts, formulas, vocabulary, and graph interpretations.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<h3>Elasticity Flashcards</h3>
+
+<p>
+
+Review price elasticity, income elasticity, cross-price elasticity, and their applications.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Market Structures Flashcards</h3>
+
+<p>
+
+Compare perfect competition, monopoly, monopolistic competition, and oligopoly.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Macroeconomics Flashcards</h3>
+
+<p>
+
+Practice GDP, inflation, unemployment, fiscal policy, and monetary policy terminology.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Graph Flashcards</h3>
+
+<p>
+
+Identify graph components, curve shifts, equilibrium changes, and policy effects.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Formula Flashcards</h3>
+
+<p>
+
+Memorize essential equations and understand when each formula should be applied.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>FRQ Vocabulary Flashcards</h3>
+
+<p>
+
+Develop precise economic language that helps maximize points on AP free-response questions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Study Schedule Templates</h2>
+
+<p>
+
+Consistent study habits are one of the strongest predictors of AP Economics success. Use these sample schedules to organize your preparation.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<h3>4-Month Study Plan</h3>
+
+<p>
+
+Review one chapter per week, complete weekly practice questions, and dedicate weekends to graph analysis and FRQ writing practice.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>8-Week Intensive Plan</h3>
+
+<p>
+
+Cover multiple chapters each week, complete daily review sessions, and take regular timed quizzes.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>30-Day Exam Review</h3>
+
+<p>
+
+Focus on formulas, vocabulary, graph interpretation, practice exams, and targeted review of weaker topics.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Weekly Study Routine</h3>
+
+<p>
+
+Monday: Vocabulary<br>
+Tuesday: Concepts<br>
+Wednesday: Graphs<br>
+Thursday: Practice MCQs<br>
+Friday: FRQs<br>
+Weekend: Full Review
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Recommended External Resources</h2>
+
+<p>
+
+Supplement your studies with high-quality educational resources that reinforce AP Economics concepts.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<h3>Khan Academy</h3>
+
+<p>
+
+Video lessons, quizzes, and practice exercises covering both microeconomics and macroeconomics.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>College Board AP Classroom</h3>
+
+<p>
+
+Official AP resources, practice questions, progress checks, and exam information.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Federal Reserve Education</h3>
+
+<p>
+
+Educational materials explaining monetary policy, banking, and economic data.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Bureau of Labor Statistics</h3>
+
+<p>
+
+Access real-world unemployment, inflation, and labor market data used by economists.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>World Bank Data</h3>
+
+<p>
+
+Explore global economic development indicators and international economic trends.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>International Monetary Fund</h3>
+
+<p>
+
+Research reports and global economic outlook resources for advanced learning.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Student Success Toolkit</h2>
+
+<p>
+
+These practical strategies can help students maximize learning efficiency and improve exam performance.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<div class="resource-card">
+
+<h3>Create Summary Notes</h3>
+
+<p>
+
+Write concise summaries after each chapter to strengthen understanding and retention.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Practice Graph Drawing</h3>
+
+<p>
+
+Redraw key graphs from memory until you can accurately recreate them without assistance.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Use Active Recall</h3>
+
+<p>
+
+Test yourself regularly instead of only rereading notes and textbooks.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Review Mistakes</h3>
+
+<p>
+
+Analyze incorrect answers carefully to identify knowledge gaps and misconceptions.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Complete Timed Practice</h3>
+
+<p>
+
+Simulate exam conditions to build confidence and improve pacing.
+
+</p>
+
+</div>
+
+<div class="resource-card">
+
+<h3>Teach Others</h3>
+
+<p>
+
+Explaining economic concepts to classmates can significantly improve understanding.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Final Resources Summary</h2>
+
+<p>
+
+The EconoVerse AP Resource Center is designed to provide students with the tools necessary to succeed in AP Economics.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+By combining formula sheets, vocabulary guides, graph interpretation resources, flashcards, study schedules, and practice materials, students can build a comprehensive study system that supports long-term retention and exam readiness.
+
+</p>
+
+<br>
+
+<p>
+
+The most successful AP Economics students consistently review concepts, practice graph analysis, complete FRQs, and apply economic reasoning to real-world situations. Use these resources regularly to strengthen your skills and prepare confidently for the AP Exam.
+
+</p>
+
+</div>
+
+</section>
+
+<footer style="background:var(--dark); color:white; padding:60px 8%; text-align:center;">
+
+<h2 style="margin-bottom:20px;">
+EconoVerse AP
+</h2>
+
+<p>
+
+Empowering students to master AP Microeconomics and AP Macroeconomics through high-quality educational content and structured learning resources.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
