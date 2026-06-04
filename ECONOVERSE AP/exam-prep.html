@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | AP Economics Exam Preparation</title>
+
+<meta name="description" content="Prepare for AP Microeconomics and AP Macroeconomics with practice exams, study plans, review strategies, FRQ guidance, MCQ practice, and exam success tools.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+
+    background:
+    linear-gradient(
+    rgba(30,58,95,.85),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.highlight-box{
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+    color:white;
+    padding:40px;
+    border-radius:20px;
+}
+
+.highlight-box h3{
+    margin-bottom:15px;
+}
+
+.exam-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.exam-table th,
+.exam-table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+.exam-table th{
+    background:var(--primary);
+    color:white;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="microeconomics.html">AP Microeconomics</a></li>
+<li><a href="macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="exam-prep.html">Exam Prep</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="signin.html" class="btn btn-outline">Sign In</a>
+<a href="signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>AP Economics Exam Preparation</h1>
+
+<p>
+
+Prepare confidently for AP Microeconomics and AP Macroeconomics with structured study plans, practice resources, test-taking strategies, and proven exam preparation techniques.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Exam Preparation Overview</h2>
+
+<p>
+
+Success on the AP Economics exams requires more than memorization. Students must understand economic concepts, analyze graphs, interpret data, and communicate economic reasoning effectively.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The AP Economics exams assess both conceptual understanding and analytical skills. Students should be prepared to apply economic principles to unfamiliar situations, explain cause-and-effect relationships, and evaluate policy decisions.
+
+</p>
+
+<br>
+
+<p>
+
+A successful preparation plan includes content review, graph practice, vocabulary reinforcement, multiple-choice practice, free-response writing, and full-length practice exams.
+
+</p>
+
+<br>
+
+<p>
+
+This Exam Prep Center provides guidance and strategies to help students maximize performance and approach exam day with confidence.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Exam Format Overview</h2>
+
+<p>
+
+Understanding the structure of the AP exam is essential for effective preparation and time management.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<table class="exam-table">
+
+<tr>
+<th>Section</th>
+<th>Question Type</th>
+<th>Weight</th>
+<th>Suggested Focus</th>
+</tr>
+
+<tr>
+<td>Section I</td>
+<td>Multiple Choice Questions</td>
+<td>Approximately 66%</td>
+<td>Conceptual Understanding & Data Analysis</td>
+</tr>
+
+<tr>
+<td>Section II</td>
+<td>Free Response Questions</td>
+<td>Approximately 34%</td>
+<td>Economic Reasoning & Written Explanations</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Study Planning Guide</h2>
+
+<p>
+
+A structured study plan helps students remain consistent and avoid last-minute cramming.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>3–4 Months Before Exam</h3>
+
+<p>
+
+Complete all course units, review notes regularly, and build a strong foundation in economic concepts.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>2 Months Before Exam</h3>
+
+<p>
+
+Begin focused practice with AP-style multiple-choice and free-response questions.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>1 Month Before Exam</h3>
+
+<p>
+
+Review formulas, vocabulary, graphs, and complete timed practice activities.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Final 2 Weeks</h3>
+
+<p>
+
+Take full-length practice exams and focus on correcting weak areas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="highlight-box">
+
+<h3>Preparation Principle</h3>
+
+<p>
+
+The most effective AP Economics preparation combines content mastery, graph interpretation, problem-solving practice, and consistent review. Small daily study sessions are often more effective than infrequent long study sessions.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Practice Exams</h2>
+
+<p>
+
+Full-length practice exams are one of the most effective ways to prepare for AP Economics. They help students become familiar with exam structure, pacing, and question styles.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Diagnostic Exam</h3>
+
+<p>
+
+Take an initial practice exam to identify strengths and weaknesses before beginning intensive review.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Mid-Review Exam</h3>
+
+<p>
+
+Complete a second practice exam halfway through your study period to measure progress and adjust your review plan.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Final Practice Exams</h3>
+
+<p>
+
+Complete at least two full-length timed exams during the final month before test day.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Performance Analysis</h3>
+
+<p>
+
+Review every missed question and identify patterns in errors to improve future performance.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Timed Quizzes</h2>
+
+<p>
+
+Short timed quizzes help build speed, confidence, and familiarity with AP-style questions.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Suggested Weekly Quiz Schedule
+</h3>
+
+<ul style="margin-left:25px;">
+
+<li>Monday: Vocabulary Quiz</li>
+
+<li>Tuesday: Graph Analysis Quiz</li>
+
+<li>Wednesday: Microeconomics Concepts Quiz</li>
+
+<li>Thursday: Macroeconomics Concepts Quiz</li>
+
+<li>Friday: Mixed AP-Style Questions</li>
+
+<li>Weekend: Timed FRQ Practice</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Regular quiz practice improves recall and helps students identify areas that require additional review.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>MCQ Practice Strategies</h2>
+
+<p>
+
+Multiple-choice questions make up a significant portion of the AP Economics exams and require both content knowledge and analytical reasoning.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Read Carefully</h3>
+
+<p>
+
+Pay close attention to keywords, qualifiers, and economic terminology.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Use Elimination</h3>
+
+<p>
+
+Remove obviously incorrect answers before selecting the best remaining option.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Analyze Graphs</h3>
+
+<p>
+
+Many questions include graphs that require interpretation before answering.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Avoid Overthinking</h3>
+
+<p>
+
+Trust your economic reasoning and avoid changing answers without a clear justification.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Practice Regularly</h3>
+
+<p>
+
+Frequent exposure to AP-style questions improves familiarity and accuracy.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Review Explanations</h3>
+
+<p>
+
+Understanding why answers are correct is just as important as answering correctly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>FRQ Practice Strategies</h2>
+
+<p>
+
+Free-response questions evaluate students' ability to explain economic relationships and apply concepts using written analysis.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 1: Identify the Task
+</h3>
+
+<p>
+
+Determine exactly what the question is asking before beginning your response.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 2: Use Economic Vocabulary
+</h3>
+
+<p>
+
+Accurate terminology demonstrates understanding and helps earn scoring points.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 3: Explain Cause and Effect
+</h3>
+
+<p>
+
+Clearly connect economic events, policy changes, and resulting outcomes.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 4: Reference Graphs
+</h3>
+
+<p>
+
+When appropriate, explain shifts, movements, and equilibrium changes using graph terminology.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Step 5: Answer Every Part
+</h3>
+
+<p>
+
+Even if unsure, attempt every component because partial credit is often available.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Scoring Tips</h2>
+
+<p>
+
+Small improvements in exam strategy can have a significant impact on overall AP scores.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Show Reasoning</h3>
+
+<p>
+
+Explain how you arrived at your conclusion instead of only providing an answer.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Label Graphs Clearly</h3>
+
+<p>
+
+Proper labels and accurate shifts can help support explanations.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Use Precise Language</h3>
+
+<p>
+
+Avoid vague descriptions and use correct economic terminology whenever possible.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Focus on Key Concepts</h3>
+
+<p>
+
+Most scoring opportunities come from applying fundamental economic principles correctly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Time Management Techniques</h2>
+
+<p>
+
+Managing time effectively helps students maximize points across both exam sections.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Do not spend excessive time on a single MCQ.</li>
+
+<li>Keep a steady pace throughout the exam.</li>
+
+<li>Mark difficult questions and return later if time permits.</li>
+
+<li>Allocate sufficient time for all FRQ sections.</li>
+
+<li>Leave a few minutes for reviewing answers.</li>
+
+<li>Practice under realistic timed conditions before exam day.</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Strong pacing ensures that students have the opportunity to earn points across every section of the AP Economics exam.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Common AP Economics Mistakes</h2>
+
+<p>
+
+Understanding common errors can help students avoid losing valuable points on exam day.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Mislabeling Graphs</h3>
+
+<p>
+
+Students often forget to label axes, equilibrium points, or shifted curves correctly.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Confusing Shifts and Movements</h3>
+
+<p>
+
+A common mistake is confusing a movement along a curve with a shift of the entire curve.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Ignoring Key Vocabulary</h3>
+
+<p>
+
+Using imprecise language can weaken FRQ responses and reduce clarity.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Incomplete Explanations</h3>
+
+<p>
+
+Many students provide answers without fully explaining the economic reasoning behind them.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Formula Errors</h3>
+
+<p>
+
+Calculation mistakes can occur when formulas are memorized without understanding.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Rushing Through Questions</h3>
+
+<p>
+
+Careless reading often leads to avoidable mistakes on multiple-choice questions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Last-Minute Review Guide</h2>
+
+<p>
+
+The final week before the AP Exam should focus on reinforcement and confidence building rather than learning entirely new material.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+7 Days Before
+</h3>
+
+<p>
+
+Review chapter summaries, formulas, vocabulary, and graph interpretations.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+5 Days Before
+</h3>
+
+<p>
+
+Complete a full-length timed practice exam and analyze mistakes carefully.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+3 Days Before
+</h3>
+
+<p>
+
+Focus on weaker topics and revisit frequently tested concepts.
+
+</p>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+1 Day Before
+</h3>
+
+<p>
+
+Review notes lightly, organize materials, and prioritize rest.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Exam Day Checklist</h2>
+
+<p>
+
+Being organized on exam day helps reduce stress and improve focus.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Bring all required identification and testing materials.</li>
+
+<li>Arrive early to avoid unnecessary stress.</li>
+
+<li>Eat a balanced meal before the exam.</li>
+
+<li>Read all instructions carefully.</li>
+
+<li>Manage your time throughout the test.</li>
+
+<li>Stay calm and focus on one question at a time.</li>
+
+<li>Double-check responses when time allows.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Success Strategies</h2>
+
+<p>
+
+Top-performing students consistently apply effective study habits throughout the school year.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Study Consistently</h3>
+
+<p>
+
+Short daily review sessions are generally more effective than infrequent marathon study sessions.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Master Graphs</h3>
+
+<p>
+
+Graphs are central to both AP Microeconomics and AP Macroeconomics.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Practice FRQs Weekly</h3>
+
+<p>
+
+Regular writing practice improves economic reasoning and communication skills.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Analyze Mistakes</h3>
+
+<p>
+
+Learning from errors is one of the fastest ways to improve exam performance.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Connect Concepts</h3>
+
+<p>
+
+Understanding relationships between topics improves long-term retention.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Stay Confident</h3>
+
+<p>
+
+Confidence grows through preparation, practice, and familiarity with exam expectations.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Final Exam Preparation Summary</h2>
+
+<p>
+
+Successful AP Economics preparation combines content review, graph analysis, practice questions, and strategic exam planning.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Students who consistently review economic concepts, practice applying economic reasoning, and complete timed assessments develop the skills necessary for success on both AP Microeconomics and AP Macroeconomics exams.
+
+</p>
+
+<br>
+
+<p>
+
+Remember that the AP Exam rewards understanding, application, and analysis. Focus on building strong conceptual foundations, mastering graphs, and communicating economic ideas clearly.
+
+</p>
+
+<br>
+
+<p>
+
+With disciplined preparation and the resources provided throughout EconoVerse AP, students can approach exam day with confidence and maximize their potential performance.
+
+</p>
+
+</div>
+
+</section>
+
+<footer style="background:var(--dark); color:white; padding:60px 8%; text-align:center;">
+
+<h2 style="margin-bottom:20px;">
+EconoVerse AP
+</h2>
+
+<p>
+
+Preparing students for AP Economics success through comprehensive review materials, practice resources, and effective exam strategies.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
