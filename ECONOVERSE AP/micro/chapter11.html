@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 11: Market Failure and Government Intervention</title>
+
+<meta name="description" content="AP Microeconomics Chapter 11: Market Failure and Government Intervention including Externalities, Public Goods, Government Policies, and AP Exam Applications.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:24px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    background:white;
+    padding:18px 8%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.90),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.hero h1{
+    font-size:3.8rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.highlight{
+    border-left:5px solid var(--accent);
+    padding-left:20px;
+    margin-top:20px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a> →
+<a href="../microeconomics.html">AP Microeconomics</a> →
+<strong>Chapter 11</strong>
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 11: Market Failure and Government Intervention</h1>
+
+<p>
+
+Explore situations where markets fail to allocate resources efficiently and examine how governments use policies, taxes, subsidies, and regulations to improve economic outcomes.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Overview</h2>
+
+<p>
+
+In perfectly competitive markets, resources are generally allocated efficiently. However, some markets experience failures that prevent socially optimal outcomes. This chapter examines market failures, externalities, public goods, and government intervention strategies frequently tested on the AP Microeconomics Exam.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Market failures occur when private market decisions lead to inefficient allocation of resources. Economists study these situations to determine whether government intervention can improve economic welfare and promote efficiency.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Identify Market Failures</h3>
+<p>
+Understand why some markets fail to produce socially efficient outcomes.
+</p>
+</div>
+
+<div class="card">
+<h3>Analyze Externalities</h3>
+<p>
+Examine positive and negative spillover effects that affect third parties.
+</p>
+</div>
+
+<div class="card">
+<h3>Evaluate Government Policies</h3>
+<p>
+Assess taxes, subsidies, regulations, and other corrective measures.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Market Failure</h2>
+
+<p>
+
+A market failure occurs when the free market fails to allocate resources efficiently, resulting in either overproduction or underproduction of goods and services.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In a market failure, private costs and benefits differ from social costs and benefits. As a result, the equilibrium quantity produced by the market may not maximize total societal welfare.
+
+</p>
+
+<br>
+
+<p>
+
+Common sources of market failure include:
+
+</p>
+
+<ul>
+<li>Externalities</li>
+<li>Public Goods</li>
+<li>Common Resources</li>
+<li>Information Asymmetry</li>
+<li>Market Power</li>
+</ul>
+
+<div class="highlight">
+
+<strong>AP Exam Tip:</strong>
+
+Market failure questions frequently require students to compare market equilibrium with socially optimal equilibrium.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Externalities</h2>
+
+<p>
+
+Externalities occur when the actions of buyers or sellers affect third parties who are not directly involved in the transaction.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Because these effects are not reflected in market prices, markets may produce too much or too little of a good compared with the socially optimal level.
+
+</p>
+
+<br>
+
+<p>
+
+Externalities can be either positive or negative depending on whether they create benefits or costs for third parties.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Positive Externalities</h2>
+
+<p>
+
+Positive externalities occur when an economic activity generates benefits for individuals who are not directly involved in the transaction.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Because society receives additional benefits beyond those enjoyed by the consumer, the market tends to underproduce goods that generate positive externalities.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include:
+
+</p>
+
+<ul>
+<li>Education</li>
+<li>Vaccinations</li>
+<li>Scientific Research</li>
+<li>Public Parks</li>
+<li>Workforce Training Programs</li>
+</ul>
+
+<br>
+
+<p>
+
+Governments often encourage these activities through subsidies and public funding.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Negative Externalities</h2>
+
+<p>
+
+Negative externalities occur when economic activities impose costs on third parties.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Since producers and consumers may not bear the full social costs of their actions, markets tend to overproduce goods associated with negative externalities.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include:
+
+</p>
+
+<ul>
+<li>Air Pollution</li>
+<li>Water Pollution</li>
+<li>Noise Pollution</li>
+<li>Traffic Congestion</li>
+<li>Secondhand Smoke</li>
+</ul>
+
+<br>
+
+<p>
+
+Governments frequently use regulations, taxes, and permits to reduce negative externalities and move markets closer to socially efficient outcomes.
+
+</p>
+
+<div class="highlight">
+
+<strong>Important AP Concept:</strong>
+
+Negative externalities create a situation where Social Cost exceeds Private Cost, leading to overproduction.
+
+</div>
+
+</div>
+
+</section>
+<!-- PUBLIC GOODS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Public Goods</h2>
+
+        <p>
+            A public good is a good or service that is both non-excludable and non-rivalrous.
+            Non-excludable means people cannot easily be prevented from using the good,
+            while non-rivalrous means one person's use does not reduce availability for others.
+        </p>
+
+        <p>
+            Because firms often cannot charge consumers directly for public goods,
+            private markets tend to underproduce them. Governments frequently provide
+            public goods through taxation and public spending.
+        </p>
+
+        <div class="example-box">
+            <h3>Examples of Public Goods</h3>
+            <ul>
+                <li>National defense</li>
+                <li>Street lighting</li>
+                <li>Public parks</li>
+                <li>Flood control systems</li>
+                <li>Weather forecasting services</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- COMMON RESOURCES -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Common Resources</h2>
+
+        <p>
+            Common resources are rivalrous but non-excludable goods. Because people can
+            access them freely, they are often overused and depleted.
+        </p>
+
+        <p>
+            Economists describe this problem as the "Tragedy of the Commons," where
+            individuals acting in their own self-interest unintentionally damage a shared resource.
+        </p>
+
+        <div class="example-box">
+            <h3>Examples of Common Resources</h3>
+            <ul>
+                <li>Ocean fisheries</li>
+                <li>Public grazing land</li>
+                <li>Groundwater supplies</li>
+                <li>Forests</li>
+                <li>Clean air</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- FREE RIDER PROBLEM -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Free Rider Problem</h2>
+
+        <p>
+            The free rider problem occurs when individuals benefit from a good or service
+            without paying for it. Since people can enjoy the benefits regardless of whether
+            they contribute, many choose not to pay.
+        </p>
+
+        <p>
+            This creates difficulties for private firms attempting to provide public goods,
+            since revenues may be insufficient to cover costs.
+        </p>
+
+        <div class="concept-box">
+            <strong>AP Exam Tip:</strong>
+            Questions frequently ask students to identify how the free rider problem
+            contributes to market failure and justifies government intervention.
+        </div>
+
+    </div>
+</section>
+
+<!-- GOVERNMENT REGULATION -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Government Regulation</h2>
+
+        <p>
+            Governments often intervene in markets to correct inefficiencies caused
+            by market failures. Regulations establish rules and standards designed
+            to protect consumers, workers, and the environment.
+        </p>
+
+        <p>
+            Effective regulations can reduce harmful externalities, improve market
+            transparency, and increase economic welfare.
+        </p>
+
+        <div class="example-box">
+            <h3>Examples of Government Regulation</h3>
+            <ul>
+                <li>Pollution limits on factories</li>
+                <li>Food safety requirements</li>
+                <li>Workplace safety standards</li>
+                <li>Financial market oversight</li>
+                <li>Consumer protection laws</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- TAXES AND SUBSIDIES -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Taxes and Subsidies</h2>
+
+        <p>
+            Governments frequently use taxes and subsidies to address externalities.
+            Taxes discourage activities that generate negative externalities, while
+            subsidies encourage activities that create positive externalities.
+        </p>
+
+        <p>
+            These policies help align private incentives with socially desirable outcomes.
+        </p>
+
+        <div class="grid">
+
+            <div class="info-card">
+                <h3>Corrective Taxes</h3>
+                <p>
+                    Taxes imposed on activities that generate harmful side effects,
+                    such as pollution or tobacco consumption.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Subsidies</h3>
+                <p>
+                    Government payments designed to encourage beneficial activities,
+                    such as education, renewable energy, or vaccinations.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- COST-BENEFIT ANALYSIS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Cost-Benefit Analysis</h2>
+
+        <p>
+            Cost-benefit analysis is a decision-making process used to compare the
+            expected benefits of a policy with its associated costs.
+        </p>
+
+        <p>
+            Governments use cost-benefit analysis when evaluating infrastructure projects,
+            environmental regulations, public health programs, and other policy initiatives.
+        </p>
+
+        <div class="concept-box">
+            <strong>Decision Rule:</strong>
+            A project should generally be undertaken if its total expected benefits
+            exceed its total expected costs.
+        </div>
+
+    </div>
+</section>
+
+<!-- ENVIRONMENTAL ECONOMICS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Environmental Economics</h2>
+
+        <p>
+            Environmental economics focuses on how economic incentives can be used
+            to address environmental challenges and promote sustainable resource use.
+        </p>
+
+        <p>
+            Economists analyze pollution, climate change, conservation, and resource
+            management through the lens of market incentives and externalities.
+        </p>
+
+        <div class="example-box">
+            <h3>Environmental Policy Tools</h3>
+            <ul>
+                <li>Carbon taxes</li>
+                <li>Cap-and-trade systems</li>
+                <li>Pollution permits</li>
+                <li>Renewable energy subsidies</li>
+                <li>Conservation programs</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- REAL-WORLD EXAMPLES -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Real-World Examples</h2>
+
+        <div class="grid">
+
+            <div class="info-card">
+                <h3>Vaccination Programs</h3>
+                <p>
+                    Vaccines generate positive externalities because society benefits
+                    when more individuals are immunized.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Carbon Emissions</h3>
+                <p>
+                    Industrial pollution creates negative externalities that may require
+                    corrective taxes or environmental regulations.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Public Infrastructure</h3>
+                <p>
+                    Roads, bridges, and public transportation often involve government
+                    provision because of significant public benefits.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- AP ECONOMICS CONNECTIONS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>AP Economics Connections</h2>
+
+        <p>
+            Market failure is one of the most frequently tested topics in AP
+            Microeconomics. Students should be able to identify externalities,
+            public goods, common resources, and appropriate government responses.
+        </p>
+
+        <p>
+            You should understand how taxes, subsidies, regulations, and property rights
+            can improve market outcomes and increase economic efficiency.
+        </p>
+
+        <div class="concept-box">
+            <strong>Must Know for the AP Exam:</strong>
+            Positive Externalities, Negative Externalities, Public Goods,
+            Common Resources, Free Rider Problem, Corrective Taxes,
+            Subsidies, Cost-Benefit Analysis, and Government Intervention.
+        </div>
+
+    </div>
+</section>
+<!-- SUMMARY -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Summary</h2>
+
+        <p>
+            Market failures occur when markets fail to allocate resources efficiently.
+            Externalities, public goods, common resources, and information problems
+            can prevent markets from achieving socially optimal outcomes.
+        </p>
+
+        <p>
+            Governments often intervene through regulations, taxes, subsidies,
+            property rights enforcement, and public provision of goods and services.
+            Understanding when intervention improves efficiency is a central goal
+            of AP Microeconomics.
+        </p>
+
+    </div>
+</section>
+
+<!-- KEY TERMS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Key Terms</h2>
+
+        <div class="grid">
+
+            <div class="info-card">Market Failure</div>
+            <div class="info-card">Externality</div>
+            <div class="info-card">Positive Externality</div>
+            <div class="info-card">Negative Externality</div>
+            <div class="info-card">Social Cost</div>
+            <div class="info-card">Social Benefit</div>
+            <div class="info-card">Public Good</div>
+            <div class="info-card">Common Resource</div>
+            <div class="info-card">Free Rider Problem</div>
+            <div class="info-card">Corrective Tax</div>
+            <div class="info-card">Subsidy</div>
+            <div class="info-card">Government Regulation</div>
+            <div class="info-card">Cost-Benefit Analysis</div>
+            <div class="info-card">Environmental Economics</div>
+            <div class="info-card">Tragedy of the Commons</div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- MULTIPLE-CHOICE REVIEW QUESTIONS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Multiple-Choice Review Questions</h2>
+
+        <div class="question-box">
+            <p><strong>1.</strong> Which of the following is an example of a negative externality?</p>
+            <p>A. Vaccination programs</p>
+            <p>B. Public education</p>
+            <p>C. Factory pollution</p>
+            <p>D. Scientific research</p>
+        </div>
+
+        <div class="question-box">
+            <p><strong>2.</strong> A public good is characterized as:</p>
+            <p>A. Rival and excludable</p>
+            <p>B. Non-rival and non-excludable</p>
+            <p>C. Rival and non-excludable</p>
+            <p>D. Non-rival and excludable</p>
+        </div>
+
+        <div class="question-box">
+            <p><strong>3.</strong> The free rider problem is most closely associated with:</p>
+            <p>A. Public goods</p>
+            <p>B. Monopolies</p>
+            <p>C. Oligopolies</p>
+            <p>D. Perfect competition</p>
+        </div>
+
+        <div class="question-box">
+            <p><strong>4.</strong> Governments commonly use corrective taxes to:</p>
+            <p>A. Encourage positive externalities</p>
+            <p>B. Increase competition</p>
+            <p>C. Reduce negative externalities</p>
+            <p>D. Eliminate scarcity</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FREE-RESPONSE REVIEW QUESTIONS -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Free-Response Review Questions</h2>
+
+        <div class="question-box">
+
+            <p><strong>1.</strong> Explain what a negative externality is. Using a pollution example, illustrate why the market outcome may be inefficient.</p>
+
+            <br>
+
+            <p><strong>2.</strong> Define a public good and explain why private markets often underproduce public goods.</p>
+
+            <br>
+
+            <p><strong>3.</strong> Compare public goods and common resources. Include at least one example of each.</p>
+
+            <br>
+
+            <p><strong>4.</strong> Describe how a government subsidy can help correct a positive externality.</p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CHAPTER SUMMARY -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <h2>Chapter Summary</h2>
+
+        <div class="glass-card">
+
+            <p>
+                In this chapter, you explored market failures and the reasons
+                governments sometimes intervene in markets.
+            </p>
+
+            <br>
+
+            <p>
+                You learned about positive and negative externalities, public goods,
+                common resources, the free rider problem, taxes, subsidies,
+                cost-benefit analysis, and environmental economics.
+            </p>
+
+            <br>
+
+            <p>
+                These concepts help economists evaluate whether markets are producing
+                socially efficient outcomes and what policies may improve economic welfare.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PREVIOUS / NEXT CHAPTER NAVIGATION -->
+
+<section class="content-section">
+    <div class="section-container">
+
+        <div class="chapter-navigation">
+
+            <a href="chapter10.html" class="nav-button">
+                ← Previous Chapter
+            </a>
+
+            <a href="../macroeconomics.html" class="nav-button">
+                Continue to AP Macroeconomics →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>EconoVerse AP</h3>
+
+        <p>
+            Empowering students to master AP Economics through
+            comprehensive lessons, exam preparation, and real-world applications.
+        </p>
+
+        <p>
+            © 2026 EconoVerse AP. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+window.addEventListener('scroll', () => {
+
+    const winScroll =
+        document.body.scrollTop ||
+        document.documentElement.scrollTop;
+
+    const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const scrolled =
+        (winScroll / height) * 100;
+
+    const progressBar =
+        document.getElementById('progressBar');
+
+    if(progressBar){
+        progressBar.style.width = scrolled + '%';
+    }
+
+});
+
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+
+    link.addEventListener('mouseenter', () => {
+        link.style.transition = '0.3s';
+    });
+
+});
+
+</script>
+
+</body>
+</html>
