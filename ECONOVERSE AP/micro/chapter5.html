@@ -1,0 +1,1175 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 5: Elasticity</title>
+
+<meta name="description" content="AP Microeconomics Chapter 5: Elasticity. Learn Price Elasticity of Demand, determinants of elasticity, and how economists measure responsiveness to change.">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.breadcrumb{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    color:#64748B;
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.objectives{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.objective-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.objective-box h4{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="../signin.html" class="btn btn-outline">Sign In</a>
+<a href="../signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a>
+→
+<a href="../microeconomics.html">AP Microeconomics</a>
+→
+Chapter 5
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 5: Elasticity</h1>
+
+<p>
+
+Discover how economists measure responsiveness. Elasticity helps explain
+how consumers and producers react to changes in prices, income, and related goods,
+making it one of the most important analytical tools in AP Microeconomics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Elasticity measures the degree to which buyers and sellers respond to economic changes.
+In this chapter, students will learn how elasticity affects consumer behavior,
+business decisions, government taxation policies, and market outcomes.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Understanding elasticity allows economists to predict how changes in prices,
+income levels, and market conditions influence quantity demanded and quantity supplied.
+These concepts appear frequently on the AP Microeconomics Exam and are essential for
+analyzing real-world markets.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+<p>
+After completing this chapter, you should be able to:
+</p>
+</div>
+
+<div class="objectives">
+
+<div class="objective-box">
+<h4>Measure Elasticity</h4>
+<p>
+Calculate price elasticity of demand and interpret elasticity values.
+</p>
+</div>
+
+<div class="objective-box">
+<h4>Analyze Consumer Behavior</h4>
+<p>
+Explain how consumers respond differently to changing prices.
+</p>
+</div>
+
+<div class="objective-box">
+<h4>Evaluate Market Outcomes</h4>
+<p>
+Use elasticity to predict revenue changes and market responses.
+</p>
+</div>
+
+<div class="objective-box">
+<h4>Apply Economic Models</h4>
+<p>
+Connect elasticity concepts to real-world markets and AP exam questions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Price Elasticity of Demand</h2>
+
+<p>
+
+Price Elasticity of Demand (PED) measures how responsive quantity demanded is
+to a change in price.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Some goods experience large changes in demand when prices change, while others
+experience only small changes. Price elasticity helps economists quantify this
+difference.
+
+</p>
+
+<br>
+
+<p>
+
+Elasticity is calculated by comparing the percentage change in quantity demanded
+to the percentage change in price.
+
+</p>
+
+<br>
+
+<p>
+
+Understanding price elasticity is important for businesses because pricing decisions
+can significantly affect revenue and profitability.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Elastic Demand</h3>
+<p>
+Consumers respond strongly to price changes.
+A small price increase causes a large decrease in quantity demanded.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Inelastic Demand</h3>
+<p>
+Consumers respond weakly to price changes.
+Demand remains relatively stable despite changing prices.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Unit Elastic Demand</h3>
+<p>
+Percentage changes in quantity demanded and price are equal.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Determinants of Elasticity</h2>
+
+<p>
+
+Several factors influence how responsive consumers are to changes in price.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Availability of Substitutes</h3>
+<p>
+The more substitutes available, the more elastic demand tends to be.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Necessity vs Luxury</h3>
+<p>
+Necessities often have inelastic demand, while luxury goods are usually more elastic.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Percentage of Income</h3>
+<p>
+Goods that represent a large portion of income tend to be more elastic.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Time Period</h3>
+<p>
+Demand generally becomes more elastic over longer periods of time.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+For example, gasoline tends to be relatively inelastic in the short run because
+people still need transportation. Over time, however, consumers may switch to
+fuel-efficient vehicles or alternative transportation, making demand more elastic.
+
+</p>
+
+</div>
+
+</section>
+```
+<section>
+
+    <div class="section-title">
+        <h2>Elastic vs Inelastic Demand</h2>
+        <p>
+            The value of elasticity determines how strongly quantity demanded
+            responds to a change in price.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card">
+            <h3>Elastic Demand</h3>
+            <p>
+                Demand is elastic when consumers respond strongly to price changes.
+                A small increase in price leads to a relatively large decrease in
+                quantity demanded.
+            </p>
+            <ul>
+                <li>Elasticity > 1</li>
+                <li>Luxury goods often exhibit elastic demand</li>
+                <li>Many substitutes available</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Inelastic Demand</h3>
+            <p>
+                Demand is inelastic when quantity demanded changes only slightly
+                after a price change.
+            </p>
+            <ul>
+                <li>Elasticity < 1</li>
+                <li>Necessities often exhibit inelastic demand</li>
+                <li>Few substitutes available</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Unit Elastic Demand</h3>
+            <p>
+                A percentage change in price produces an equal percentage change
+                in quantity demanded.
+            </p>
+            <ul>
+                <li>Elasticity = 1</li>
+                <li>Total revenue remains unchanged</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Total Revenue Test</h2>
+        <p>
+            The Total Revenue Test helps determine whether demand is elastic
+            or inelastic by examining how revenue changes when prices change.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <h3>Elastic Demand</h3>
+
+        <p>
+            Price and total revenue move in opposite directions.
+        </p>
+
+        <ul>
+            <li>Price ↑ → Revenue ↓</li>
+            <li>Price ↓ → Revenue ↑</li>
+        </ul>
+
+        <br>
+
+        <h3>Inelastic Demand</h3>
+
+        <p>
+            Price and total revenue move in the same direction.
+        </p>
+
+        <ul>
+            <li>Price ↑ → Revenue ↑</li>
+            <li>Price ↓ → Revenue ↓</li>
+        </ul>
+
+        <br>
+
+        <h3>Unit Elastic Demand</h3>
+
+        <p>
+            Changes in price do not affect total revenue.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Price Elasticity of Supply</h2>
+        <p>
+            Price Elasticity of Supply measures how responsive producers are
+            to changes in market prices.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <p>
+
+            When prices increase, producers often increase output.
+            The extent of this response determines the elasticity of supply.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Price Elasticity of Supply =
+            Percentage Change in Quantity Supplied ÷
+            Percentage Change in Price
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Supply tends to be more elastic when firms can easily adjust production
+            and more inelastic when production requires significant time or resources.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Income Elasticity of Demand</h2>
+        <p>
+            Income Elasticity measures how demand changes when consumer income changes.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card">
+            <h3>Normal Goods</h3>
+            <p>
+                Demand increases as income increases.
+            </p>
+            <p>
+                Examples: vacations, electronics, restaurant meals.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Inferior Goods</h3>
+            <p>
+                Demand decreases as income increases.
+            </p>
+            <p>
+                Examples may include generic products or public transportation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Cross-Price Elasticity of Demand</h2>
+        <p>
+            Cross-Price Elasticity measures how demand for one good changes
+            when the price of another good changes.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card">
+            <h3>Substitute Goods</h3>
+            <p>
+                When the price of one good rises,
+                demand for the substitute increases.
+            </p>
+
+            <p>
+                Example: Coca-Cola and Pepsi.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Complementary Goods</h3>
+            <p>
+                When the price of one good rises,
+                demand for the related product falls.
+            </p>
+
+            <p>
+                Example: printers and ink cartridges.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Applications of Elasticity</h2>
+        <p>
+            Elasticity is one of the most practical concepts in economics and is
+            widely used by businesses and governments.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card">
+            <h3>Business Pricing</h3>
+            <p>
+                Firms use elasticity to determine optimal pricing strategies.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Tax Policy</h3>
+            <p>
+                Governments analyze elasticity when deciding which goods to tax.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Revenue Forecasting</h3>
+            <p>
+                Elasticity helps predict how sales revenue may change after price adjustments.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Market Research</h3>
+            <p>
+                Companies estimate consumer responsiveness before launching products.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Real-World Elasticity Examples</h2>
+        <p>
+            Elasticity can be observed in many everyday markets.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <h3>Gasoline</h3>
+        <p>
+            In the short run, gasoline demand is often relatively inelastic because
+            consumers still need transportation.
+        </p>
+
+        <br>
+
+        <h3>Luxury Cars</h3>
+        <p>
+            Luxury vehicles usually have elastic demand because consumers can delay
+            purchases or choose alternatives.
+        </p>
+
+        <br>
+
+        <h3>Prescription Medicine</h3>
+        <p>
+            Essential medications often exhibit highly inelastic demand due to necessity.
+        </p>
+
+        <br>
+
+        <h3>Streaming Services</h3>
+        <p>
+            Subscription platforms face more elastic demand because consumers can
+            easily switch providers.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>AP Economics Connections</h2>
+        <p>
+            Elasticity appears throughout the AP Microeconomics curriculum and is
+            frequently tested on both MCQs and FRQs.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <ul style="margin-left:25px;">
+
+            <li>Calculate elasticity values.</li>
+
+            <li>Interpret elasticity coefficients.</li>
+
+            <li>Apply the Total Revenue Test.</li>
+
+            <li>Analyze tax incidence using elasticity.</li>
+
+            <li>Evaluate market outcomes using elastic and inelastic demand.</li>
+
+            <li>Explain real-world business and government decisions.</li>
+
+        </ul>
+
+        <br>
+
+        <p>
+            Mastering elasticity provides a foundation for later topics including
+            taxation, market efficiency, and government intervention.
+        </p>
+
+    </div>
+
+</section>
+<section>
+
+    <div class="section-title">
+        <h2>Summary</h2>
+        <p>
+            Elasticity measures responsiveness in economic behavior and is a
+            fundamental tool for understanding consumer choices, producer decisions,
+            government policy, and market outcomes.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <p>
+            Price Elasticity of Demand measures how consumers respond to price changes.
+            Demand may be elastic, inelastic, or unit elastic depending on consumer behavior.
+        </p>
+
+        <br>
+
+        <p>
+            Elasticity is influenced by factors such as the availability of substitutes,
+            whether a good is a necessity or luxury, the share of income spent on the good,
+            and the amount of time consumers have to adjust.
+        </p>
+
+        <br>
+
+        <p>
+            Additional elasticity measures—including Price Elasticity of Supply,
+            Income Elasticity, and Cross-Price Elasticity—help economists analyze
+            a wide variety of market situations and business decisions.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Key Terms</h2>
+        <p>
+            Review these important concepts before moving to the next chapter.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card">
+            <h3>Elastic Demand</h3>
+            <p>Demand with elasticity greater than 1.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Inelastic Demand</h3>
+            <p>Demand with elasticity less than 1.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Unit Elastic</h3>
+            <p>Elasticity exactly equal to 1.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Total Revenue</h3>
+            <p>Price multiplied by quantity sold.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Price Elasticity of Supply</h3>
+            <p>Responsiveness of quantity supplied to price changes.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Income Elasticity</h3>
+            <p>Responsiveness of demand to changes in income.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Cross-Price Elasticity</h3>
+            <p>Responsiveness of demand to price changes in another good.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Substitutes</h3>
+            <p>Goods that can replace one another.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Complements</h3>
+            <p>Goods that are commonly used together.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Multiple-Choice Review Questions</h2>
+        <p>
+            Test your understanding of Chapter 5 concepts.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <ol>
+
+            <li>
+                If demand is elastic and price decreases, total revenue will:
+                <br><strong>A.</strong> Increase
+                <br><strong>B.</strong> Decrease
+                <br><strong>C.</strong> Remain unchanged
+                <br><strong>D.</strong> Become negative
+            </li>
+
+            <br>
+
+            <li>
+                Which factor tends to make demand more elastic?
+                <br><strong>A.</strong> Few substitutes
+                <br><strong>B.</strong> Necessity
+                <br><strong>C.</strong> Many substitutes
+                <br><strong>D.</strong> Short time period
+            </li>
+
+            <br>
+
+            <li>
+                Income elasticity is primarily used to classify:
+                <br><strong>A.</strong> Market structures
+                <br><strong>B.</strong> Normal and inferior goods
+                <br><strong>C.</strong> Public goods
+                <br><strong>D.</strong> Production costs
+            </li>
+
+            <br>
+
+            <li>
+                Two goods that are consumed together are called:
+                <br><strong>A.</strong> Inferior goods
+                <br><strong>B.</strong> Substitutes
+                <br><strong>C.</strong> Complements
+                <br><strong>D.</strong> Public goods
+            </li>
+
+            <br>
+
+            <li>
+                Price elasticity of supply measures:
+                <br><strong>A.</strong> Consumer responsiveness
+                <br><strong>B.</strong> Producer responsiveness
+                <br><strong>C.</strong> Government spending
+                <br><strong>D.</strong> Utility maximization
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Free-Response Review Questions</h2>
+        <p>
+            Practice AP-style written responses.
+        </p>
+    </div>
+
+    <div class="glass-card">
+
+        <ol>
+
+            <li>
+                Explain the difference between elastic and inelastic demand.
+                Provide one real-world example of each.
+            </li>
+
+            <br>
+
+            <li>
+                A company lowers the price of its product by 10% and experiences
+                a 20% increase in quantity demanded.
+                Calculate the price elasticity of demand and classify demand.
+            </li>
+
+            <br>
+
+            <li>
+                Explain how the Total Revenue Test can be used to determine
+                whether demand is elastic or inelastic.
+            </li>
+
+            <br>
+
+            <li>
+                Describe two determinants of price elasticity of demand and
+                explain how they affect consumer responsiveness.
+            </li>
+
+            <br>
+
+            <li>
+                Explain the difference between substitute goods and complementary goods.
+                Include examples and discuss how cross-price elasticity applies to each.
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Chapter Summary</h2>
+    </div>
+
+    <div class="glass-card">
+
+        <p>
+
+            Chapter 5 introduced elasticity as a powerful analytical tool used
+            throughout economics. Students learned how elasticity measures responsiveness,
+            how it affects total revenue, and how different elasticity concepts help
+            explain market behavior.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Mastering elasticity is essential because it appears frequently on AP
+            Microeconomics exams and serves as a foundation for later topics such as
+            taxation, market efficiency, government intervention, and consumer behavior.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Continue Your Learning</h2>
+    </div>
+
+    <div class="grid">
+
+        <div class="info-card" style="text-align:center;">
+            <h3>← Previous Chapter</h3>
+            <p>Chapter 4: Demand and Supply</p>
+            <br>
+            <a href="chapter4.html" class="btn btn-outline">
+                Go to Chapter 4
+            </a>
+        </div>
+
+        <div class="info-card" style="text-align:center;">
+            <h3>Next Chapter →</h3>
+            <p>Chapter 6: Consumer Choice</p>
+            <br>
+            <a href="chapter6.html" class="btn btn-primary">
+                Go to Chapter 6
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>EconoVerse AP</h3>
+
+    <br>
+
+    <p>
+        Building AP Economics success through structured lessons,
+        exam preparation, and real-world applications.
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 EconoVerse AP. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+    let winScroll =
+    document.body.scrollTop ||
+    document.documentElement.scrollTop;
+
+    let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    let scrolled =
+    (winScroll / height) * 100;
+
+    document.getElementById('progressBar').style.width =
+    scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
