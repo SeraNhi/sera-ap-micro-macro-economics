@@ -1,0 +1,1461 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 7: Costs of Production</title>
+
+<meta name="description" content="Learn the Costs of Production in AP Microeconomics, including explicit costs, implicit costs, economic profit, accounting profit, and business decision-making.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.breadcrumb{
+    width:90%;
+    max-width:1400px;
+    margin:25px auto;
+    color:#64748B;
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    color:var(--secondary);
+    text-decoration:none;
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.highlight{
+    border-left:5px solid var(--accent);
+    padding-left:20px;
+    margin-top:20px;
+}
+
+ul{
+    margin-left:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">AP Microeconomics</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+<a href="../signin.html" class="btn btn-outline">Sign In</a>
+<a href="../signup.html" class="btn btn-primary">Sign Up</a>
+</div>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a> →
+<a href="../microeconomics.html">AP Microeconomics</a> →
+Chapter 7
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 7: Costs of Production</h1>
+
+<p>
+
+Discover how economists analyze business costs, profits, and production decisions.
+This chapter explores explicit and implicit costs, economic profit, accounting profit,
+and the foundations of cost analysis used throughout AP Microeconomics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Firms constantly make decisions about production, pricing, hiring, and investment.
+To make effective choices, businesses must understand the costs associated with
+producing goods and services. Economists examine these costs differently from
+accountants, leading to important distinctions between accounting profit and
+economic profit.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+This chapter introduces the key cost concepts that underpin producer behavior.
+Students will learn how businesses evaluate resources, calculate profits,
+and determine whether production decisions create value.
+
+</p>
+
+<br>
+
+<p>
+
+The study of production costs also prepares students for later topics such as
+cost curves, profit maximization, market structures, and long-run business growth.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+<p>
+By the end of this chapter, you should be able to:
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Identify Costs</h3>
+<p>
+Distinguish between explicit and implicit costs of production.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Analyze Profit</h3>
+<p>
+Differentiate economic profit from accounting profit.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Apply Opportunity Cost</h3>
+<p>
+Recognize how opportunity costs influence business decisions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Evaluate Firms</h3>
+<p>
+Understand how firms determine whether production is worthwhile.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Explicit Costs</h2>
+
+<p>
+Explicit costs are direct monetary payments made by firms for resources used in production.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Explicit costs involve actual cash expenditures. These are the costs that appear
+on accounting records and financial statements because money physically changes hands.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include:
+
+</p>
+
+<ul>
+<li>Employee wages and salaries</li>
+<li>Rent payments</li>
+<li>Utility bills</li>
+<li>Raw materials</li>
+<li>Equipment purchases</li>
+<li>Advertising expenses</li>
+<li>Insurance premiums</li>
+</ul>
+
+<div class="highlight">
+
+<p>
+
+AP Economics Tip: Explicit costs are easy to identify because they involve
+observable financial transactions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Implicit Costs</h2>
+
+<p>
+Implicit costs represent the opportunity costs of using resources already owned by the firm.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Unlike explicit costs, implicit costs do not require direct cash payments.
+Instead, they represent the value of opportunities sacrificed when resources are
+used in a particular way.
+
+</p>
+
+<br>
+
+<p>
+
+For example, if an entrepreneur leaves a job paying $60,000 per year to start a business,
+the forgone salary becomes an implicit cost of operating that business.
+
+</p>
+
+<br>
+
+<p>
+
+Other examples include:
+
+</p>
+
+<ul>
+<li>Forgone wages</li>
+<li>Forgone rental income from owned property</li>
+<li>Interest that could have been earned elsewhere</li>
+<li>Alternative uses of business-owned resources</li>
+</ul>
+
+<div class="highlight">
+
+<p>
+
+Economists include implicit costs because they reflect the true opportunity cost
+of production decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Economic Profit vs Accounting Profit</h2>
+
+<p>
+Economists and accountants measure profit differently because they treat costs differently.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Accounting profit considers only explicit costs:
+
+</p>
+
+<br>
+
+<p style="font-weight:bold;">
+Accounting Profit = Total Revenue − Explicit Costs
+</p>
+
+<br>
+
+<p>
+
+Economic profit considers both explicit and implicit costs:
+
+</p>
+
+<br>
+
+<p style="font-weight:bold;">
+Economic Profit = Total Revenue − (Explicit Costs + Implicit Costs)
+</p>
+
+<br>
+
+<p>
+
+Because economic profit includes opportunity costs, it usually provides a more
+complete picture of business performance.
+
+</p>
+
+<br>
+
+<p>
+
+A firm may earn a positive accounting profit while earning zero or even negative
+economic profit if implicit costs are substantial.
+
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+
+<h2>Fixed Costs</h2>
+
+<p>
+Fixed costs remain constant regardless of the quantity of output produced.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+A fixed cost is a cost that does not change as production levels change.
+Whether a firm produces zero units or thousands of units, these costs must
+still be paid.
+
+</p>
+
+<br>
+
+<p>
+
+Common examples include:
+
+</p>
+
+<ul>
+<li>Building rent</li>
+<li>Property taxes</li>
+<li>Business licenses</li>
+<li>Insurance premiums</li>
+<li>Long-term equipment leases</li>
+</ul>
+
+<br>
+
+<p>
+
+Because fixed costs do not vary with output, they become less significant
+per unit as production increases.
+
+</p>
+
+<div class="highlight">
+
+<p>
+
+AP Economics Tip: Fixed costs exist even when output equals zero.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Variable Costs</h2>
+
+<p>
+Variable costs change as the level of production changes.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Variable costs rise when firms produce more output and fall when production
+decreases. These costs are directly tied to the production process.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include:
+
+</p>
+
+<ul>
+<li>Raw materials</li>
+<li>Hourly labor</li>
+<li>Packaging materials</li>
+<li>Shipping expenses</li>
+<li>Electricity used in production</li>
+</ul>
+
+<br>
+
+<p>
+
+As output expands, firms generally require additional resources, causing
+variable costs to increase.
+
+</p>
+
+<div class="highlight">
+
+<p>
+
+Remember: No production usually means no variable costs.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Total Cost</h2>
+
+<p>
+Total cost combines all fixed and variable costs incurred by a firm.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists calculate total cost using a simple formula:
+
+</p>
+
+<br>
+
+TC = FC + VC
+
+<br>
+
+<p>
+
+Where:
+
+</p>
+
+<ul>
+<li>TC = Total Cost</li>
+<li>FC = Fixed Cost</li>
+<li>VC = Variable Cost</li>
+</ul>
+
+<br>
+
+<p>
+
+For example, if a bakery pays $2,000 in monthly rent and spends $3,000 on
+ingredients and labor, total cost equals $5,000.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Average Costs</h2>
+
+<p>
+Average costs measure production costs on a per-unit basis.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Average costs help firms determine how much each unit of output costs to produce.
+
+</p>
+
+<br>
+
+<p>
+
+Key average cost measures include:
+
+</p>
+
+<ul>
+<li>Average Fixed Cost (AFC)</li>
+<li>Average Variable Cost (AVC)</li>
+<li>Average Total Cost (ATC)</li>
+</ul>
+
+<br>
+
+<p>
+
+Average Fixed Cost decreases as production increases because fixed costs are
+spread across more units of output.
+
+</p>
+
+<br>
+
+<p>
+
+Average Total Cost combines both fixed and variable costs per unit produced.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Marginal Cost</h2>
+
+<p>
+Marginal cost measures the additional cost of producing one more unit of output.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Marginal cost is one of the most important concepts in microeconomics because
+firms use it when deciding how much output to produce.
+
+</p>
+
+<br>
+
+MC=\frac{\Delta TC}{\Delta Q}
+
+<br>
+
+<p>
+
+Marginal cost focuses on changes rather than totals. It tells producers how
+costs change when output increases by one unit.
+
+</p>
+
+<br>
+
+<p>
+
+Profit-maximizing firms compare marginal cost with marginal revenue when making
+production decisions.
+
+</p>
+
+<div class="highlight">
+
+<p>
+
+AP Exam Connection: Marginal Cost appears throughout AP Microeconomics and is
+critical for understanding firm behavior.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Cost Curves</h2>
+
+<p>
+Cost curves visually represent the relationship between costs and output.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists use several cost curves to analyze production efficiency:
+
+</p>
+
+<ul>
+<li>Average Fixed Cost (AFC)</li>
+<li>Average Variable Cost (AVC)</li>
+<li>Average Total Cost (ATC)</li>
+<li>Marginal Cost (MC)</li>
+</ul>
+
+<br>
+
+<p>
+
+One important AP Economics relationship is that the Marginal Cost curve
+intersects both the AVC and ATC curves at their minimum points.
+
+</p>
+
+<br>
+
+<p>
+
+Understanding these graphs is essential for later chapters involving perfect
+competition, monopoly, and profit maximization.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Economies of Scale</h2>
+
+<p>
+Large firms often benefit from lower costs as production expands.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economies of scale occur when average costs decrease as output increases.
+
+</p>
+
+<br>
+
+<p>
+
+Sources of economies of scale include:
+
+</p>
+
+<ul>
+<li>Specialization of labor</li>
+<li>Bulk purchasing discounts</li>
+<li>Advanced technology</li>
+<li>Managerial efficiency</li>
+</ul>
+
+<br>
+
+<p>
+
+Large companies such as major retailers and manufacturers frequently achieve
+cost advantages because of economies of scale.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Diseconomies of Scale</h2>
+
+<p>
+Growth does not always reduce costs.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Diseconomies of scale occur when average costs increase as firms become too large.
+
+</p>
+
+<br>
+
+<p>
+
+Common causes include:
+
+</p>
+
+<ul>
+<li>Communication problems</li>
+<li>Management inefficiencies</li>
+<li>Coordination difficulties</li>
+<li>Bureaucratic delays</li>
+</ul>
+
+<br>
+
+<p>
+
+When firms become excessively large, managing operations can become more complex,
+causing costs to rise.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Real-World Applications</h2>
+
+<p>
+Understanding production costs helps explain business decisions across industries.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Airlines experience extremely high fixed costs due to aircraft purchases,
+airport facilities, and maintenance infrastructure.
+
+</p>
+
+<br>
+
+<p>
+
+Restaurants face significant variable costs because food ingredients and labor
+expenses change with customer demand.
+
+</p>
+
+<br>
+
+<p>
+
+Technology companies often benefit from economies of scale because software can
+be distributed to millions of users at relatively low additional cost.
+
+</p>
+
+<br>
+
+<p>
+
+Economic cost analysis helps businesses determine prices, production levels,
+expansion plans, and investment decisions.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Connections</h2>
+
+<p>
+The concepts in this chapter form the foundation for several upcoming AP topics.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ul>
+
+<li>Perfect Competition</li>
+
+<li>Profit Maximization</li>
+
+<li>Monopoly Pricing</li>
+
+<li>Short-Run Production Decisions</li>
+
+<li>Long-Run Industry Adjustment</li>
+
+<li>Market Structures</li>
+
+<li>Marginal Analysis</li>
+
+</ul>
+
+<br>
+
+<p>
+
+A strong understanding of production costs makes later chapters significantly
+easier because firms use cost information when making nearly every economic decision.
+
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+
+<h2>Summary</h2>
+
+<p>
+This chapter introduced the major cost concepts used by economists to analyze firm behavior and production decisions.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Firms face both explicit costs and implicit costs when producing goods and services.
+While accountants focus on direct monetary expenditures, economists also consider
+opportunity costs when evaluating business performance.
+
+</p>
+
+<br>
+
+<p>
+
+Students learned how fixed costs, variable costs, total costs, average costs,
+and marginal costs influence production decisions. Understanding these concepts
+provides the foundation for analyzing market structures and profit-maximizing behavior.
+
+</p>
+
+<br>
+
+<p>
+
+The chapter also explored economies of scale and diseconomies of scale,
+demonstrating how firm size can affect production efficiency.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Key Terms</h2>
+
+<p>
+Review these essential AP Microeconomics terms.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card"><h3>Explicit Cost</h3><p>Direct monetary payment for resources.</p></div>
+
+<div class="info-card"><h3>Implicit Cost</h3><p>Opportunity cost of using owned resources.</p></div>
+
+<div class="info-card"><h3>Accounting Profit</h3><p>Total revenue minus explicit costs.</p></div>
+
+<div class="info-card"><h3>Economic Profit</h3><p>Total revenue minus all explicit and implicit costs.</p></div>
+
+<div class="info-card"><h3>Fixed Cost</h3><p>Cost that does not change with output.</p></div>
+
+<div class="info-card"><h3>Variable Cost</h3><p>Cost that changes as output changes.</p></div>
+
+<div class="info-card"><h3>Total Cost</h3><p>Fixed cost plus variable cost.</p></div>
+
+<div class="info-card"><h3>Marginal Cost</h3><p>Additional cost of producing one more unit.</p></div>
+
+<div class="info-card"><h3>Average Total Cost</h3><p>Total cost per unit of output.</p></div>
+
+<div class="info-card"><h3>Economies of Scale</h3><p>Declining average costs as output increases.</p></div>
+
+<div class="info-card"><h3>Diseconomies of Scale</h3><p>Increasing average costs as output increases.</p></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Multiple-Choice Review Questions</h2>
+
+<p>
+Test your understanding of production costs and profit concepts.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+Which of the following is an explicit cost?
+<br><br>
+A. Forgone salary of a business owner
+<br>
+B. Rental income given up
+<br>
+C. Monthly wage payments to employees
+<br>
+D. Opportunity cost of capital
+</li>
+
+<br>
+
+<li>
+Economic profit differs from accounting profit because economic profit:
+<br><br>
+A. Ignores fixed costs
+<br>
+B. Includes implicit costs
+<br>
+C. Excludes revenue
+<br>
+D. Excludes variable costs
+</li>
+
+<br>
+
+<li>
+A cost that remains unchanged as output changes is:
+<br><br>
+A. Marginal cost
+<br>
+B. Variable cost
+<br>
+C. Fixed cost
+<br>
+D. Opportunity cost
+</li>
+
+<br>
+
+<li>
+Which cost is most important when firms decide whether to produce one more unit?
+<br><br>
+A. Fixed cost
+<br>
+B. Average cost
+<br>
+C. Marginal cost
+<br>
+D. Accounting cost
+</li>
+
+<br>
+
+<li>
+Economies of scale occur when:
+<br><br>
+A. Average costs rise
+<br>
+B. Marginal costs equal revenue
+<br>
+C. Average costs fall as output rises
+<br>
+D. Firms reduce production
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Free-Response Review Questions</h2>
+
+<p>
+Practice AP-style written responses.
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<h3>FRQ 1</h3>
+
+<p>
+
+A student leaves a job paying $50,000 per year to open a bakery.
+The bakery earns $200,000 in revenue and has explicit costs of $130,000.
+
+</p>
+
+<ul>
+
+<li>Define implicit cost.</li>
+
+<li>Calculate accounting profit.</li>
+
+<li>Calculate economic profit.</li>
+
+<li>Explain whether opening the bakery was economically profitable.</li>
+
+</ul>
+
+<br>
+
+<h3>FRQ 2</h3>
+
+<p>
+
+A manufacturing firm experiences a decline in average costs as production expands.
+
+</p>
+
+<ul>
+
+<li>Define economies of scale.</li>
+
+<li>Explain two possible causes of economies of scale.</li>
+
+<li>Describe one situation that could lead to diseconomies of scale.</li>
+
+</ul>
+
+<br>
+
+<h3>FRQ 3</h3>
+
+<p>
+
+Suppose a firm experiences rising marginal costs as output increases.
+
+</p>
+
+<ul>
+
+<li>Explain why marginal costs may increase.</li>
+
+<li>Describe how rising marginal costs affect production decisions.</li>
+
+<li>Connect your explanation to the law of diminishing returns.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Summary</h2>
+
+</div>
+
+<div class="glass-card">
+
+<ul>
+
+<li>Explicit costs involve direct monetary payments.</li>
+
+<li>Implicit costs represent opportunity costs.</li>
+
+<li>Accounting profit excludes implicit costs.</li>
+
+<li>Economic profit includes all opportunity costs.</li>
+
+<li>Fixed costs do not change with output.</li>
+
+<li>Variable costs rise as production increases.</li>
+
+<li>Total cost equals fixed cost plus variable cost.</li>
+
+<li>Marginal cost measures the cost of one additional unit.</li>
+
+<li>Economies of scale reduce average costs.</li>
+
+<li>Diseconomies of scale increase average costs.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Continue Learning</h2>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>← Previous Chapter</h3>
+
+<p>Chapter 6: Consumer Choice</p>
+
+<br>
+
+<a href="chapter6.html" class="btn btn-outline">
+Go to Chapter 6
+</a>
+
+</div>
+
+<div class="info-card">
+
+<h3>Next Chapter →</h3>
+
+<p>Chapter 8: Perfect Competition</p>
+
+<br>
+
+<a href="chapter8.html" class="btn btn-primary">
+Go to Chapter 8
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+
+Master AP Economics through comprehensive lessons,
+graph analysis, practice questions, and exam preparation resources.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
