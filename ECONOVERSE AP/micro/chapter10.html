@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 10: Resource Markets</title>
+
+<meta name="description" content="AP Microeconomics Chapter 10: Resource Markets, Derived Demand, and Marginal Revenue Product (MRP).">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.90),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.breadcrumb{
+    background:white;
+    padding:18px 8%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+ul{
+    margin-left:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a> →
+<a href="../microeconomics.html">AP Microeconomics</a> →
+<strong>Chapter 10</strong>
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 10: Resource Markets</h1>
+
+<p>
+
+Explore how firms hire resources, determine wages, and make employment decisions using derived demand and marginal revenue product analysis.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Overview</h2>
+<p>
+
+Resource markets focus on the buying and selling of factors of production such as labor, land, capital, and entrepreneurship. This chapter explains how firms determine the quantity of resources they employ and how factor prices are established.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Unlike product markets where consumers demand goods and services, resource markets involve firms demanding inputs needed for production. Understanding these markets helps explain wages, employment levels, and business hiring decisions.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Understand Derived Demand</h3>
+<p>
+Explain why the demand for resources depends on the demand for the products those resources help produce.
+</p>
+</div>
+
+<div class="card">
+<h3>Calculate MRP</h3>
+<p>
+Understand how marginal revenue product measures the value of an additional worker or resource.
+</p>
+</div>
+
+<div class="card">
+<h3>Analyze Hiring Decisions</h3>
+<p>
+Examine how firms determine the profit-maximizing quantity of labor and other inputs.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Derived Demand</h2>
+<p>
+
+The demand for a resource is derived from the demand for the final product that the resource helps produce.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Consumers do not directly purchase labor from firms. Instead, firms hire labor because workers help produce goods and services that consumers want to buy. Therefore, the demand for labor depends on the demand for the output being produced.
+
+</p>
+
+<br>
+
+<p>
+
+If consumer demand for smartphones increases, firms may hire additional workers to expand production. If demand falls, firms may reduce employment. This relationship is known as derived demand.
+
+</p>
+
+<br>
+
+<p>
+
+Key factors affecting derived demand include:
+
+</p>
+
+<ul>
+<li>Demand for the final product</li>
+<li>Productivity of the resource</li>
+<li>Price of the final product</li>
+<li>Availability of substitute resources</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Marginal Revenue Product (MRP)</h2>
+<p>
+
+Marginal Revenue Product measures the additional revenue generated by employing one more unit of a resource.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+MRP is one of the most important concepts in resource market analysis because firms use it when deciding how many workers to hire.
+
+</p>
+
+<br>
+
+<p>
+
+The basic formula is:
+
+</p>
+
+<p style="font-weight:bold; color:var(--primary);">
+MRP = Marginal Product × Marginal Revenue
+</p>
+
+<br>
+
+<p>
+
+A profit-maximizing firm continues hiring additional workers as long as the revenue generated by the worker exceeds or equals the cost of employing that worker.
+
+</p>
+
+<br>
+
+<p>
+
+As additional workers are hired, diminishing marginal returns often cause MRP to decline, creating a downward-sloping resource demand curve.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>Labor Markets</h2>
+<p>
+
+Labor markets bring together workers who supply labor and firms that demand labor. Wages and employment levels are determined through the interaction of supply and demand.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The labor market operates similarly to other markets. Workers supply labor in exchange for wages, while firms demand labor because workers contribute to production and revenue generation.
+
+</p>
+
+<br>
+
+<p>
+
+The labor demand curve is derived from Marginal Revenue Product (MRP), while the labor supply curve reflects workers' willingness to work at different wage rates.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Wage Determination</h2>
+<p>
+
+Wages are determined by the interaction of labor demand and labor supply.
+
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Higher Demand</h3>
+<p>
+When demand for workers increases, wages and employment tend to rise.
+</p>
+</div>
+
+<div class="card">
+<h3>Higher Supply</h3>
+<p>
+When more workers enter a labor market, wages may decrease if demand remains unchanged.
+</p>
+</div>
+
+<div class="card">
+<h3>Skill Levels</h3>
+<p>
+Workers with specialized skills often earn higher wages due to greater productivity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Perfectly Competitive Labor Markets</h2>
+<p>
+
+In a perfectly competitive labor market, many firms compete for workers and no single firm can influence wages.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Firms are wage takers and must accept the market wage rate. Because each additional worker costs the same wage, the firm's labor supply curve is perfectly elastic.
+
+</p>
+
+<br>
+
+<p>
+
+Profit-maximizing firms hire workers until:
+
+</p>
+
+<p style="font-weight:bold;color:var(--primary);">
+MRP = Wage Rate
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Monopsony</h2>
+<p>
+
+A monopsony exists when there is only one major buyer of labor in a market.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Unlike a competitive labor market, a monopsonist has significant control over wages because workers have limited employment alternatives.
+
+</p>
+
+<br>
+
+<p>
+
+Examples may include a large employer in a small town or a dominant healthcare provider hiring nurses in a rural region.
+
+</p>
+
+<br>
+
+<p>
+
+Monopsonies generally hire fewer workers and pay lower wages than competitive labor markets.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Labor Unions</h2>
+<p>
+
+Labor unions are organizations formed by workers to improve wages, benefits, and working conditions.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Through collective bargaining, unions negotiate contracts with employers on behalf of workers.
+
+</p>
+
+<br>
+
+<p>
+
+Supporters argue that unions increase worker bargaining power, while critics argue that unions may create labor market inefficiencies.
+
+</p>
+
+<br>
+
+<p>
+
+AP Economics often examines how unions affect wages, employment, and labor market outcomes.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Human Capital</h2>
+<p>
+
+Human capital refers to the knowledge, education, skills, training, and experience possessed by workers.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Investments in education and training typically increase worker productivity and earning potential.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include earning a university degree, obtaining certifications, participating in internships, and developing specialized technical skills.
+
+</p>
+
+<br>
+
+<p>
+
+Higher levels of human capital generally lead to higher wages because employers value more productive workers.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Income Inequality</h2>
+<p>
+
+Income inequality refers to differences in earnings among individuals and groups within an economy.
+
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists identify several causes of income inequality, including differences in education, skill levels, experience, technology, discrimination, and access to opportunities.
+
+</p>
+
+<br>
+
+<p>
+
+Governments may attempt to reduce income inequality through progressive taxation, social programs, education investments, and labor market policies.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Real-World Labor Market Examples</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Technology Industry</h3>
+<p>
+Software engineers often earn high wages due to strong demand and specialized human capital.
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare Sector</h3>
+<p>
+Doctors and nurses receive extensive training, increasing their productivity and earning potential.
+</p>
+</div>
+
+<div class="card">
+<h3>Professional Sports</h3>
+<p>
+Elite athletes earn high incomes because their talents are scarce and generate substantial revenue.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Economics Connections</h2>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+For the AP Exam, students should understand how labor markets operate, how wages are determined, how MRP influences hiring decisions, and how labor market structures affect employment outcomes.
+
+</p>
+
+<br>
+
+<p>
+
+Be prepared to analyze labor market graphs, calculate MRP, evaluate monopsony outcomes, and explain the effects of labor unions and human capital investments.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Resource markets determine the prices and quantities of productive inputs. Firms demand labor because workers contribute to production and revenue generation. The concepts of derived demand and marginal revenue product help explain hiring decisions and wage determination.
+
+</p>
+
+<br>
+
+<p>
+
+Students should understand competitive labor markets, monopsonies, labor unions, human capital, and income inequality, all of which are important AP Microeconomics topics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+</div>
+
+<div class="glass-card">
+
+<ul>
+<li>Resource Market</li>
+<li>Derived Demand</li>
+<li>Marginal Revenue Product (MRP)</li>
+<li>Labor Demand</li>
+<li>Labor Supply</li>
+<li>Wage Rate</li>
+<li>Perfect Competition</li>
+<li>Monopsony</li>
+<li>Labor Union</li>
+<li>Collective Bargaining</li>
+<li>Human Capital</li>
+<li>Income Inequality</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+</div>
+
+<div class="glass-card">
+
+<p><strong>1.</strong> The demand for labor is called derived demand because:</p>
+<p>A. Workers derive utility from wages</p>
+<p>B. Labor demand depends on demand for final products</p>
+<p>C. Firms derive profits from labor markets</p>
+<p>D. Labor is always productive</p>
+
+<br>
+
+<p><strong>2.</strong> A firm maximizes profit by hiring workers until:</p>
+<p>A. Wage > MRP</p>
+<p>B. Wage < MRP</p>
+<p>C. MRP = Wage</p>
+<p>D. MRP = Price</p>
+
+<br>
+
+<p><strong>3.</strong> Human capital includes:</p>
+<p>A. Machinery</p>
+<p>B. Buildings</p>
+<p>C. Education and skills</p>
+<p>D. Natural resources</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+</div>
+
+<div class="glass-card">
+
+<p><strong>1.</strong> Explain why labor demand is considered derived demand.</p>
+
+<br>
+
+<p><strong>2.</strong> Describe how firms use Marginal Revenue Product when making hiring decisions.</p>
+
+<br>
+
+<p><strong>3.</strong> Compare a perfectly competitive labor market with a monopsony labor market.</p>
+
+<br>
+
+<p><strong>4.</strong> Explain how investments in human capital affect worker productivity and wages.</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Chapter 10 introduced resource markets and labor market analysis. Students learned how firms determine labor demand using Marginal Revenue Product, how wages are established through supply and demand, and how labor market structures influence employment outcomes.
+
+</p>
+
+<br>
+
+<p>
+
+Mastering these concepts prepares students for advanced analysis of government intervention and market failures in subsequent AP Microeconomics chapters.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="grid">
+
+<div class="card" style="text-align:center;">
+<h3>← Previous Chapter</h3>
+<p>Chapter 9: Imperfect Competition</p>
+<br>
+<a href="chapter9.html" class="btn btn-primary">Go to Chapter 9</a>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>Next Chapter →</h3>
+<p>Chapter 11: Market Failure & Government Intervention</p>
+<br>
+<a href="chapter11.html" class="btn btn-primary">Go to Chapter 11</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+
+Master AP Microeconomics through comprehensive lessons, practice questions, exam preparation tools, and real-world economic applications.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
