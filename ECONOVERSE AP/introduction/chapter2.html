@@ -1,0 +1,871 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter 2 | The Discipline of Economics | EconoVerse AP</title>
+
+<meta name="description" content="Chapter 2: The Discipline of Economics. Learn economics defined, resources, opportunity cost, production possibilities frontier, law of increasing costs, and comparative advantage.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    color:#64748B;
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+}
+
+.hero{
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+
+    color:white;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.hero h1{
+    font-size:3.8rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.15rem;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.content-box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-top:25px;
+}
+
+.content-box h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.content-box p{
+    margin-bottom:18px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../introduction.html">Introduction</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a>
+→
+<a href="../introduction.html">Introduction</a>
+→
+Chapter 2
+</div>
+
+<header class="hero">
+
+<h1>Chapter 2: The Discipline of Economics</h1>
+
+<p>
+Explore the fundamental principles that form the foundation of economics, including scarcity, resource allocation, opportunity cost, production possibilities, and comparative advantage.
+</p>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Overview</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Economics is the study of how individuals, businesses, and governments make choices when faced with limited resources and unlimited wants. This chapter introduces the core ideas that economists use to analyze decision-making and resource allocation.
+</p>
+
+<p>
+Understanding these concepts provides the foundation for all future topics in AP Microeconomics and AP Macroeconomics.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Define Economics</h3>
+<p>Understand what economics is and why scarcity exists.</p>
+</div>
+
+<div class="card">
+<h3>Identify Resources</h3>
+<p>Learn the four factors of production and their importance.</p>
+</div>
+
+<div class="card">
+<h3>Evaluate Choices</h3>
+<p>Apply opportunity cost to real-world decision making.</p>
+</div>
+
+<div class="card">
+<h3>Prepare for AP Economics</h3>
+<p>Build a foundation for later economic analysis and graph interpretation.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Economics Defined</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Economics is the social science that studies how people, businesses, and governments allocate scarce resources to satisfy unlimited wants and needs.
+</p>
+
+<p>
+Because resources are limited, every choice involves trade-offs. Economists analyze these trade-offs to understand how societies produce, distribute, and consume goods and services.
+</p>
+
+<p>
+The central problem of economics is scarcity. Scarcity exists because society does not have enough resources to produce everything everyone wants.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Resources</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Resources, often called factors of production, are the inputs used to produce goods and services.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Land</h3>
+<p>Natural resources such as water, forests, minerals, and farmland.</p>
+</div>
+
+<div class="card">
+<h3>Labor</h3>
+<p>Human effort used in production, both physical and mental.</p>
+</div>
+
+<div class="card">
+<h3>Capital</h3>
+<p>Tools, machinery, buildings, and equipment used to produce goods.</p>
+</div>
+
+<div class="card">
+<h3>Entrepreneurship</h3>
+<p>The ability to combine resources, take risks, and create businesses.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Opportunity Cost</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Opportunity cost is the value of the next best alternative that must be given up when a choice is made.
+</p>
+
+<p>
+Every decision has an opportunity cost because choosing one option means giving up another. Understanding opportunity cost helps individuals and societies make more efficient decisions.
+</p>
+
+<p>
+For example, if a student spends three hours studying economics instead of watching a movie, the opportunity cost is the enjoyment they would have received from watching the movie.
+</p>
+
+<p>
+Opportunity cost is one of the most important concepts in all of economics because it applies to every decision involving scarce resources.
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+<h2>Production Possibilities Frontier (PPF)</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+The Production Possibilities Frontier (PPF) is a graph that illustrates the maximum combinations of two goods or services that an economy can produce using all available resources efficiently.
+</p>
+
+<p>
+The PPF demonstrates several important economic concepts, including scarcity, choice, opportunity cost, efficiency, inefficiency, and economic growth.
+</p>
+
+<p>
+Points located on the curve represent efficient production because all resources are fully utilized. Points inside the curve indicate inefficient production, while points outside the curve are currently unattainable given existing resources and technology.
+</p>
+
+<p>
+As an economy shifts production from one good to another, it must sacrifice some amount of the first good. This sacrifice represents opportunity cost.
+</p>
+
+<div style="margin-top:25px;">
+
+
+
+</div>
+
+<p style="margin-top:20px;">
+While actual PPFs are not always represented by this exact equation, AP Economics students should become comfortable interpreting curved production possibility frontiers and understanding what movements along the curve represent.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Law of Increasing Costs</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+The Law of Increasing Costs states that as more resources are devoted to producing one good, the opportunity cost of producing additional units of that good will eventually increase.
+</p>
+
+<p>
+This occurs because resources are not perfectly adaptable. Different workers, machines, and materials are often better suited for producing certain goods than others.
+</p>
+
+<p>
+When an economy reallocates resources away from their most productive uses, efficiency decreases and greater sacrifices must be made to produce additional units of another good.
+</p>
+
+<p>
+The Law of Increasing Costs explains why most Production Possibilities Frontiers are bowed outward rather than appearing as straight lines.
+</p>
+
+<p>
+For example, if a country shifts more and more resources toward producing computers, it may eventually need to use workers and equipment that are less efficient at producing computers, causing opportunity costs to rise.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Comparative Advantage</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Comparative advantage exists when an individual, business, or country can produce a good or service at a lower opportunity cost than another producer.
+</p>
+
+<p>
+Comparative advantage is one of the most important principles in economics because it explains the benefits of specialization and trade.
+</p>
+
+<p>
+Even if one producer is better at producing everything, both parties can still benefit from trade if they specialize according to comparative advantage.
+</p>
+
+<p>
+Economists use comparative advantage to explain international trade, business specialization, and efficient resource allocation.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Absolute Advantage</h3>
+<p>
+The ability to produce more output using the same amount of resources.
+</p>
+</div>
+
+<div class="card">
+<h3>Comparative Advantage</h3>
+<p>
+The ability to produce at a lower opportunity cost.
+</p>
+</div>
+
+<div class="card">
+<h3>Specialization</h3>
+<p>
+Focusing production on goods where opportunity costs are lowest.
+</p>
+</div>
+
+<div class="card">
+<h3>Trade</h3>
+<p>
+Exchange that allows all participants to consume beyond their individual production possibilities.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Real-World Applications</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Economic principles are visible in everyday decisions made by individuals, businesses, and governments.
+</p>
+
+<p>
+Students can apply opportunity cost when deciding how to spend time, money, or resources. Businesses use economic reasoning when choosing production methods, setting prices, and allocating budgets.
+</p>
+
+<p>
+Governments apply economic concepts when determining how to allocate tax revenues among education, healthcare, infrastructure, defense, and social programs.
+</p>
+
+<p>
+Comparative advantage helps explain why countries engage in international trade and why businesses often outsource certain activities to specialized producers.
+</p>
+
+<p>
+Understanding these principles allows students to analyze current events and public policy from an economic perspective.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Economic Thinking Skills</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cost-Benefit Analysis</h3>
+<p>
+Evaluate decisions by comparing expected benefits and expected costs.
+</p>
+</div>
+
+<div class="card">
+<h3>Marginal Analysis</h3>
+<p>
+Examine the additional costs and benefits of one more unit of activity.
+</p>
+</div>
+
+<div class="card">
+<h3>Trade-Off Evaluation</h3>
+<p>
+Recognize that every choice involves giving up alternatives.
+</p>
+</div>
+
+<div class="card">
+<h3>Resource Allocation</h3>
+<p>
+Determine how scarce resources can be used most efficiently.
+</p>
+</div>
+
+<div class="card">
+<h3>Incentive Analysis</h3>
+<p>
+Understand how incentives influence behavior and decision-making.
+</p>
+</div>
+
+<div class="card">
+<h3>Economic Reasoning</h3>
+<p>
+Use evidence and logical thinking to explain economic outcomes.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Exam Connections</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+The concepts introduced in this chapter appear throughout both AP Microeconomics and AP Macroeconomics.
+</p>
+
+<p>
+Students should be able to identify opportunity costs, interpret Production Possibilities Frontiers, distinguish between absolute and comparative advantage, and apply economic reasoning to real-world scenarios.
+</p>
+
+<p>
+The AP Exam frequently includes questions requiring students to analyze trade-offs, calculate opportunity costs, interpret graphical models, and explain the benefits of specialization and trade.
+</p>
+
+<p>
+Mastering these foundational concepts will make later chapters significantly easier because nearly every topic in economics builds upon them.
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Economics is the study of how individuals, businesses, and governments make choices when resources are scarce. Throughout this chapter, you explored the concepts of scarcity, opportunity cost, factors of production, Production Possibilities Frontiers, the Law of Increasing Costs, and comparative advantage.
+</p>
+
+<p>
+These principles form the foundation of economic reasoning and serve as building blocks for all future AP Economics topics.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+</div>
+
+<div class="grid">
+
+<div class="card"><h3>Economics</h3><p>The study of how scarce resources are allocated.</p></div>
+
+<div class="card"><h3>Scarcity</h3><p>The condition that exists because resources are limited while wants are unlimited.</p></div>
+
+<div class="card"><h3>Factors of Production</h3><p>Land, labor, capital, and entrepreneurship.</p></div>
+
+<div class="card"><h3>Opportunity Cost</h3><p>The value of the next best alternative given up.</p></div>
+
+<div class="card"><h3>PPF</h3><p>A graph showing maximum possible output combinations.</p></div>
+
+<div class="card"><h3>Efficiency</h3><p>Using resources in a way that maximizes output.</p></div>
+
+<div class="card"><h3>Comparative Advantage</h3><p>Producing at a lower opportunity cost.</p></div>
+
+<div class="card"><h3>Specialization</h3><p>Focusing production on activities with comparative advantage.</p></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+</div>
+
+<div class="content-box">
+
+<p><strong>1.</strong> Scarcity exists because:</p>
+
+<p>
+A. Governments create shortages<br>
+B. Resources are limited while wants are unlimited<br>
+C. Prices are too high<br>
+D. Businesses seek profits
+</p>
+
+<br>
+
+<p><strong>2.</strong> Opportunity cost is:</p>
+
+<p>
+A. Money spent on a purchase<br>
+B. The value of the next best alternative forgone<br>
+C. The total cost of production<br>
+D. The market price of a good
+</p>
+
+<br>
+
+<p><strong>3.</strong> A point inside a Production Possibilities Frontier represents:</p>
+
+<p>
+A. Efficiency<br>
+B. Economic growth<br>
+C. Inefficient resource use<br>
+D. Maximum production
+</p>
+
+<br>
+
+<p><strong>4.</strong> Comparative advantage is based on:</p>
+
+<p>
+A. Total output<br>
+B. Opportunity cost<br>
+C. Population size<br>
+D. Resource ownership
+</p>
+
+<br>
+
+<p><strong>5.</strong> The Law of Increasing Costs explains why:</p>
+
+<p>
+A. Prices always rise<br>
+B. Most PPFs are bowed outward<br>
+C. Inflation occurs<br>
+D. Unemployment increases
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+<strong>FRQ 1:</strong>
+Explain the concept of opportunity cost and provide a real-world example involving a student's decision-making.
+</p>
+
+<br>
+
+<p>
+<strong>FRQ 2:</strong>
+Describe the four factors of production and explain how each contributes to economic output.
+</p>
+
+<br>
+
+<p>
+<strong>FRQ 3:</strong>
+Using a Production Possibilities Frontier, explain the difference between efficient, inefficient, and unattainable production points.
+</p>
+
+<br>
+
+<p>
+<strong>FRQ 4:</strong>
+Differentiate between absolute advantage and comparative advantage. Explain why trade can benefit both parties even when one producer has an absolute advantage in all goods.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+</div>
+
+<div class="content-box">
+
+<p>
+Chapter 2 introduced the fundamental principles that define economic thinking. You learned how scarcity creates the need for choices, why opportunity cost is central to decision-making, and how resources are allocated to satisfy wants and needs.
+</p>
+
+<p>
+You also explored Production Possibilities Frontiers, the Law of Increasing Costs, and comparative advantage—concepts that explain specialization, trade, and economic efficiency.
+</p>
+
+<p>
+These ideas serve as the foundation for understanding markets, economic systems, and policy decisions throughout AP Microeconomics and AP Macroeconomics.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Navigation</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Previous Chapter</h3>
+<p>Chapter 1: The AP Tests in Microeconomics and Macroeconomics</p>
+<br>
+<a href="chapter1.html" style="color:#2C5F8A;font-weight:bold;">
+← Go to Chapter 1
+</a>
+</div>
+
+<div class="card">
+<h3>Next Chapter</h3>
+<p>Chapter 3: Economic Systems</p>
+<br>
+<a href="chapter3.html" style="color:#2C5F8A;font-weight:bold;">
+Go to Chapter 3 →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Building strong economic foundations through structured lessons, practice questions, real-world applications, and AP-focused preparation.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
