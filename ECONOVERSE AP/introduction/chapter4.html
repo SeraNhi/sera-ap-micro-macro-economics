@@ -1,0 +1,1237 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 4 - Demand and Supply: The Basics</title>
+
+<meta name="description"
+content="Chapter 4: Demand and Supply: The Basics. Learn demand, the law of demand, market behavior, consumer decision-making, and AP Economics fundamentals.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.90),
+    rgba(44,95,138,.85)),
+    url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.breadcrumb{
+    background:white;
+    padding:18px 8%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+.breadcrumb span{
+    color:#64748B;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:850px;
+    margin:auto;
+}
+
+.content-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.chapter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.chapter-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.chapter-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.learning-list{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.learning-list ul{
+    margin-left:25px;
+}
+
+.learning-list li{
+    margin-bottom:12px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+<span> → </span>
+
+<a href="../introduction.html">Introduction</a>
+<span> → </span>
+
+<span>Chapter 4</span>
+
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 4</h1>
+
+<h2 style="margin-bottom:25px;">
+Demand and Supply: The Basics
+</h2>
+
+<p>
+
+Discover how markets determine prices and quantities through
+the interaction of buyers and sellers. This chapter introduces
+one of the most important models in all of economics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Overview</h2>
+
+<p>
+
+Demand and supply form the foundation of modern economic analysis.
+These concepts explain how markets allocate resources, determine
+prices, and respond to changes in consumer behavior, production
+costs, and economic conditions.
+
+</p>
+
+</div>
+
+<div class="content-card">
+
+<p>
+
+Almost every market outcome can be understood using demand and
+supply analysis. Whether studying housing prices, airline tickets,
+smartphones, gasoline, or labor markets, economists begin by
+examining how buyers and sellers interact.
+
+</p>
+
+<br>
+
+<p>
+
+In this chapter, you will learn the Law of Demand, understand
+the factors that influence consumer purchasing decisions, and
+prepare for the supply analysis that follows later in the chapter.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+
+<p>
+By the end of this chapter, you should be able to:
+</p>
+
+</div>
+
+<div class="learning-list">
+
+<ul>
+
+<li>Define demand and explain its importance.</li>
+
+<li>Understand the Law of Demand.</li>
+
+<li>Distinguish between a change in demand and a change in quantity demanded.</li>
+
+<li>Identify factors that shift demand.</li>
+
+<li>Interpret demand curves and demand schedules.</li>
+
+<li>Analyze consumer behavior using economic reasoning.</li>
+
+<li>Apply demand concepts to real-world market situations.</li>
+
+<li>Prepare for supply and market equilibrium analysis.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Introduction</h2>
+
+<p>
+Markets coordinate millions of decisions every day.
+</p>
+
+</div>
+
+<div class="content-card">
+
+<p>
+
+Why does the price of concert tickets increase when demand is high?
+Why do retailers offer discounts during slow seasons?
+Why do luxury brands often maintain high prices?
+
+</p>
+
+<br>
+
+<p>
+
+Economists answer these questions using demand and supply analysis.
+The interaction of buyers and sellers creates market outcomes that
+determine prices and quantities exchanged.
+
+</p>
+
+<br>
+
+<p>
+
+Demand represents the behavior of consumers, while supply represents
+the behavior of producers. Together, these forces form the foundation
+of market economies.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Demand and the Law of Demand</h2>
+
+<p>
+Demand reflects consumers' willingness and ability to purchase goods and services.
+</p>
+
+</div>
+
+<div class="content-card">
+
+<p>
+
+Demand refers to the quantities of a good or service that consumers
+are willing and able to purchase at various prices during a specific
+period of time.
+
+</p>
+
+<br>
+
+<p>
+
+The Law of Demand states that, all else equal, as the price of a good
+increases, the quantity demanded decreases. Conversely, when the price
+of a good decreases, the quantity demanded increases.
+
+</p>
+
+<br>
+
+<p>
+
+This inverse relationship between price and quantity demanded is one
+of the most fundamental principles in economics.
+
+</p>
+
+<br>
+
+<p>
+
+Consumers generally respond to lower prices by purchasing more because:
+
+</p>
+
+<ul style="margin-left:25px; margin-top:15px;">
+
+<li>Goods become more affordable.</li>
+
+<li>Consumers can substitute away from more expensive alternatives.</li>
+
+<li>Purchasing power effectively increases.</li>
+
+<li>Additional units provide value at lower costs.</li>
+
+</ul>
+
+<br>
+
+<p>
+
+As a result, demand curves typically slope downward from left to right,
+illustrating the inverse relationship between price and quantity demanded.
+
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+    <div class="section-title">
+        <h2>Demand Schedule</h2>
+
+        <p>
+            A demand schedule is a table that shows the quantity of a good
+            consumers are willing and able to purchase at different prices.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <p>
+
+            Economists often begin demand analysis using a demand schedule.
+            The schedule demonstrates the inverse relationship between price
+            and quantity demanded.
+
+        </p>
+
+        <br>
+
+        <table style="width:100%; border-collapse:collapse; text-align:center;">
+
+            <tr style="background:#1E3A5F; color:white;">
+                <th style="padding:12px;">Price ($)</th>
+                <th style="padding:12px;">Quantity Demanded</th>
+            </tr>
+
+            <tr>
+                <td style="padding:12px;">10</td>
+                <td style="padding:12px;">100</td>
+            </tr>
+
+            <tr>
+                <td style="padding:12px;">8</td>
+                <td style="padding:12px;">140</td>
+            </tr>
+
+            <tr>
+                <td style="padding:12px;">6</td>
+                <td style="padding:12px;">180</td>
+            </tr>
+
+            <tr>
+                <td style="padding:12px;">4</td>
+                <td style="padding:12px;">240</td>
+            </tr>
+
+            <tr>
+                <td style="padding:12px;">2</td>
+                <td style="padding:12px;">320</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <p>
+
+            Notice that as price decreases, quantity demanded increases.
+            This pattern reflects the Law of Demand.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Demand Curve</h2>
+
+        <p>
+            A demand curve graphically represents the relationship between
+            price and quantity demanded.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <p>
+
+            The demand curve slopes downward from left to right because
+            consumers generally buy more of a product when its price falls.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Economists use demand curves to predict consumer behavior,
+            analyze market outcomes, and evaluate policy impacts.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            A movement along the demand curve reflects a change in price,
+            while a shift of the entire curve indicates a change in demand.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            On the AP Exam, students are frequently asked to draw, label,
+            interpret, and explain demand curves.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Changes in Quantity Demanded</h2>
+
+        <p>
+            A change in quantity demanded occurs when the price of the good changes.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <p>
+
+            When the price changes, consumers move from one point to another
+            on the same demand curve.
+
+        </p>
+
+        <br>
+
+        <h3>Increase in Quantity Demanded</h3>
+
+        <p>
+
+            Occurs when price falls and consumers purchase more of the good.
+
+        </p>
+
+        <br>
+
+        <h3>Decrease in Quantity Demanded</h3>
+
+        <p>
+
+            Occurs when price rises and consumers purchase less of the good.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Remember:
+            <strong>Price changes cause movements along the demand curve.</strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Changes in Demand</h2>
+
+        <p>
+            A change in demand occurs when factors other than price change.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <p>
+
+            When demand changes, the entire demand curve shifts either to
+            the right or to the left.
+
+        </p>
+
+        <br>
+
+        <h3>Increase in Demand</h3>
+
+        <p>
+
+            Demand shifts right. Consumers are willing to purchase more
+            at every price level.
+
+        </p>
+
+        <br>
+
+        <h3>Decrease in Demand</h3>
+
+        <p>
+
+            Demand shifts left. Consumers are willing to purchase less
+            at every price level.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            One of the most common AP Economics mistakes is confusing
+            movements along the curve with shifts of the curve.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Determinants of Demand</h2>
+
+        <p>
+            Several factors can cause demand to increase or decrease.
+        </p>
+
+    </div>
+
+    <div class="chapter-grid">
+
+        <div class="chapter-card">
+            <h3>Consumer Income</h3>
+            <p>
+                Higher incomes generally increase demand for normal goods.
+            </p>
+        </div>
+
+        <div class="chapter-card">
+            <h3>Consumer Preferences</h3>
+            <p>
+                Changes in tastes and trends affect purchasing decisions.
+            </p>
+        </div>
+
+        <div class="chapter-card">
+            <h3>Population</h3>
+            <p>
+                More consumers often increase market demand.
+            </p>
+        </div>
+
+        <div class="chapter-card">
+            <h3>Expectations</h3>
+            <p>
+                Future expectations can influence current buying behavior.
+            </p>
+        </div>
+
+        <div class="chapter-card">
+            <h3>Substitute Goods</h3>
+            <p>
+                An increase in the price of one substitute may increase
+                demand for another.
+            </p>
+        </div>
+
+        <div class="chapter-card">
+            <h3>Complementary Goods</h3>
+            <p>
+                Demand for related products often moves together.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Real-World Demand Examples</h2>
+
+        <p>
+            Demand analysis helps explain many everyday economic situations.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <h3>Smartphones</h3>
+
+        <p>
+
+            New smartphone releases often increase consumer demand due to
+            improved technology and marketing campaigns.
+
+        </p>
+
+        <br>
+
+        <h3>Airline Tickets</h3>
+
+        <p>
+
+            Demand frequently increases during holidays and vacation periods,
+            causing ticket prices to rise.
+
+        </p>
+
+        <br>
+
+        <h3>Coffee Shops</h3>
+
+        <p>
+
+            Consumer preferences and changing lifestyles can increase demand
+            for specialty coffee products.
+
+        </p>
+
+        <br>
+
+        <h3>Streaming Services</h3>
+
+        <p>
+
+            New content and improved features often shift consumer demand
+            toward specific platforms.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>AP Economics Connections</h2>
+
+        <p>
+            Demand is one of the most frequently tested topics on the AP Exam.
+        </p>
+
+    </div>
+
+    <div class="content-card">
+
+        <p>
+
+            Students should be able to:
+
+        </p>
+
+        <br>
+
+        <ul style="margin-left:25px;">
+
+            <li>Define demand and quantity demanded.</li>
+
+            <li>Apply the Law of Demand.</li>
+
+            <li>Identify movements along a demand curve.</li>
+
+            <li>Explain shifts in demand.</li>
+
+            <li>Analyze determinants of demand.</li>
+
+            <li>Interpret demand schedules and graphs.</li>
+
+            <li>Use demand analysis to explain real-world events.</li>
+
+        </ul>
+
+        <br>
+
+        <p>
+
+            Strong understanding of demand is essential because it serves
+            as the foundation for supply analysis and market equilibrium,
+            which will be explored next.
+
+        </p>
+
+    </div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+<h2>Supply and the Law of Supply</h2>
+<p>
+Supply represents the quantity of a good or service that producers are willing and able
+to offer for sale at different price levels during a specific period of time.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3>Understanding Supply</h3>
+
+<p>
+The Law of Supply states that, all else being equal, producers are willing to supply
+more of a good as its price increases. Higher prices often create greater opportunities
+for profit, encouraging firms to expand production.
+</p>
+
+<br>
+
+<p>
+Conversely, when prices fall, producers may reduce output because production becomes
+less profitable.
+</p>
+
+<br>
+
+<h3>Determinants of Supply</h3>
+
+<ul>
+<li>Input Costs</li>
+<li>Technology</li>
+<li>Taxes and Subsidies</li>
+<li>Number of Sellers</li>
+<li>Producer Expectations</li>
+<li>Natural Events</li>
+</ul>
+
+<br>
+
+<p>
+A change in any determinant other than price causes the entire supply curve to shift.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Market Equilibrium</h2>
+<p>
+Market equilibrium occurs when quantity demanded equals quantity supplied.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+At equilibrium, buyers and sellers agree on both price and quantity. There is no
+tendency for the market price to change because there is neither excess demand
+nor excess supply.
+</p>
+
+<br>
+
+<p>
+Economists use equilibrium analysis to understand how markets respond to changing
+conditions and why prices naturally move toward balance over time.
+</p>
+
+<br>
+
+<div class="info-grid">
+
+<div class="info-card">
+<h3>Equilibrium Price</h3>
+<p>
+The market-clearing price where quantity demanded equals quantity supplied.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Equilibrium Quantity</h3>
+<p>
+The amount bought and sold at the equilibrium price.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Surplus and Shortage</h2>
+<p>
+Disequilibrium occurs whenever the market price differs from the equilibrium price.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Surplus</h3>
+<p>
+A surplus occurs when quantity supplied exceeds quantity demanded. Producers are
+unable to sell all units offered for sale.
+</p>
+
+<br>
+
+<p>
+Surpluses place downward pressure on prices, encouraging producers to reduce output
+and consumers to purchase more.
+</p>
+
+</div>
+
+<div class="info-card">
+<h3>Shortage</h3>
+<p>
+A shortage occurs when quantity demanded exceeds quantity supplied.
+</p>
+
+<br>
+
+<p>
+Shortages place upward pressure on prices, encouraging producers to increase output
+while reducing consumer demand.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+</div>
+
+<div class="glass-card">
+
+<ul>
+<li>Demand</li>
+<li>Law of Demand</li>
+<li>Demand Schedule</li>
+<li>Demand Curve</li>
+<li>Quantity Demanded</li>
+<li>Supply</li>
+<li>Law of Supply</li>
+<li>Supply Schedule</li>
+<li>Supply Curve</li>
+<li>Quantity Supplied</li>
+<li>Equilibrium</li>
+<li>Equilibrium Price</li>
+<li>Equilibrium Quantity</li>
+<li>Surplus</li>
+<li>Shortage</li>
+<li>Market Forces</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+If the price of a product rises and all other factors remain unchanged,
+what will generally happen to quantity supplied?
+<br><br>
+A. Decrease
+<br>
+B. Increase
+<br>
+C. Remain unchanged
+<br>
+D. Become negative
+</li>
+
+<br>
+
+<li>
+Which factor would cause demand to increase?
+<br><br>
+A. Lower consumer income for a normal good
+<br>
+B. Negative consumer expectations
+<br>
+C. Increase in consumer income
+<br>
+D. Increase in production costs
+</li>
+
+<br>
+
+<li>
+A market shortage occurs when:
+<br><br>
+A. Quantity supplied exceeds quantity demanded
+<br>
+B. Quantity demanded exceeds quantity supplied
+<br>
+C. Supply equals demand
+<br>
+D. Prices remain constant
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+Explain the difference between a change in demand and a change in quantity demanded.
+Include a graph description in your answer.
+</li>
+
+<br>
+
+<li>
+Describe how an increase in production costs affects supply and market equilibrium.
+</li>
+
+<br>
+
+<li>
+Assume consumer income rises significantly for a normal good.
+Illustrate and explain the impact on market equilibrium price and quantity.
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+</div>
+
+<div class="glass-card">
+
+<p>
+Chapter 4 introduced the foundation of market economics through demand and supply
+analysis. Students learned how consumers and producers respond to changing prices,
+how market equilibrium is established, and how shortages and surpluses influence
+market outcomes.
+</p>
+
+<br>
+
+<p>
+These concepts form the basis for nearly every topic in AP Microeconomics and are
+essential for success on the AP Economics examination.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your Learning</h2>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Previous Chapter</h3>
+<p>Chapter 3: Economic Systems</p>
+<br>
+<a href="chapter3.html" class="btn btn-outline">← Chapter 3</a>
+</div>
+
+<div class="info-card">
+<h3>Next Chapter</h3>
+<p>Chapter 5: Elasticity</p>
+<br>
+<a href="../micro/chapter5.html" class="btn btn-primary">Chapter 5 →</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Master AP Economics through structured lessons, real-world applications,
+practice questions, and exam-focused preparation.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
