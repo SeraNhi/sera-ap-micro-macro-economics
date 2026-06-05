@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 6: Consumer Choice</title>
+
+<meta name="description" content="AP Microeconomics Chapter 6: Consumer Choice. Learn utility, marginal utility, the law of diminishing marginal utility, and how consumers make rational economic decisions.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    background:white;
+    padding:15px 8%;
+    font-size:.95rem;
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 8%;
+    color:white;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:850px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.objectives{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.objective-card{
+    background:white;
+    padding:25px;
+    border-left:5px solid var(--accent);
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.highlight{
+    background:#FFF8EC;
+    border-left:5px solid var(--accent);
+    padding:25px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">Microeconomics</a></li>
+<li><a href="../macroeconomics.html">Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a>
+→
+<a href="../microeconomics.html">AP Microeconomics</a>
+→
+Chapter 6: Consumer Choice
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 6: Consumer Choice</h1>
+
+<p>
+
+Discover how consumers make decisions, allocate limited income,
+and maximize satisfaction through utility analysis. This chapter
+introduces one of the most important foundations of modern
+microeconomic theory.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Consumers face scarcity every day. Because income is limited and
+wants are unlimited, individuals must choose how to spend their
+resources. Economists study these choices using utility theory,
+which explains how consumers seek to maximize satisfaction from
+the goods and services they purchase.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Consumer choice theory helps explain purchasing behavior,
+demand patterns, market outcomes, and responses to changes in
+prices and income. Understanding these concepts provides a
+foundation for demand analysis throughout AP Microeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Learning Objectives</h2>
+<p>
+By the end of this chapter, you should be able to:
+</p>
+</div>
+
+<div class="objectives">
+
+<div class="objective-card">
+Understand the concept of utility and consumer satisfaction.
+</div>
+
+<div class="objective-card">
+Explain marginal utility and how it influences decision-making.
+</div>
+
+<div class="objective-card">
+Apply the Law of Diminishing Marginal Utility.
+</div>
+
+<div class="objective-card">
+Analyze how consumer choices affect demand.
+</div>
+
+<div class="objective-card">
+Connect utility theory to real-world purchasing decisions.
+</div>
+
+<div class="objective-card">
+Prepare for AP-style consumer choice questions.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Utility</h2>
+<p>
+Utility is the satisfaction or happiness a consumer receives from consuming a good or service.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists use the concept of utility to explain why consumers
+purchase goods and services. While utility cannot be measured
+precisely in the real world, it provides a useful framework for
+understanding consumer behavior.
+
+</p>
+
+<br>
+
+<p>
+
+For example, a student purchasing a cup of coffee before class
+receives utility from the increased alertness and enjoyment.
+Different consumers may receive different levels of utility from
+the same product depending on preferences and circumstances.
+
+</p>
+
+<div class="highlight">
+
+<strong>Key Idea:</strong>
+
+Consumers generally seek to maximize total utility given their
+limited income and available choices.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Marginal Utility</h2>
+<p>
+Marginal utility measures the additional satisfaction gained from consuming one more unit of a good or service.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Marginal utility focuses on changes in satisfaction rather than
+overall satisfaction. Economists assume that consumers compare
+the marginal benefits of goods when making purchasing decisions.
+
+</p>
+
+<br>
+
+<p>
+
+Suppose a consumer eats slices of pizza:
+
+</p>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>1st Slice</h3>
+<p>Very high satisfaction because hunger is reduced significantly.</p>
+</div>
+
+<div class="info-card">
+<h3>2nd Slice</h3>
+<p>Still enjoyable, but less satisfying than the first slice.</p>
+</div>
+
+<div class="info-card">
+<h3>3rd Slice</h3>
+<p>Satisfaction continues to increase but at a slower rate.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Law of Diminishing Marginal Utility</h2>
+<p>
+As a consumer consumes additional units of a good, marginal utility eventually decreases.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The Law of Diminishing Marginal Utility is one of the most
+important principles in consumer choice theory. Although total
+utility may continue to rise, the additional satisfaction gained
+from each extra unit generally becomes smaller.
+
+</p>
+
+<br>
+
+<p>
+
+This concept helps explain why demand curves typically slope
+downward. Consumers are only willing to purchase additional
+units if prices fall enough to compensate for lower marginal
+utility.
+
+</p>
+
+<br>
+
+<p>
+
+For example, the first bottle of water after a long workout may
+provide tremendous satisfaction. The second bottle still provides
+benefits, but the third or fourth bottle offers much less
+additional value.
+
+</p>
+
+<div class="highlight">
+
+<strong>AP Economics Connection:</strong>
+
+The Law of Diminishing Marginal Utility helps explain downward-
+sloping demand curves and serves as a foundation for utility
+maximization theory.
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>Utility Maximization Rule</h2>
+<p>
+Consumers maximize satisfaction by allocating their income so that the marginal utility per dollar spent is equal across all goods and services.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Because consumers have limited income, they must carefully choose
+how to spend each dollar. Rational consumers compare the additional
+satisfaction gained from different purchases and allocate their
+money where it produces the greatest benefit.
+
+</p>
+
+<br>
+
+<p>
+
+The Utility Maximization Rule states that consumers maximize total
+utility when:
+
+</p>
+
+:contentReference[oaicite:0]{index=0}
+
+<br>
+
+<p>
+
+Where:
+
+</p>
+
+<ul style="margin-left:25px;">
+<li>MU = Marginal Utility</li>
+<li>P = Price</li>
+<li>A and B represent different goods</li>
+</ul>
+
+<br>
+
+<p>
+
+If one product provides more marginal utility per dollar than
+another, consumers will purchase more of that product until
+equilibrium is restored.
+
+</p>
+
+<div class="highlight">
+
+<strong>Example:</strong>
+
+If a student receives more satisfaction per dollar from buying
+coffee than buying snacks, the student will spend more on coffee
+until the marginal utility per dollar becomes equal.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Budget Constraints</h2>
+<p>
+Consumers cannot purchase everything they want because income is limited.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+A budget constraint represents the combinations of goods and
+services a consumer can afford given available income and market
+prices.
+
+</p>
+
+<br>
+
+<p>
+
+Every consumer faces trade-offs. Purchasing more of one good
+usually requires purchasing less of another good. These trade-offs
+are a direct result of scarcity.
+
+</p>
+
+<br>
+
+<p>
+
+For example, suppose a student has $20 available each week for
+entertainment. Spending more money on movies leaves less money
+available for streaming subscriptions, snacks, or games.
+
+</p>
+
+<div class="highlight">
+
+<strong>Key Idea:</strong>
+
+Consumer choices are always constrained by income, prices, and
+available resources.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Consumer Equilibrium</h2>
+<p>
+Consumer equilibrium occurs when a consumer has allocated income in a way that maximizes total utility.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+At consumer equilibrium, there is no incentive to reallocate
+spending because utility is already being maximized given the
+budget constraint.
+
+</p>
+
+<br>
+
+<p>
+
+If market prices change, equilibrium may be disrupted. Consumers
+then adjust their purchasing behavior until a new equilibrium is
+reached.
+
+</p>
+
+<br>
+
+<p>
+
+Consumer equilibrium helps explain why demand changes when prices
+or incomes change and forms an important foundation for demand
+analysis in AP Microeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Demand and Consumer Choice</h2>
+<p>
+Consumer choice theory helps explain the shape and behavior of demand curves.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Demand reflects consumers' willingness and ability to purchase a
+good at various prices. Utility theory explains why consumers
+respond to price changes.
+
+</p>
+
+<br>
+
+<p>
+
+When prices fall, consumers often purchase more because the good
+provides greater utility relative to its cost. When prices rise,
+consumers may reduce purchases because the marginal utility no
+longer justifies the higher price.
+
+</p>
+
+<br>
+
+<p>
+
+The Law of Diminishing Marginal Utility contributes to the
+downward slope of demand curves because consumers require lower
+prices to justify purchasing additional units.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Behavioral Economics Connections</h2>
+<p>
+Behavioral economics examines how real human behavior sometimes differs from traditional economic assumptions.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Traditional economic theory assumes that consumers are perfectly
+rational decision-makers who always maximize utility.
+
+</p>
+
+<br>
+
+<p>
+
+Behavioral economists have found that people often make decisions
+based on emotions, habits, social influences, and psychological
+biases rather than pure rational calculation.
+
+</p>
+
+<br>
+
+<p>
+
+Examples include:
+
+</p>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Impulse Buying</h3>
+<p>
+Consumers sometimes make spontaneous purchases without carefully
+considering costs and benefits.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Brand Loyalty</h3>
+<p>
+People may repeatedly buy familiar brands even when cheaper
+alternatives exist.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Anchoring</h3>
+<p>
+Consumers often rely heavily on the first price they see when
+evaluating value.
+</p>
+</div>
+
+</div>
+
+<br>
+
+<p>
+
+Behavioral economics enriches traditional consumer choice theory
+by incorporating insights from psychology and decision science.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Real-World Consumer Choice Examples</h2>
+<p>
+Consumer choice theory can be observed in everyday economic decisions.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>College Selection</h3>
+<p>
+Students compare tuition costs, future earnings potential,
+location, and personal preferences when choosing universities.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Streaming Services</h3>
+<p>
+Consumers allocate limited entertainment budgets among competing
+platforms based on perceived value.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Smartphone Purchases</h3>
+<p>
+Buyers evaluate features, brand reputation, price, and utility
+before selecting a device.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Transportation Choices</h3>
+<p>
+Individuals compare costs and benefits when deciding between
+public transit, ridesharing, cycling, or driving.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Economics Connections</h2>
+<p>
+Consumer choice theory connects to several major AP Microeconomics topics.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Explains why demand curves slope downward.</li>
+
+<li>Supports analysis of consumer surplus.</li>
+
+<li>Provides a foundation for elasticity concepts.</li>
+
+<li>Helps explain responses to taxation and subsidies.</li>
+
+<li>Connects to market equilibrium and resource allocation.</li>
+
+<li>Supports understanding of behavioral economics and public policy.</li>
+
+</ul>
+
+<br>
+
+<p>
+
+On the AP Exam, consumer choice concepts often appear in
+multiple-choice questions involving utility, demand, consumer
+behavior, and market decision-making. Understanding these
+principles strengthens performance across many areas of
+microeconomic analysis.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+Consumer choice theory explains how individuals allocate scarce resources to maximize satisfaction.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In this chapter, we examined utility, marginal utility, the Law
+of Diminishing Marginal Utility, utility maximization, budget
+constraints, and consumer equilibrium. Together, these concepts
+provide a framework for understanding consumer behavior and the
+foundation of demand analysis.
+
+</p>
+
+<br>
+
+<p>
+
+Consumers constantly face trade-offs because income and resources
+are limited. By comparing costs and benefits, individuals attempt
+to maximize total satisfaction while operating within budget
+constraints.
+
+</p>
+
+<br>
+
+<p>
+
+Understanding consumer choice is essential for analyzing demand,
+market behavior, elasticity, taxation effects, and many other
+topics throughout AP Microeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Review these important AP Microeconomics terms.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Utility</h3>
+<p>The satisfaction gained from consuming a good or service.</p>
+</div>
+
+<div class="info-card">
+<h3>Marginal Utility</h3>
+<p>The additional satisfaction from consuming one more unit.</p>
+</div>
+
+<div class="info-card">
+<h3>Law of Diminishing Marginal Utility</h3>
+<p>Additional satisfaction decreases as more units are consumed.</p>
+</div>
+
+<div class="info-card">
+<h3>Utility Maximization</h3>
+<p>Allocating spending to maximize total satisfaction.</p>
+</div>
+
+<div class="info-card">
+<h3>Budget Constraint</h3>
+<p>The limits on consumption imposed by income and prices.</p>
+</div>
+
+<div class="info-card">
+<h3>Consumer Equilibrium</h3>
+<p>The point at which utility is maximized given available income.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of consumer choice concepts.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ol style="margin-left:25px;">
+
+<li>
+Utility is best defined as:
+<br><br>
+A. The price of a good
+<br>
+B. The satisfaction received from consumption
+<br>
+C. The quantity purchased
+<br>
+D. The cost of production
+</li>
+
+<br>
+
+<li>
+Marginal utility refers to:
+<br><br>
+A. Total satisfaction from all consumption
+<br>
+B. Additional satisfaction from one more unit
+<br>
+C. Consumer income
+<br>
+D. Market equilibrium
+</li>
+
+<br>
+
+<li>
+According to the Law of Diminishing Marginal Utility:
+<br><br>
+A. Total utility always decreases
+<br>
+B. Prices always increase
+<br>
+C. Additional satisfaction eventually decreases
+<br>
+D. Consumers stop purchasing goods
+</li>
+
+<br>
+
+<li>
+Consumer equilibrium occurs when:
+<br><br>
+A. Prices equal costs
+<br>
+B. Utility is maximized given income
+<br>
+C. Demand equals supply
+<br>
+D. Marginal cost equals marginal revenue
+</li>
+
+<br>
+
+<li>
+A budget constraint illustrates:
+<br><br>
+A. Unlimited consumer spending
+<br>
+B. Government taxation
+<br>
+C. Income limitations and purchasing trade-offs
+<br>
+D. Business profits
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice AP-style written responses.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary);">
+FRQ 1
+</h3>
+
+<p>
+
+A consumer has a weekly entertainment budget of $40 and spends
+money on movie tickets and streaming subscriptions.
+
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Define utility.</li>
+
+<li>Explain the role of a budget constraint.</li>
+
+<li>Describe how the consumer can maximize utility.</li>
+
+<li>Explain how a price increase in movie tickets may affect consumption choices.</li>
+
+</ul>
+
+<br>
+
+<h3 style="color:var(--primary);">
+FRQ 2
+</h3>
+
+<p>
+
+Using the Law of Diminishing Marginal Utility, explain why demand
+curves generally slope downward.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+Essential takeaways from Chapter 6.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Utility measures satisfaction from consumption.</li>
+
+<li>Marginal utility measures additional satisfaction.</li>
+
+<li>Diminishing marginal utility helps explain downward-sloping demand.</li>
+
+<li>Consumers face budget constraints because resources are scarce.</li>
+
+<li>Utility maximization guides rational decision-making.</li>
+
+<li>Consumer equilibrium occurs when satisfaction is maximized.</li>
+
+<li>Consumer choice theory forms the foundation of demand analysis.</li>
+
+<li>Behavioral economics highlights departures from perfect rationality.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your AP Microeconomics Journey</h2>
+<p>
+Move forward to the next chapter or review previous material.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card" style="text-align:center;">
+<h3>← Previous Chapter</h3>
+<p>Chapter 5: Elasticity</p>
+<br>
+<a href="chapter5.html" class="btn btn-outline">
+Review Chapter 5
+</a>
+</div>
+
+<div class="info-card" style="text-align:center;">
+<h3>Next Chapter →</h3>
+<p>Chapter 7: Costs, Production & Profit Maximization</p>
+<br>
+<a href="chapter7.html" class="btn btn-primary">
+Continue to Chapter 7
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+
+Chapter 6: Consumer Choice — Building a deeper understanding of
+how individuals make economic decisions and allocate scarce
+resources efficiently.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 EconoVerse AP. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
