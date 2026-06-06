@@ -1,0 +1,1098 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter 12 | National Income and GDP | EconoVerse AP</title>
+
+<meta name="description" content="Chapter 12: National Income and GDP for AP Macroeconomics. Learn GDP, the Expenditure Approach, the Income Approach, and national income accounting.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.breadcrumb{
+    background:white;
+    padding:18px 8%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.section-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.content-section h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.content-section p{
+    margin-bottom:18px;
+}
+
+.objective-list{
+    margin-left:25px;
+}
+
+.objective-list li{
+    margin-bottom:10px;
+}
+
+.concept-box{
+    background:#EEF6FF;
+    border-left:5px solid var(--secondary);
+    padding:25px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+→
+<a href="../macroeconomics.html">AP Macroeconomics</a>
+→
+Chapter 12
+
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 12: National Income and GDP</h1>
+
+<p>
+
+Learn how economists measure economic performance through Gross Domestic Product (GDP),
+national income accounting, and the tools used to evaluate economic growth and business activity.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+National income accounting provides economists with a framework for measuring the
+overall performance of an economy. In this chapter, you will learn how GDP is calculated,
+what it measures, and its strengths and limitations as an economic indicator.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Gross Domestic Product (GDP) is one of the most important statistics in macroeconomics.
+Governments, businesses, investors, and policymakers use GDP data to evaluate economic
+health, compare economic performance across time, and make important decisions.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+</div>
+
+<div class="glass-card">
+
+<ul class="objective-list">
+
+<li>Define Gross Domestic Product (GDP).</li>
+
+<li>Understand how GDP measures economic output.</li>
+
+<li>Explain the Expenditure Approach to calculating GDP.</li>
+
+<li>Explain the Income Approach to calculating GDP.</li>
+
+<li>Interpret GDP data and national income statistics.</li>
+
+<li>Connect GDP measurement to AP Macroeconomics concepts.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="content-section">
+
+<div class="section-container">
+
+<h2>Gross Domestic Product (GDP)</h2>
+
+<p>
+
+Gross Domestic Product (GDP) is the total market value of all final goods and services
+produced within a country's borders during a specific period of time, usually one year.
+
+</p>
+
+<p>
+
+GDP serves as the primary measure of economic output and allows economists to track
+changes in economic performance over time.
+
+</p>
+
+<div class="concept-box">
+
+<strong>Key Definition:</strong>
+
+GDP measures the value of final production occurring within a country's borders.
+
+</div>
+
+<p>
+
+To avoid double counting, GDP includes only final goods and services rather than
+intermediate goods used in production.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="content-section">
+
+<div class="section-container">
+
+<h2>Expenditure Approach</h2>
+
+<p>
+
+The Expenditure Approach calculates GDP by adding all spending on final goods and services
+within the economy.
+
+</p>
+
+<p>
+
+The GDP formula is:
+
+</p>
+
+GDP = C + I + G + (X - M)
+
+<p>
+
+Where:
+
+</p>
+
+<ul class="objective-list">
+
+<li><strong>C</strong> = Consumer Spending</li>
+
+<li><strong>I</strong> = Business Investment</li>
+
+<li><strong>G</strong> = Government Spending</li>
+
+<li><strong>X</strong> = Exports</li>
+
+<li><strong>M</strong> = Imports</li>
+
+</ul>
+
+<p>
+
+This method is the most commonly tested GDP calculation approach on the AP Macroeconomics Exam.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="content-section">
+
+<div class="section-container">
+
+<h2>Income Approach</h2>
+
+<p>
+
+The Income Approach calculates GDP by adding all income earned from producing goods
+and services within an economy.
+
+</p>
+
+<p>
+
+Since every dollar spent becomes income for someone else, total spending and total
+income should theoretically produce the same GDP value.
+
+</p>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Wages</h3>
+<p>
+Compensation paid to workers for labor services.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Rent</h3>
+<p>
+Income earned from providing land and property resources.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Interest</h3>
+<p>
+Income earned from lending financial capital.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Profit</h3>
+<p>
+Income earned by business owners and entrepreneurs.
+</p>
+</div>
+
+</div>
+
+<p style="margin-top:25px;">
+
+The Income Approach reinforces the circular flow model by demonstrating how spending,
+production, and income are interconnected throughout the economy.
+
+</p>
+
+</div>
+
+</section>
+```
+<section>
+
+<div class="section-title">
+<h2>Nominal GDP vs Real GDP</h2>
+<p>
+Economists distinguish between nominal GDP and real GDP to separate changes in production from changes in prices. Understanding this distinction is essential when evaluating economic growth over time.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Nominal GDP</h3>
+<p>
+Nominal GDP measures the value of all final goods and services produced within a country's borders using current-year prices. Because prices can change from year to year, nominal GDP may increase even when actual production remains unchanged.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Real GDP</h3>
+<p>
+Real GDP adjusts for inflation by using constant base-year prices. This allows economists to compare production levels across different years and determine whether actual output has increased or decreased.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Why It Matters</h3>
+<p>
+Real GDP provides a more accurate measure of economic performance because it removes the effects of changing price levels and focuses on actual production.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Comparing Nominal and Real GDP
+</h3>
+
+<p>
+Suppose an economy produces 100 laptops at $1,000 each in Year 1 and 100 laptops at $1,100 each in Year 2.
+</p>
+
+<br>
+
+<p>
+Nominal GDP increases because prices increased, even though production remained the same.
+</p>
+
+<br>
+
+<p>
+Real GDP would show no change because the quantity of laptops produced did not increase.
+</p>
+
+<br>
+
+<p>
+This example demonstrates why economists rely heavily on real GDP when measuring economic growth.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>GDP Deflator</h2>
+<p>
+The GDP Deflator measures changes in the overall price level within an economy and helps economists distinguish inflation from real economic growth.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+GDP Deflator Formula
+</h3>
+
+<p>
+GDP Deflator = (Nominal GDP ÷ Real GDP) × 100
+</p>
+
+<br>
+
+<p>
+A GDP Deflator above 100 indicates that prices have increased relative to the base year, while a value below 100 indicates lower prices than the base year.
+</p>
+
+<br>
+
+<p>
+Economists use the GDP Deflator to convert nominal GDP into real GDP and track inflation across the entire economy.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Measures Inflation</h3>
+<p>
+Tracks overall price changes for domestically produced goods and services.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Economic Analysis</h3>
+<p>
+Helps policymakers separate changes in prices from changes in output.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Policy Decisions</h3>
+<p>
+Provides valuable information for fiscal and monetary policy planning.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Limitations of GDP</h2>
+<p>
+Although GDP is one of the most widely used economic indicators, it does not provide a complete picture of economic well-being.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Non-Market Activities</h3>
+<p>
+GDP excludes unpaid household work, volunteer services, and many forms of informal economic activity.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Income Distribution</h3>
+<p>
+GDP does not reveal how income is distributed among individuals or households.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Environmental Costs</h3>
+<p>
+Economic production may create pollution and environmental damage that GDP does not subtract.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Quality of Life</h3>
+<p>
+GDP measures production, not happiness, health, education quality, or overall life satisfaction.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Underground Economy</h3>
+<p>
+Illegal and unreported economic activities are often excluded from official GDP calculations.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Sustainability</h3>
+<p>
+GDP may increase in the short run even when resources are being depleted unsustainably.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Business Cycles</h2>
+<p>
+Economic activity does not grow at a constant rate. Economies experience recurring fluctuations known as business cycles.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+Phases of the Business Cycle
+</h3>
+
+<p>
+Economic activity typically moves through four stages:
+</p>
+
+<br>
+
+<ul style="margin-left:25px;">
+
+<li><strong>Expansion</strong> — GDP increases, employment rises, and consumer spending grows.</li>
+
+<li><strong>Peak</strong> — Economic activity reaches its highest level before slowing.</li>
+
+<li><strong>Recession</strong> — GDP declines, unemployment increases, and spending decreases.</li>
+
+<li><strong>Trough</strong> — The economy reaches its lowest point before recovery begins.</li>
+
+</ul>
+
+<br>
+
+<p>
+Understanding business cycles helps economists and policymakers anticipate economic challenges and implement appropriate policies.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Real-World GDP Examples</h2>
+<p>
+GDP data is used extensively by governments, businesses, investors, and international organizations to evaluate economic performance.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Economic Growth</h3>
+<p>
+Countries experiencing sustained increases in real GDP are generally producing more goods and services and expanding economic opportunities.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Recessions</h3>
+<p>
+Negative GDP growth often signals economic downturns that may require policy intervention.
+</p>
+</div>
+
+<div class="info-card">
+<h3>International Comparisons</h3>
+<p>
+GDP allows economists to compare economic performance across different countries and regions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Government Planning</h3>
+<p>
+Policymakers use GDP data when designing budgets, infrastructure projects, and economic development strategies.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>AP Economics Connections</h2>
+<p>
+National Income and GDP form the foundation for nearly every macroeconomic concept that follows in AP Macroeconomics.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Understanding GDP is essential for analyzing inflation, unemployment, aggregate demand, aggregate supply, fiscal policy, monetary policy, and economic growth.
+</p>
+
+<br>
+
+<p>
+AP exam questions frequently require students to calculate GDP, distinguish between nominal and real GDP, interpret GDP data, identify limitations of GDP, and analyze business cycle conditions.
+</p>
+
+<br>
+
+<p>
+Students should be comfortable applying GDP concepts to both numerical calculations and real-world economic scenarios.
+</p>
+
+<br>
+
+<p>
+Mastery of this chapter will provide the foundation necessary for success throughout the remainder of AP Macroeconomics.
+</p>
+
+</div>
+
+</section>
+```html
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+Chapter 12 introduced the fundamental concepts used to measure national economic performance. Students learned how GDP is calculated using both the expenditure and income approaches, the differences between nominal and real GDP, the role of the GDP Deflator, the limitations of GDP as a measure of well-being, and the relationship between GDP and business cycles.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>GDP measures the total market value of final goods and services produced within a country.</li>
+
+<li>The Expenditure Approach uses the formula C + I + G + (X − M).</li>
+
+<li>The Income Approach measures income generated from production.</li>
+
+<li>Nominal GDP uses current prices.</li>
+
+<li>Real GDP uses constant base-year prices.</li>
+
+<li>The GDP Deflator measures overall price changes.</li>
+
+<li>GDP has several limitations when measuring economic well-being.</li>
+
+<li>Business cycles describe fluctuations in economic activity over time.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Review these important concepts before moving to the next chapter.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card"><h3>GDP</h3><p>Total value of final goods and services produced domestically.</p></div>
+
+<div class="info-card"><h3>Final Goods</h3><p>Goods purchased by the end user rather than used in further production.</p></div>
+
+<div class="info-card"><h3>Expenditure Approach</h3><p>Method of calculating GDP through spending categories.</p></div>
+
+<div class="info-card"><h3>Income Approach</h3><p>Method of calculating GDP through income earned from production.</p></div>
+
+<div class="info-card"><h3>Nominal GDP</h3><p>GDP measured using current-year prices.</p></div>
+
+<div class="info-card"><h3>Real GDP</h3><p>GDP adjusted for inflation using constant prices.</p></div>
+
+<div class="info-card"><h3>GDP Deflator</h3><p>Price index used to measure inflation within GDP.</p></div>
+
+<div class="info-card"><h3>Business Cycle</h3><p>Periodic fluctuations in economic activity.</p></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of Chapter 12 concepts.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p><strong>1.</strong> Which formula represents the expenditure approach to GDP?</p>
+
+<p>
+A. GDP = Wages + Rent + Interest + Profit<br>
+B. GDP = C + I + G + (X − M)<br>
+C. GDP = Inflation + Unemployment<br>
+D. GDP = Taxes − Transfers
+</p>
+
+<br>
+
+<p><strong>2.</strong> Real GDP differs from nominal GDP because real GDP:</p>
+
+<p>
+A. Includes imports<br>
+B. Measures unemployment<br>
+C. Adjusts for inflation<br>
+D. Excludes government spending
+</p>
+
+<br>
+
+<p><strong>3.</strong> Which phase of the business cycle is characterized by declining economic activity?</p>
+
+<p>
+A. Expansion<br>
+B. Peak<br>
+C. Recession<br>
+D. Recovery
+</p>
+
+<br>
+
+<p><strong>4.</strong> Which of the following is a limitation of GDP?</p>
+
+<p>
+A. Measures market production<br>
+B. Includes government spending<br>
+C. Excludes many non-market activities<br>
+D. Measures final goods
+</p>
+
+<br>
+
+<p><strong>5.</strong> The GDP Deflator is used primarily to:</p>
+
+<p>
+A. Measure unemployment<br>
+B. Measure inflation<br>
+C. Calculate exports<br>
+D. Measure income inequality
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice applying economic reasoning using AP-style FRQs.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p><strong>FRQ 1</strong></p>
+
+<p>
+Assume an economy reports the following annual data:
+</p>
+
+<ul style="margin-left:25px;">
+<li>Consumption = $9 trillion</li>
+<li>Investment = $3 trillion</li>
+<li>Government Spending = $4 trillion</li>
+<li>Exports = $2 trillion</li>
+<li>Imports = $1 trillion</li>
+</ul>
+
+<br>
+
+<p>
+(a) Calculate GDP using the expenditure approach.
+</p>
+
+<p>
+(b) Explain why imports are subtracted from GDP.
+</p>
+
+<p>
+(c) Explain one limitation of GDP as a measure of economic well-being.
+</p>
+
+<br><br>
+
+<p><strong>FRQ 2</strong></p>
+
+<p>
+Suppose nominal GDP increases by 8% while real GDP increases by only 3%.
+</p>
+
+<p>
+(a) Explain why nominal GDP increased faster than real GDP.
+</p>
+
+<p>
+(b) What does this suggest about inflation?
+</p>
+
+<p>
+(c) How might policymakers respond if inflation becomes excessive?
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+National income accounting provides economists with tools for measuring production, economic growth, and overall economic performance.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+GDP serves as the primary indicator of economic activity and provides valuable information for businesses, investors, policymakers, and citizens. Throughout this chapter, students learned how GDP is calculated, how inflation affects economic measurements, and why economists rely on real GDP to evaluate growth.
+
+</p>
+
+<br>
+
+<p>
+
+Understanding GDP is essential because it forms the foundation for many macroeconomic concepts explored later in AP Macroeconomics, including inflation, unemployment, aggregate demand, aggregate supply, and economic growth.
+
+</p>
+
+<br>
+
+<p>
+
+Mastering these concepts will make it easier to analyze economic performance and understand the policy decisions discussed in future chapters.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your Learning Journey</h2>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>← Previous Chapter</h3>
+<p>
+<a href="../micro/chapter11.html" style="color:var(--primary);font-weight:bold;text-decoration:none;">
+Chapter 11: Market Failure and Government Intervention
+</a>
+</p>
+</div>
+
+<div class="info-card">
+<h3>Next Chapter →</h3>
+<p>
+<a href="chapter13.html" style="color:var(--primary);font-weight:bold;text-decoration:none;">
+Chapter 13: Inflation and Unemployment
+</a>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Master AP Microeconomics and AP Macroeconomics through comprehensive lessons, exam preparation, study resources, and real-world applications.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
