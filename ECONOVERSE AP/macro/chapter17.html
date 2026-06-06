@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 17: Monetary Policy</title>
+
+<meta name="description" content="Learn monetary policy, expansionary monetary policy, contractionary monetary policy, and Federal Reserve actions in AP Macroeconomics Chapter 17.">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    width:90%;
+    max-width:1400px;
+    margin:25px auto;
+    color:#64748B;
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.highlight-box{
+    background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
+    border-left:6px solid var(--secondary);
+    padding:25px;
+    border-radius:15px;
+    margin-top:25px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">AP Microeconomics</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a> →
+<a href="../macroeconomics.html">AP Macroeconomics</a> →
+Chapter 17
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 17: Monetary Policy</h1>
+
+<p>
+
+Discover how central banks influence economic activity through monetary policy. Learn how changes in interest rates, money supply, and Federal Reserve actions affect inflation, unemployment, and economic growth.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Monetary policy is one of the most powerful tools available to policymakers. By influencing interest rates and the money supply, central banks can stabilize the economy, manage inflation, and promote employment.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In this chapter, you will explore how the Federal Reserve conducts monetary policy, examine expansionary and contractionary strategies, and analyze how monetary policy affects aggregate demand and overall economic performance.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+<p>
+
+After completing this chapter, you should be able to:
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Define Monetary Policy</h3>
+<p>
+Explain how central banks use monetary policy to influence economic activity.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Analyze Policy Tools</h3>
+<p>
+Understand the major tools used by the Federal Reserve.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Evaluate Economic Effects</h3>
+<p>
+Examine how monetary policy impacts inflation, unemployment, and growth.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Monetary Policy</h2>
+
+<p>
+
+Monetary policy refers to actions taken by a central bank to influence the money supply, interest rates, and overall economic conditions.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In the United States, monetary policy is conducted by the Federal Reserve System. The Federal Reserve uses various tools to achieve its dual mandate of promoting price stability and maximum employment.
+
+</p>
+
+<br>
+
+<p>
+
+Changes in monetary policy can influence borrowing, spending, investment, inflation, and economic growth throughout the economy.
+
+</p>
+
+<div class="highlight-box">
+
+<strong>AP Economics Focus:</strong>
+
+Monetary policy primarily affects Aggregate Demand by changing interest rates and the availability of credit.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Expansionary Monetary Policy</h2>
+
+<p>
+
+Expansionary monetary policy is used during recessions or periods of slow economic growth.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Lower Interest Rates</h3>
+<p>
+Encourages households and businesses to borrow and spend more.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Increase Money Supply</h3>
+<p>
+Provides greater liquidity throughout the financial system.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Boost Aggregate Demand</h3>
+<p>
+Helps increase output, employment, and economic growth.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Expansionary monetary policy shifts Aggregate Demand to the right, increasing real GDP and reducing cyclical unemployment.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Contractionary Monetary Policy</h2>
+
+<p>
+
+Contractionary monetary policy is used when inflation becomes excessively high.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Raise Interest Rates</h3>
+<p>
+Discourages borrowing and spending throughout the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Reduce Money Supply</h3>
+<p>
+Limits liquidity and slows economic activity.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Control Inflation</h3>
+<p>
+Helps reduce upward pressure on prices.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Contractionary monetary policy shifts Aggregate Demand to the left, reducing inflationary pressures while potentially slowing economic growth in the short run.
+
+</p>
+
+<br>
+
+<p>
+
+Policymakers must carefully balance inflation control with maintaining strong employment and sustainable economic growth.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>Open Market Operations</h2>
+
+<p>
+
+Open Market Operations (OMOs) are the buying and selling of government securities by the Federal Reserve to influence the money supply.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Buying Securities</h3>
+<p>
+When the Federal Reserve buys government bonds, money enters the banking system and the money supply increases.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Selling Securities</h3>
+<p>
+When the Federal Reserve sells government bonds, money leaves the banking system and the money supply decreases.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Most Frequently Used Tool</h3>
+<p>
+Open market operations are the primary tool used by the Federal Reserve to conduct monetary policy.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Open market operations directly affect bank reserves, making them a highly effective method for influencing lending, spending, and economic activity.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Discount Rate</h2>
+
+<p>
+
+The discount rate is the interest rate charged by the Federal Reserve when lending funds directly to commercial banks.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Lower Discount Rate</h3>
+<p>
+Encourages banks to borrow more reserves and expand lending.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Higher Discount Rate</h3>
+<p>
+Discourages borrowing from the Federal Reserve and reduces lending activity.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Monetary Policy Impact</h3>
+<p>
+Changes in the discount rate can influence the overall money supply.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Reserve Requirements</h2>
+
+<p>
+
+Reserve requirements determine the percentage of deposits banks must keep as reserves rather than lend out.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+A lower reserve requirement allows banks to make more loans, increasing the money supply. A higher reserve requirement limits lending and decreases the potential expansion of the money supply.
+
+</p>
+
+<br>
+
+<p>
+
+Although reserve requirements are a powerful monetary policy tool, they are adjusted less frequently because changes can significantly affect banking operations.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Federal Funds Rate</h2>
+
+<p>
+
+The federal funds rate is the interest rate banks charge one another for overnight loans of reserves.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Key Benchmark Rate</h3>
+<p>
+Many other interest rates in the economy are influenced by the federal funds rate.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Economic Influence</h3>
+<p>
+Changes in the federal funds rate affect borrowing, spending, and investment decisions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Policy Target</h3>
+<p>
+The Federal Reserve often targets a specific federal funds rate range through open market operations.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Money Supply and Interest Rates</h2>
+
+<p>
+
+Monetary policy influences economic activity primarily through changes in the money supply and interest rates.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+When the money supply increases, interest rates generally fall. Lower interest rates encourage borrowing, investment, and consumer spending.
+
+</p>
+
+<br>
+
+<p>
+
+When the money supply decreases, interest rates generally rise. Higher interest rates discourage borrowing and reduce spending throughout the economy.
+
+</p>
+
+<br>
+
+<p>
+
+These changes directly affect Aggregate Demand and overall economic performance.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Monetary Policy Transmission Mechanism</h2>
+
+<p>
+
+The transmission mechanism describes how monetary policy actions affect the broader economy.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Federal Reserve Action → Changes in Bank Reserves → Changes in Interest Rates → Changes in Borrowing and Spending → Changes in Aggregate Demand → Changes in GDP, Employment, and Inflation
+
+</p>
+
+<br>
+
+<p>
+
+Because individuals and businesses need time to adjust their behavior, monetary policy often affects the economy with significant time lags.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Real-World Monetary Policy Examples</h2>
+
+<p>
+
+Central banks around the world regularly use monetary policy to address economic challenges.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Economic Recessions</h3>
+<p>
+Central banks often lower interest rates and increase money supply to stimulate economic growth.
+</p>
+</div>
+
+<div class="info-card">
+<h3>High Inflation</h3>
+<p>
+Central banks may raise interest rates to reduce spending and control inflation.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Financial Crises</h3>
+<p>
+Emergency lending programs and liquidity support can help stabilize financial systems.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Recent global economic events have demonstrated the important role central banks play in maintaining financial stability and supporting economic recovery.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Connections</h2>
+
+<p>
+
+Monetary policy connects directly to many major AP Macroeconomics concepts.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Aggregate Demand</h3>
+<p>
+Monetary policy shifts Aggregate Demand through changes in interest rates.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Inflation</h3>
+<p>
+Contractionary monetary policy helps reduce inflationary pressures.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Unemployment</h3>
+<p>
+Expansionary monetary policy can help reduce cyclical unemployment.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Money and Banking</h3>
+<p>
+Monetary policy builds directly upon concepts introduced in Chapter 16.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Economic Growth</h3>
+<p>
+Changes in investment and spending influence long-run economic performance.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Federal Reserve</h3>
+<p>
+Understanding Federal Reserve tools is essential for AP Macroeconomics success.
+</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+Monetary policy is one of the most important tools used by central banks to stabilize the economy and promote sustainable growth.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Throughout this chapter, you learned how the Federal Reserve influences economic activity through changes in the money supply and interest rates. Expansionary monetary policy is used to stimulate growth during recessions, while contractionary monetary policy helps control inflation.
+
+</p>
+
+<br>
+
+<p>
+
+You also explored the major tools of monetary policy, including open market operations, the discount rate, reserve requirements, and the federal funds rate. Understanding these tools is essential for success in AP Macroeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Important vocabulary from Chapter 17.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Monetary Policy</h3>
+<p>
+Central bank actions designed to influence money supply and interest rates.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Expansionary Monetary Policy</h3>
+<p>
+Policy actions that increase money supply and lower interest rates.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Contractionary Monetary Policy</h3>
+<p>
+Policy actions that decrease money supply and raise interest rates.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Open Market Operations</h3>
+<p>
+The buying and selling of government securities by the Federal Reserve.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Discount Rate</h3>
+<p>
+The interest rate charged on loans from the Federal Reserve to banks.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Reserve Requirement</h3>
+<p>
+The percentage of deposits banks must hold as reserves.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Federal Funds Rate</h3>
+<p>
+The interest rate banks charge one another for overnight reserve loans.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Money Supply</h3>
+<p>
+The total quantity of money available in the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Interest Rate</h3>
+<p>
+The cost of borrowing money.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Federal Reserve</h3>
+<p>
+The central banking system of the United States.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of monetary policy concepts.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+Which monetary policy action is most expansionary?
+<br><br>
+A. Selling government bonds
+<br>
+B. Raising reserve requirements
+<br>
+C. Buying government bonds
+<br>
+D. Raising the discount rate
+</li>
+
+<br>
+
+<li>
+Expansionary monetary policy generally causes:
+<br><br>
+A. Higher interest rates
+<br>
+B. Lower money supply
+<br>
+C. Lower Aggregate Demand
+<br>
+D. Lower interest rates
+</li>
+
+<br>
+
+<li>
+The Federal Reserve conducts open market operations by:
+<br><br>
+A. Changing tax rates
+<br>
+B. Changing government spending
+<br>
+C. Buying and selling government securities
+<br>
+D. Setting wages
+</li>
+
+<br>
+
+<li>
+Which policy tool directly affects the percentage of deposits banks must hold?
+<br><br>
+A. Discount Rate
+<br>
+B. Reserve Requirement
+<br>
+C. Federal Funds Rate
+<br>
+D. CPI
+</li>
+
+<br>
+
+<li>
+Contractionary monetary policy is primarily used to:
+<br><br>
+A. Reduce inflation
+<br>
+B. Increase unemployment benefits
+<br>
+C. Increase Aggregate Demand
+<br>
+D. Reduce taxes
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice AP-style monetary policy analysis.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary);margin-bottom:15px;">
+FRQ 1
+</h3>
+
+<p>
+
+Assume the economy enters a recession and unemployment rises significantly.
+
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Identify an appropriate monetary policy action.</li>
+
+<li>Explain how the money supply changes.</li>
+
+<li>Describe the impact on interest rates.</li>
+
+<li>Explain how Aggregate Demand and real GDP are affected.</li>
+
+</ul>
+
+<br>
+
+<h3 style="color:var(--primary);margin-bottom:15px;">
+FRQ 2
+</h3>
+
+<p>
+
+Suppose inflation rises above the Federal Reserve's target rate.
+
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Identify a contractionary monetary policy action.</li>
+
+<li>Explain how interest rates change.</li>
+
+<li>Describe the impact on investment spending.</li>
+
+<li>Explain how inflation may be affected.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+Key takeaways from Chapter 17.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Monetary policy is conducted by central banks to influence economic activity.</li>
+
+<li>Expansionary monetary policy increases money supply and lowers interest rates.</li>
+
+<li>Contractionary monetary policy decreases money supply and raises interest rates.</li>
+
+<li>Open market operations are the Federal Reserve's primary policy tool.</li>
+
+<li>The discount rate affects bank borrowing from the Federal Reserve.</li>
+
+<li>Reserve requirements influence banks' lending capacity.</li>
+
+<li>The federal funds rate is a key benchmark interest rate.</li>
+
+<li>Interest rates affect consumption, investment, and Aggregate Demand.</li>
+
+<li>Monetary policy affects the economy through a transmission mechanism.</li>
+
+<li>The Federal Reserve plays a critical role in maintaining economic stability.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your AP Macroeconomics Journey</h2>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>← Previous Chapter</h3>
+<p>
+<a href="chapter16.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 16: Money and Banking
+</a>
+</p>
+</div>
+
+<div class="info-card">
+<h3>Next Chapter →</h3>
+<p>
+<a href="chapter18.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 18: Economic Growth and Productivity
+</a>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Master AP Microeconomics and AP Macroeconomics through comprehensive lessons, AP-style practice questions, graph analysis, and exam-focused preparation.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+const progressBar =
+document.getElementById('progressBar');
+
+if(progressBar){
+progressBar.style.width =
+scrolled + '%';
+}
+
+});
+
+</script>
+
+</body>
+</html>
