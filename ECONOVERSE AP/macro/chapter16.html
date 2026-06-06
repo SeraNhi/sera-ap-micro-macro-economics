@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 16: Money and Banking</title>
+
+<meta name="description" content="Learn the functions of money, characteristics of money, and money supply in AP Macroeconomics Chapter 16.">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    width:90%;
+    max-width:1400px;
+    margin:25px auto;
+    color:#64748B;
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    text-decoration:none;
+    color:var(--secondary);
+    font-weight:600;
+}
+
+.hero{
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 8%;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../microeconomics.html">AP Microeconomics</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+<a href="../index.html">Home</a> →
+<a href="../macroeconomics.html">AP Macroeconomics</a> →
+Chapter 16
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 16: Money and Banking</h1>
+
+<p>
+
+Explore how money functions within modern economies, how banks create money through lending, and how financial institutions influence economic activity. Understanding money and banking provides the foundation for monetary policy and economic stability.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Money and banking are central to the functioning of every modern economy. Individuals, businesses, and governments rely on financial institutions to facilitate transactions, provide loans, and support economic growth.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In this chapter, you will examine the functions and characteristics of money, learn how money is measured, and understand how banks contribute to the expansion of the money supply. These concepts form the foundation for later chapters on monetary policy and central banking.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+<p>
+
+After completing this chapter, you should be able to:
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Define Money</h3>
+<p>
+Explain what money is and why societies use it as a medium of exchange.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Identify Money Functions</h3>
+<p>
+Describe the major roles money plays in economic transactions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Understand Banking</h3>
+<p>
+Analyze how banks influence the money supply and economic activity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Functions of Money</h2>
+
+<p>
+
+Money performs several essential functions that make modern economies possible.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Medium of Exchange</h3>
+<p>
+Money eliminates the need for barter and allows goods and services to be exchanged efficiently.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Unit of Account</h3>
+<p>
+Money provides a common measure of value that makes prices easy to compare.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Store of Value</h3>
+<p>
+Money allows individuals to save purchasing power for future use.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Standard of Deferred Payment</h3>
+<p>
+Money enables borrowing and lending by providing a widely accepted payment standard.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Without money, individuals would need to find trading partners who possess exactly what they want and simultaneously desire what they have to offer. Money solves this problem and significantly improves economic efficiency.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Characteristics of Money</h2>
+
+<p>
+
+For an item to function effectively as money, it must possess several important characteristics.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Durability</h3>
+<p>
+Money must withstand repeated use without significant deterioration.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Portability</h3>
+<p>
+Money should be easy to transport and exchange.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Divisibility</h3>
+<p>
+Money must be capable of being divided into smaller units for transactions of different sizes.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Uniformity</h3>
+<p>
+Each unit of money should be identical in value to other units.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Limited Supply</h3>
+<p>
+Money must be relatively scarce to maintain value.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Acceptability</h3>
+<p>
+People must trust and accept money as payment for goods and services.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Money Supply</h2>
+
+<p>
+
+The money supply represents the total quantity of money available within an economy at a given time.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists and policymakers monitor the money supply because it influences spending, investment, inflation, and economic growth. Changes in the money supply can affect interest rates and overall economic activity.
+
+</p>
+
+<br>
+
+<p>
+
+Central banks closely track money supply measures to help achieve macroeconomic objectives such as stable prices, full employment, and sustainable economic growth.
+
+</p>
+
+<br>
+
+<p>
+
+In the next section, you will learn how economists classify different forms of money and how banks contribute to money creation through the lending process.
+
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+
+<h2>M1 and M2</h2>
+
+<p>
+
+Economists use different measures of the money supply to track the amount of money circulating throughout the economy.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>M1</h3>
+<p>
+M1 includes the most liquid forms of money, such as currency in circulation, checking account deposits, and traveler's checks.
+</p>
+</div>
+
+<div class="info-card">
+<h3>M2</h3>
+<p>
+M2 includes all components of M1 plus savings deposits, money market accounts, and small time deposits.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+M1 is considered money that can be spent immediately, while M2 includes assets that can quickly be converted into spendable funds.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Fractional Reserve Banking</h2>
+
+<p>
+
+Modern banking systems operate under fractional reserve banking, where banks keep only a fraction of deposits as reserves and lend the remainder.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+When customers deposit money into a bank, the bank is not required to keep the entire deposit in its vault. Instead, a portion is held as reserves while the remainder can be loaned to borrowers.
+
+</p>
+
+<br>
+
+<p>
+
+This process allows banks to create additional money within the economy and support economic growth through lending activities.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Required Reserves</h2>
+
+<p>
+
+Required reserves are the minimum amount of deposits that banks must keep and cannot lend out.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Purpose</h3>
+<p>
+Required reserves help ensure banks have sufficient funds available to meet withdrawal requests.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Financial Stability</h3>
+<p>
+Reserve requirements contribute to confidence in the banking system.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Monetary Policy Tool</h3>
+<p>
+Central banks may adjust reserve requirements to influence lending activity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Excess Reserves</h2>
+
+<p>
+
+Excess reserves are reserves held by banks beyond the required minimum.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Banks may choose to hold excess reserves when economic uncertainty is high or when they expect lower demand for loans.
+
+</p>
+
+<br>
+
+<p>
+
+Large amounts of excess reserves generally reduce the money creation process because fewer funds are being loaned to borrowers.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Money Creation Process</h2>
+
+<p>
+
+Banks create money through the lending process within the fractional reserve banking system.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Suppose a customer deposits $1,000 into a bank with a 10% reserve requirement. The bank keeps $100 as reserves and loans out $900.
+
+</p>
+
+<br>
+
+<p>
+
+When the borrower spends the $900, it is deposited into another bank. That bank keeps 10% as reserves and loans out the remaining amount.
+
+</p>
+
+<br>
+
+<p>
+
+This cycle continues throughout the banking system, creating a multiple expansion of deposits and the money supply.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Money Multiplier</h2>
+
+<p>
+
+The money multiplier estimates the maximum amount of money that can be created from an initial deposit.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Money Multiplier Formula:
+
+</p>
+
+<p>
+
+Money Multiplier = 1 ÷ Reserve Requirement
+
+</p>
+
+<br>
+
+<p>
+
+For example, if the reserve requirement is 10%, the money multiplier equals 10. An initial deposit of $1,000 could theoretically support up to $10,000 in total deposits throughout the banking system.
+
+</p>
+
+<br>
+
+<p>
+
+The actual multiplier may be smaller if banks hold excess reserves or borrowers do not redeposit funds.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Central Banking System</h2>
+
+<p>
+
+Central banks oversee the banking system and help maintain economic stability.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Monetary Policy</h3>
+<p>
+Central banks influence money supply and interest rates to achieve economic goals.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Bank Supervision</h3>
+<p>
+They monitor financial institutions and help ensure stability.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Lender of Last Resort</h3>
+<p>
+Central banks can provide emergency loans during financial crises.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Federal Reserve Structure</h2>
+
+<p>
+
+The Federal Reserve serves as the central banking system of the United States.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Board of Governors</h3>
+<p>
+Provides leadership and policy direction for the Federal Reserve System.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Regional Reserve Banks</h3>
+<p>
+Twelve regional banks carry out Federal Reserve functions throughout the country.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Federal Open Market Committee</h3>
+<p>
+The FOMC makes key decisions regarding monetary policy and interest rates.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Although AP Economics focuses on U.S. institutions, the concepts of central banking apply broadly to economies around the world.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Real-World Banking Examples</h2>
+
+<p>
+
+Banking systems play a vital role in economic development and financial stability.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Consumer Loans</h3>
+<p>
+Banks provide mortgages, auto loans, and personal loans that support household spending.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Business Financing</h3>
+<p>
+Companies rely on bank loans to expand operations and invest in new projects.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Financial Crises</h3>
+<p>
+Central banks often intervene during periods of instability to maintain confidence in financial markets.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Connections</h2>
+
+<p>
+
+Money and banking concepts connect directly to many major AP Macroeconomics topics.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Monetary Policy</h3>
+<p>
+Understanding money creation is essential for analyzing central bank actions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Interest Rates</h3>
+<p>
+Money supply changes influence borrowing costs throughout the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Inflation</h3>
+<p>
+Rapid growth in the money supply can contribute to inflationary pressures.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Economic Growth</h3>
+<p>
+Bank lending supports investment and long-term economic expansion.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Financial Stability</h3>
+<p>
+Healthy banking systems help reduce economic volatility.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Federal Reserve</h3>
+<p>
+The Federal Reserve's decisions influence money supply, employment, and inflation.
+</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+Money and banking are essential components of modern economies, facilitating transactions, investment, and economic growth.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+This chapter explored the functions and characteristics of money, different measures of the money supply, and the role of banks in creating money through fractional reserve banking.
+
+</p>
+
+<br>
+
+<p>
+
+You also learned how reserves influence lending, how the money multiplier works, and how central banks oversee financial systems. These concepts provide the foundation for understanding monetary policy in the next chapter.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Important vocabulary from Chapter 16.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Money</h3>
+<p>
+Anything generally accepted as payment for goods and services.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Medium of Exchange</h3>
+<p>
+A function of money that facilitates transactions.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Store of Value</h3>
+<p>
+The ability of money to retain purchasing power over time.
+</p>
+</div>
+
+<div class="info-card">
+<h3>M1</h3>
+<p>
+The narrowest measure of the money supply.
+</p>
+</div>
+
+<div class="info-card">
+<h3>M2</h3>
+<p>
+A broader measure of the money supply that includes savings deposits.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Fractional Reserve Banking</h3>
+<p>
+A system where banks hold only a fraction of deposits as reserves.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Required Reserves</h3>
+<p>
+Minimum reserves banks must maintain.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Excess Reserves</h3>
+<p>
+Reserves held beyond the required amount.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Money Multiplier</h3>
+<p>
+The maximum expansion of deposits from an initial deposit.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Central Bank</h3>
+<p>
+The institution responsible for overseeing a nation's monetary system.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of money and banking concepts.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+Which function of money allows individuals to save purchasing power for future use?
+<br><br>
+A. Medium of Exchange
+<br>
+B. Unit of Account
+<br>
+C. Store of Value
+<br>
+D. Barter System
+</li>
+
+<br>
+
+<li>
+Which of the following is included in M1?
+<br><br>
+A. Savings Accounts
+<br>
+B. Small Time Deposits
+<br>
+C. Currency and Checking Deposits
+<br>
+D. Treasury Bonds
+</li>
+
+<br>
+
+<li>
+Fractional reserve banking allows banks to:
+<br><br>
+A. Keep all deposits in reserve
+<br>
+B. Lend a portion of deposits
+<br>
+C. Eliminate interest rates
+<br>
+D. Control inflation directly
+</li>
+
+<br>
+
+<li>
+If the reserve requirement is 20%, the money multiplier is:
+<br><br>
+A. 2
+<br>
+B. 4
+<br>
+C. 5
+<br>
+D. 10
+</li>
+
+<br>
+
+<li>
+Which institution serves as the central bank of the United States?
+<br><br>
+A. Treasury Department
+<br>
+B. World Bank
+<br>
+C. Federal Reserve
+<br>
+D. IMF
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice AP-style macroeconomic analysis.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary);margin-bottom:15px;">
+FRQ 1
+</h3>
+
+<p>
+
+Assume a bank receives a $5,000 deposit and the reserve requirement is 10%.
+
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Calculate required reserves.</li>
+
+<li>Calculate excess reserves.</li>
+
+<li>Determine the maximum amount of new loans the bank can make.</li>
+
+<li>Calculate the theoretical maximum increase in the money supply.</li>
+
+</ul>
+
+<br>
+
+<h3 style="color:var(--primary);margin-bottom:15px;">
+FRQ 2
+</h3>
+
+<p>
+
+Suppose consumers lose confidence in the banking system and begin holding more cash.
+
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Explain how this affects bank reserves.</li>
+
+<li>Describe the impact on lending.</li>
+
+<li>Explain how the money supply may change.</li>
+
+<li>Discuss the potential impact on economic growth.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+Key takeaways from Chapter 16.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Money serves as a medium of exchange, unit of account, store of value, and standard of deferred payment.</li>
+
+<li>Effective money must be durable, portable, divisible, uniform, limited in supply, and widely accepted.</li>
+
+<li>M1 and M2 are common measures of the money supply.</li>
+
+<li>Fractional reserve banking allows banks to create money through lending.</li>
+
+<li>Required reserves limit how much banks can lend.</li>
+
+<li>Excess reserves represent funds available for additional lending.</li>
+
+<li>The money multiplier measures the potential expansion of deposits.</li>
+
+<li>Central banks oversee the financial system and monetary policy.</li>
+
+<li>The Federal Reserve serves as the central bank of the United States.</li>
+
+<li>Money and banking concepts form the foundation of monetary policy analysis.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your AP Macroeconomics Journey</h2>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>← Previous Chapter</h3>
+<p>
+<a href="chapter15.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 15: Fiscal Policy
+</a>
+</p>
+</div>
+
+<div class="info-card">
+<h3>Next Chapter →</h3>
+<p>
+<a href="chapter17.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 17: Monetary Policy
+</a>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Master AP Microeconomics and AP Macroeconomics through comprehensive lessons, AP-style practice, graph analysis, and exam-focused preparation.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+const progressBar =
+document.getElementById('progressBar');
+
+if(progressBar){
+progressBar.style.width =
+scrolled + '%';
+}
+
+});
+
+</script>
+
+</body>
+</html>
