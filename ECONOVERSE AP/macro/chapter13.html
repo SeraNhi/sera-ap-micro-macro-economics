@@ -1,0 +1,1483 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 13: Inflation and Unemployment</title>
+
+<meta name="description" content="AP Macroeconomics Chapter 13: Inflation and Unemployment. Learn CPI, inflation calculations, unemployment concepts, and AP exam applications.">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.breadcrumb{
+    background:white;
+    padding:18px 8%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    font-size:.95rem;
+}
+
+.breadcrumb a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.objective-list{
+    margin-left:25px;
+}
+
+.objective-list li{
+    margin-bottom:10px;
+}
+
+.formula-box{
+    background:#EEF6FF;
+    border-left:5px solid var(--secondary);
+    padding:20px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+.highlight{
+    color:var(--primary);
+    font-weight:700;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+section{
+    padding:70px 6%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+→
+<a href="../macroeconomics.html">AP Macroeconomics</a>
+→
+Chapter 13
+
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 13: Inflation and Unemployment</h1>
+
+<p>
+
+Understand how economists measure changes in prices, analyze inflation trends,
+evaluate labor market performance, and interpret key macroeconomic indicators
+used throughout AP Macroeconomics.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+Inflation and unemployment are two of the most important indicators of economic
+performance. Governments, businesses, and households closely monitor both
+because they influence purchasing power, economic growth, living standards,
+and public policy decisions.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In this chapter, you will learn how inflation is measured through the Consumer
+Price Index (CPI), how inflation rates are calculated, and why changes in the
+overall price level affect economic decision-making. You will also develop the
+foundation needed to understand unemployment and labor market performance in
+later sections.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+<p>
+
+By the end of this chapter, you should be able to:
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ul class="objective-list">
+
+<li>Define inflation and explain why it occurs.</li>
+
+<li>Understand how economists construct the Consumer Price Index (CPI).</li>
+
+<li>Calculate inflation rates using CPI data.</li>
+
+<li>Interpret changes in purchasing power over time.</li>
+
+<li>Analyze the effects of inflation on consumers and businesses.</li>
+
+<li>Connect inflation data to AP Macroeconomics exam questions.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Inflation</h2>
+
+<p>
+
+Inflation refers to a sustained increase in the overall price level of goods
+and services within an economy over time.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+When inflation occurs, money loses purchasing power because consumers must pay
+higher prices for the same goods and services. Moderate inflation is common in
+growing economies, but excessive inflation can create uncertainty and reduce
+economic stability.
+
+</p>
+
+<br>
+
+<p>
+
+For example, if a textbook costs $100 today and $105 next year, the increase in
+price contributes to inflation. Economists focus on changes in the average
+price level across many products rather than the price of a single good.
+
+</p>
+
+<br>
+
+<p>
+
+Inflation affects wages, savings, investments, interest rates, and government
+policy decisions. Because of its importance, economists use several indicators
+to measure inflation accurately.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Consumer Price Index (CPI)</h2>
+
+<p>
+
+The Consumer Price Index (CPI) is one of the most widely used measures of
+inflation.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The CPI measures the average change in prices paid by consumers for a fixed
+basket of goods and services over time. This basket includes items commonly
+purchased by households such as food, housing, transportation, clothing,
+healthcare, and entertainment.
+
+</p>
+
+<br>
+
+<p>
+
+Economists compare the cost of the basket in different years to determine how
+much prices have changed.
+
+</p>
+
+<div class="formula-box">
+
+<strong>CPI Formula</strong>
+
+<br><br>
+
+CPI =
+(Cost of Market Basket in Current Year ÷ Cost of Market Basket in Base Year)
+× 100
+
+</div>
+
+<p>
+
+The base year is assigned a value of 100. CPI values above 100 indicate that
+prices have risen relative to the base year, while values below 100 indicate
+lower prices than the base year.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Calculating Inflation Rate</h2>
+
+<p>
+
+Economists use CPI data to calculate the percentage change in prices from one
+year to another.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The inflation rate measures how rapidly the general price level changes over
+time.
+
+</p>
+
+<div class="formula-box">
+
+<strong>Inflation Rate Formula</strong>
+
+<br><br>
+
+Inflation Rate (%) =
+
+[(Current CPI − Previous CPI) ÷ Previous CPI]
+
+× 100
+
+</div>
+
+<p>
+
+Example:
+
+</p>
+
+<ul class="objective-list">
+
+<li>Previous Year CPI = 120</li>
+
+<li>Current Year CPI = 126</li>
+
+</ul>
+
+<p>
+
+Inflation Rate =
+
+[(126 − 120) ÷ 120] × 100
+
+= 5%
+
+</p>
+
+<br>
+
+<p>
+
+This means that the average price level increased by 5 percent during the year.
+
+</p>
+
+<p>
+
+Understanding inflation calculations is essential for AP Macroeconomics because
+students are frequently asked to calculate and interpret inflation rates using
+economic data tables and graphs.
+
+</p>
+
+</div>
+
+</section>
+```
+```html
+<section>
+
+<div class="section-title">
+
+<h2>Demand-Pull Inflation</h2>
+
+<p>
+
+Demand-pull inflation occurs when total spending in the economy grows faster
+than the economy's ability to produce goods and services.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Economists often summarize demand-pull inflation with the phrase:
+
+<span class="highlight">"Too much money chasing too few goods."</span>
+
+</p>
+
+<br>
+
+<p>
+
+As households, businesses, and governments increase spending, producers may
+struggle to keep up with rising demand. As a result, prices increase.
+
+</p>
+
+<br>
+
+<p>
+
+Common causes of demand-pull inflation include:
+
+</p>
+
+<ul class="objective-list">
+
+<li>Increased consumer spending</li>
+
+<li>Expansionary fiscal policy</li>
+
+<li>Expansionary monetary policy</li>
+
+<li>Strong business investment</li>
+
+<li>Growing export demand</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Demand-pull inflation is frequently illustrated using shifts in Aggregate
+Demand (AD) within AP Macroeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Cost-Push Inflation</h2>
+
+<p>
+
+Cost-push inflation occurs when production costs increase, causing businesses
+to raise prices.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Unlike demand-pull inflation, cost-push inflation originates on the supply
+side of the economy.
+
+</p>
+
+<br>
+
+<p>
+
+Businesses may face higher costs due to:
+
+</p>
+
+<ul class="objective-list">
+
+<li>Rising wages</li>
+
+<li>Higher energy prices</li>
+
+<li>Increased raw material costs</li>
+
+<li>Supply chain disruptions</li>
+
+<li>Natural disasters affecting production</li>
+
+</ul>
+
+<br>
+
+<p>
+
+For example, a sharp increase in oil prices raises transportation and
+manufacturing costs. Firms often pass these costs on to consumers through
+higher prices.
+
+</p>
+
+<br>
+
+<p>
+
+In AP Macroeconomics, cost-push inflation is commonly represented by a leftward
+shift of Short-Run Aggregate Supply (SRAS).
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Consequences of Inflation</h2>
+
+<p>
+
+Inflation affects different groups within the economy in different ways.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Reduced Purchasing Power</h3>
+<p>
+Consumers can purchase fewer goods and services with the same amount of money.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Uncertainty</h3>
+<p>
+Businesses may find it more difficult to plan future investments and pricing strategies.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Savers Lose</h3>
+<p>
+Money held in savings accounts may lose value if inflation exceeds interest rates.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Borrowers Benefit</h3>
+<p>
+Loans may become easier to repay because future dollars are worth less.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Menu Costs</h3>
+<p>
+Firms incur costs when frequently updating prices and catalogs.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Shoe Leather Costs</h3>
+<p>
+People spend more time managing cash and financial decisions during inflationary periods.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Unemployment</h2>
+
+<p>
+
+Unemployment measures the percentage of people in the labor force who are
+actively seeking work but unable to find employment.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The labor force includes individuals who are either employed or actively
+searching for employment.
+
+</p>
+
+<br>
+
+<p>
+
+People who are retired, full-time students not seeking work, or those who have
+stopped looking for jobs are generally not counted as unemployed.
+
+</p>
+
+<div class="formula-box">
+
+<strong>Unemployment Rate Formula</strong>
+
+<br><br>
+
+(Number of Unemployed ÷ Labor Force)
+
+× 100
+
+</div>
+
+<p>
+
+Monitoring unemployment helps economists evaluate economic health and labor
+market conditions.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Types of Unemployment</h2>
+
+<p>
+
+Economists classify unemployment into several categories based on its causes.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Frictional Unemployment</h3>
+
+<p>
+
+Temporary unemployment occurring when workers move between jobs or enter the
+workforce.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Structural Unemployment</h3>
+
+<p>
+
+Occurs when workers' skills no longer match available jobs because of
+technological change or shifts in economic activity.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Cyclical Unemployment</h3>
+
+<p>
+
+Results from economic downturns and recessions when overall demand for labor
+declines.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Seasonal Unemployment</h3>
+
+<p>
+
+Occurs because demand for labor varies throughout the year in industries such
+as tourism and agriculture.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Natural Rate of Unemployment</h2>
+
+<p>
+
+Even healthy economies experience some unemployment.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+The natural rate of unemployment consists primarily of frictional and
+structural unemployment.
+
+</p>
+
+<br>
+
+<p>
+
+Because workers continuously change jobs and industries evolve over time, some
+level of unemployment is unavoidable.
+
+</p>
+
+<br>
+
+<p>
+
+The natural rate does not include cyclical unemployment caused by recessions.
+
+</p>
+
+<br>
+
+<p>
+
+Economists use the natural rate as a benchmark when evaluating labor market
+performance.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Full Employment</h2>
+
+<p>
+
+Full employment does not mean zero unemployment.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Full employment occurs when cyclical unemployment is absent and the economy is
+operating at its potential output.
+
+</p>
+
+<br>
+
+<p>
+
+At full employment, only frictional and structural unemployment remain.
+
+</p>
+
+<br>
+
+<p>
+
+Most economists consider an economy to be at full employment when unemployment
+is approximately equal to the natural rate of unemployment.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Phillips Curve</h2>
+
+<p>
+
+The Phillips Curve illustrates a historical relationship between inflation and
+unemployment.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In the short run, lower unemployment is often associated with higher inflation,
+while higher unemployment is often associated with lower inflation.
+
+</p>
+
+<br>
+
+<p>
+
+This relationship suggests a short-run tradeoff between inflation and
+unemployment.
+
+</p>
+
+<br>
+
+<p>
+
+Policymakers frequently analyze the Phillips Curve when considering monetary
+and fiscal policy decisions.
+
+</p>
+
+<br>
+
+<p>
+
+Although the relationship does not always hold perfectly, the Phillips Curve
+remains an important AP Macroeconomics concept.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Real-World Examples</h2>
+
+<p>
+
+Economic indicators become more meaningful when applied to actual events.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+During periods of strong economic growth, increased consumer spending can
+contribute to demand-pull inflation as businesses struggle to meet rising
+demand.
+
+</p>
+
+<br>
+
+<p>
+
+Sharp increases in oil prices have historically contributed to cost-push
+inflation by raising production and transportation costs throughout the economy.
+
+</p>
+
+<br>
+
+<p>
+
+Economic recessions often increase cyclical unemployment as firms reduce
+production and lay off workers.
+
+</p>
+
+<br>
+
+<p>
+
+Technological advancements can create structural unemployment when workers must
+develop new skills to remain competitive in changing industries.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>AP Economics Connections</h2>
+
+<p>
+
+Inflation and unemployment appear throughout the AP Macroeconomics curriculum.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Students should be comfortable calculating inflation rates using CPI data,
+identifying types of unemployment, interpreting economic indicators, and
+analyzing Phillips Curve relationships.
+
+</p>
+
+<br>
+
+<p>
+
+These concepts frequently appear in multiple-choice questions, free-response
+questions, data analysis problems, and graph interpretation exercises.
+
+</p>
+
+<br>
+
+<p>
+
+A strong understanding of inflation and unemployment provides the foundation
+for later chapters covering monetary policy, fiscal policy, aggregate demand,
+aggregate supply, and economic stabilization strategies.
+
+</p>
+
+</div>
+
+</section>
+```
+```html id="z7m4kp"
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+This chapter introduced two of the most important indicators of macroeconomic performance: inflation and unemployment.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Inflation measures changes in the overall price level and is commonly tracked using the Consumer Price Index (CPI). Economists calculate inflation rates to determine how rapidly prices change over time and to evaluate purchasing power.
+
+</p>
+
+<br>
+
+<p>
+
+Inflation can result from increasing aggregate demand (demand-pull inflation) or rising production costs (cost-push inflation). Both forms affect consumers, businesses, governments, and financial markets.
+
+</p>
+
+<br>
+
+<p>
+
+Unemployment measures the percentage of people actively seeking work who cannot find employment. Economists classify unemployment into frictional, structural, cyclical, and seasonal categories.
+
+</p>
+
+<br>
+
+<p>
+
+The natural rate of unemployment and the Phillips Curve help economists analyze labor market conditions and inflation-unemployment relationships.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Review these essential AP Macroeconomics vocabulary terms.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card"><h3>Inflation</h3><p>Sustained increase in the overall price level.</p></div>
+
+<div class="info-card"><h3>CPI</h3><p>Consumer Price Index; a measure of average price changes over time.</p></div>
+
+<div class="info-card"><h3>Inflation Rate</h3><p>Percentage change in the price level from one period to another.</p></div>
+
+<div class="info-card"><h3>Demand-Pull Inflation</h3><p>Inflation caused by increasing aggregate demand.</p></div>
+
+<div class="info-card"><h3>Cost-Push Inflation</h3><p>Inflation caused by rising production costs.</p></div>
+
+<div class="info-card"><h3>Purchasing Power</h3><p>The quantity of goods and services money can buy.</p></div>
+
+<div class="info-card"><h3>Unemployment</h3><p>Condition in which individuals actively seeking work cannot find jobs.</p></div>
+
+<div class="info-card"><h3>Labor Force</h3><p>Total number of employed and unemployed workers actively seeking employment.</p></div>
+
+<div class="info-card"><h3>Frictional Unemployment</h3><p>Temporary unemployment while changing jobs.</p></div>
+
+<div class="info-card"><h3>Structural Unemployment</h3><p>Unemployment caused by skill mismatches.</p></div>
+
+<div class="info-card"><h3>Cyclical Unemployment</h3><p>Unemployment caused by economic downturns.</p></div>
+
+<div class="info-card"><h3>Seasonal Unemployment</h3><p>Unemployment resulting from seasonal demand changes.</p></div>
+
+<div class="info-card"><h3>Natural Rate of Unemployment</h3><p>Normal unemployment consisting of frictional and structural unemployment.</p></div>
+
+<div class="info-card"><h3>Full Employment</h3><p>When cyclical unemployment is absent.</p></div>
+
+<div class="info-card"><h3>Phillips Curve</h3><p>Model showing the short-run relationship between inflation and unemployment.</p></div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of Chapter 13 concepts.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p><strong>1.</strong> Inflation is best defined as:</p>
+
+<p>
+A. An increase in unemployment<br>
+B. A sustained increase in the overall price level<br>
+C. A decline in GDP<br>
+D. A decrease in consumer spending
+</p>
+
+<br>
+
+<p><strong>2.</strong> Which index is most commonly used to measure inflation?</p>
+
+<p>
+A. GDP Deflator<br>
+B. Producer Price Index<br>
+C. Consumer Price Index<br>
+D. Labor Force Index
+</p>
+
+<br>
+
+<p><strong>3.</strong> Demand-pull inflation occurs when:</p>
+
+<p>
+A. Production costs rise<br>
+B. Aggregate demand increases faster than output<br>
+C. Unemployment rises<br>
+D. Productivity falls
+</p>
+
+<br>
+
+<p><strong>4.</strong> Which type of unemployment occurs during recessions?</p>
+
+<p>
+A. Frictional<br>
+B. Structural<br>
+C. Seasonal<br>
+D. Cyclical
+</p>
+
+<br>
+
+<p><strong>5.</strong> Full employment exists when:</p>
+
+<p>
+A. Unemployment equals zero<br>
+B. Only cyclical unemployment exists<br>
+C. Cyclical unemployment is absent<br>
+D. Inflation equals zero
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice AP-style written responses.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p><strong>FRQ 1:</strong></p>
+
+<p>
+
+Assume the CPI increased from 125 to 130 during one year.
+
+</p>
+
+<ul class="objective-list">
+
+<li>Calculate the inflation rate.</li>
+
+<li>Explain what this change implies about purchasing power.</li>
+
+<li>Describe one consequence of inflation.</li>
+
+</ul>
+
+<br>
+
+<p><strong>FRQ 2:</strong></p>
+
+<p>
+
+Suppose an economy experiences a recession.
+
+</p>
+
+<ul class="objective-list">
+
+<li>Identify the type of unemployment most likely to increase.</li>
+
+<li>Explain why this type of unemployment rises.</li>
+
+<li>Describe one government policy that could help reduce unemployment.</li>
+
+</ul>
+
+<br>
+
+<p><strong>FRQ 3:</strong></p>
+
+<p>
+
+Explain the difference between frictional unemployment and structural unemployment. Provide one example of each.
+
+</p>
+
+<br>
+
+<p><strong>FRQ 4:</strong></p>
+
+<p>
+
+Using the Phillips Curve framework:
+
+</p>
+
+<ul class="objective-list">
+
+<li>Describe the relationship between inflation and unemployment.</li>
+
+<li>Explain why policymakers may face tradeoffs.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+Essential AP Exam takeaways from Chapter 13.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul class="objective-list">
+
+<li>Inflation measures changes in the overall price level.</li>
+
+<li>CPI is one of the primary tools used to calculate inflation.</li>
+
+<li>Demand-pull inflation results from rising aggregate demand.</li>
+
+<li>Cost-push inflation results from increasing production costs.</li>
+
+<li>Unemployment measures individuals actively seeking work but unable to find jobs.</li>
+
+<li>Frictional, structural, cyclical, and seasonal unemployment have different causes.</li>
+
+<li>The natural rate of unemployment excludes cyclical unemployment.</li>
+
+<li>Full employment occurs when cyclical unemployment is absent.</li>
+
+<li>The Phillips Curve illustrates a short-run relationship between inflation and unemployment.</li>
+
+<li>Inflation and unemployment are central concepts throughout AP Macroeconomics.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your Learning</h2>
+<p>
+Move through the AP Macroeconomics curriculum in sequence.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>← Previous Chapter</h3>
+
+<p>
+
+<a href="chapter12.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 12: National Income and GDP
+</a>
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Next Chapter →</h3>
+
+<p>
+
+<a href="chapter14.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 14: Aggregate Demand and Aggregate Supply
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+
+Master AP Microeconomics and AP Macroeconomics through comprehensive lessons,
+study resources, exam preparation tools, and real-world economic applications.
+
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+document.getElementById('progressBar').style.width =
+scrolled + '%';
+
+});
+
+</script>
+
+</body>
+</html>
+```
