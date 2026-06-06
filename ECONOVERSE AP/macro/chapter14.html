@@ -1,0 +1,1207 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EconoVerse AP | Chapter 14: Aggregate Demand and Aggregate Supply</title>
+
+<meta name="description" content="Learn Aggregate Demand and Aggregate Supply, including AD components, shifts in AD, SRAS, LRAS, equilibrium, recessionary gaps, inflationary gaps, and AP Macroeconomics applications.">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+:root{
+    --primary:#1E3A5F;
+    --secondary:#2C5F8A;
+    --accent:#D4A85E;
+    --background:#F8FAFC;
+    --dark:#0F172A;
+    --text:#1F2937;
+    --white:#FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:var(--accent);
+    z-index:9999;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--primary);
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.breadcrumb{
+    background:white;
+    padding:15px 8%;
+    font-size:.95rem;
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.breadcrumb a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.hero{
+    min-height:65vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+    background:
+    linear-gradient(
+    rgba(30,58,95,.88),
+    rgba(44,95,138,.82)),
+    url("https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--primary);
+    font-size:2.6rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:900px;
+    margin:auto;
+}
+
+.glass-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.info-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.objective-list{
+    margin-left:25px;
+}
+
+.objective-list li{
+    margin-bottom:10px;
+}
+
+.formula-box{
+    background:#eef5ff;
+    border-left:5px solid var(--secondary);
+    padding:20px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+.highlight{
+    color:var(--secondary);
+    font-weight:700;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+ECONOVERSE AP
+</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="../overview.html">Overview</a></li>
+<li><a href="../macroeconomics.html">AP Macroeconomics</a></li>
+<li><a href="../resources.html">Resources</a></li>
+<li><a href="../exam-prep.html">Exam Prep</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<div class="breadcrumb">
+
+<a href="../index.html">Home</a>
+→
+<a href="../macroeconomics.html">AP Macroeconomics</a>
+→
+Chapter 14
+
+</div>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Chapter 14: Aggregate Demand and Aggregate Supply</h1>
+
+<p>
+
+Understand how economy-wide spending and production determine output,
+employment, and price levels. Learn how economists use the Aggregate
+Demand and Aggregate Supply model to analyze inflation, recessions,
+economic growth, and government policy.
+
+</p>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Chapter Overview</h2>
+
+<p>
+
+The Aggregate Demand–Aggregate Supply (AD-AS) model is one of the most
+important frameworks in AP Macroeconomics. It combines spending,
+production, inflation, unemployment, and economic growth into a single
+analytical model.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+In this chapter, you will learn how Aggregate Demand and Aggregate Supply
+interact to determine equilibrium output and price levels. You will also
+explore how shifts in these curves create inflationary and recessionary
+gaps and how policymakers respond to economic fluctuations.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Learning Objectives</h2>
+
+<p>
+
+By the end of this chapter, you should be able to:
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<ul class="objective-list">
+
+<li>Define Aggregate Demand (AD).</li>
+
+<li>Identify the components of Aggregate Demand.</li>
+
+<li>Explain factors that shift Aggregate Demand.</li>
+
+<li>Differentiate between Aggregate Demand and Aggregate Supply.</li>
+
+<li>Interpret AD-AS graphs and economic outcomes.</li>
+
+<li>Analyze recessionary and inflationary gaps.</li>
+
+<li>Apply AD-AS concepts to real-world economic events.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Aggregate Demand (AD)</h2>
+
+<p>
+
+Aggregate Demand represents the total quantity of final goods and
+services demanded in an economy at various price levels during a given
+period.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+Unlike individual demand curves, Aggregate Demand measures spending
+across the entire economy. It reflects the combined purchasing decisions
+of households, businesses, governments, and foreign buyers.
+
+</p>
+
+<div class="formula-box">
+
+<strong>Aggregate Demand Formula</strong>
+
+<br><br>
+
+AD = C + I + G + (X − M)
+
+</div>
+
+<p>
+
+As the overall price level decreases, the quantity of goods and services
+demanded generally increases. As the price level rises, aggregate demand
+tends to decrease.
+
+</p>
+
+<br>
+
+<p>
+
+This inverse relationship produces the downward-sloping Aggregate Demand
+curve used throughout AP Macroeconomics.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Components of Aggregate Demand</h2>
+
+<p>
+
+Aggregate Demand consists of four major categories of spending.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<h3>Consumption (C)</h3>
+
+<p>
+
+Household spending on goods and services. Consumption is typically the
+largest component of Aggregate Demand.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Investment (I)</h3>
+
+<p>
+
+Business spending on capital equipment, factories, inventories, and
+residential construction.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Government Spending (G)</h3>
+
+<p>
+
+Expenditures by federal, state, and local governments on public goods
+and services.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Net Exports (X − M)</h3>
+
+<p>
+
+Exports minus imports. Positive net exports increase Aggregate Demand,
+while negative net exports reduce it.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+
+<h2>Shifts in Aggregate Demand</h2>
+
+<p>
+
+Changes in spending behavior cause the Aggregate Demand curve to shift.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+
+A rightward shift in Aggregate Demand indicates increased total spending
+in the economy. A leftward shift indicates decreased spending.
+
+</p>
+
+<br>
+
+<p>
+
+Major factors that shift Aggregate Demand include:
+
+</p>
+
+<ul class="objective-list">
+
+<li>Changes in consumer confidence</li>
+
+<li>Changes in household wealth</li>
+
+<li>Interest rate changes</li>
+
+<li>Business investment expectations</li>
+
+<li>Government spending policies</li>
+
+<li>Tax changes</li>
+
+<li>Exchange rate fluctuations</li>
+
+<li>Foreign economic growth</li>
+
+</ul>
+
+<br>
+
+<p>
+
+For example, if consumers become optimistic about future income, they
+may increase spending. This increase in consumption shifts Aggregate
+Demand to the right.
+
+</p>
+
+<br>
+
+<p>
+
+Similarly, expansionary fiscal or monetary policy often increases
+Aggregate Demand and stimulates economic activity.
+
+</p>
+
+</div>
+
+</section>
+```
+<!-- Aggregate Supply (AS) -->
+
+<section>
+
+<div class="section-title">
+<h2>Aggregate Supply (AS)</h2>
+<p>
+Aggregate Supply (AS) represents the total quantity of goods and services that firms are willing and able to produce at different overall price levels within an economy.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Aggregate Supply reflects the productive capacity of the economy and is influenced by resource availability, production costs, technology, and government policies.
+</p>
+
+<br>
+
+<p>
+Unlike individual supply curves studied in microeconomics, Aggregate Supply examines production across the entire economy.
+</p>
+
+</div>
+
+</section>
+
+<!-- Short-Run Aggregate Supply -->
+
+<section>
+
+<div class="section-title">
+<h2>Short-Run Aggregate Supply (SRAS)</h2>
+<p>
+The SRAS curve shows the relationship between the overall price level and the quantity of real GDP supplied in the short run.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Upward Sloping</h3>
+<p>
+As prices rise, firms often increase production because profits tend to increase faster than costs in the short run.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Sticky Wages</h3>
+<p>
+Workers' wages and some input prices adjust slowly, causing temporary increases in profitability.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Short-Run Production</h3>
+<p>
+Businesses can expand output by utilizing existing resources more intensively.
+</p>
+</div>
+
+</div>
+
+<div class="glass-card">
+
+<p>
+Factors that shift SRAS include changes in wages, resource costs, taxes, subsidies, and productivity.
+</p>
+
+</div>
+
+</section>
+
+<!-- Long-Run Aggregate Supply -->
+
+<section>
+
+<div class="section-title">
+<h2>Long-Run Aggregate Supply (LRAS)</h2>
+<p>
+The LRAS curve represents the economy's maximum sustainable level of production when all resources are fully employed.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+In the long run, output is determined by the quantity and quality of resources, technology, and productivity rather than the price level.
+</p>
+
+<br>
+
+<p>
+Because long-run production does not depend on the price level, the LRAS curve is typically shown as a vertical line.
+</p>
+
+<br>
+
+<p>
+Economic growth shifts LRAS to the right, allowing the economy to produce more goods and services over time.
+</p>
+
+</div>
+
+</section>
+
+<!-- Equilibrium Output and Price Level -->
+
+<section>
+
+<div class="section-title">
+<h2>Equilibrium Output and Price Level</h2>
+<p>
+Macroeconomic equilibrium occurs where Aggregate Demand intersects Aggregate Supply.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Equilibrium Output</h3>
+<p>
+The quantity of real GDP produced and purchased in the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Equilibrium Price Level</h3>
+<p>
+The overall average level of prices in the economy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Economic Stability</h3>
+<p>
+When AD and AS are balanced, the economy operates efficiently.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Recessionary Gap -->
+
+<section>
+
+<div class="section-title">
+<h2>Recessionary Gap</h2>
+<p>
+A recessionary gap occurs when equilibrium real GDP falls below the economy's full-employment level.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Recessionary gaps are associated with unemployment, underutilized resources, and slower economic growth.
+</p>
+
+<br>
+
+<p>
+Governments and central banks often use expansionary fiscal or monetary policies to reduce recessionary gaps.
+</p>
+
+</div>
+
+</section>
+
+<!-- Inflationary Gap -->
+
+<section>
+
+<div class="section-title">
+<h2>Inflationary Gap</h2>
+<p>
+An inflationary gap exists when equilibrium output exceeds the economy's sustainable full-employment level.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Although production may temporarily rise above potential output, resource shortages and labor market pressures often create inflation.
+</p>
+
+<br>
+
+<p>
+Policymakers may implement contractionary policies to slow economic activity and reduce inflationary pressures.
+</p>
+
+</div>
+
+</section>
+
+<!-- Economic Fluctuations -->
+
+<section>
+
+<div class="section-title">
+<h2>Economic Fluctuations</h2>
+<p>
+Economies naturally experience periods of expansion and contraction known as business cycles.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Expansion</h3>
+<p>
+Increasing output, rising employment, and economic growth.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Peak</h3>
+<p>
+The highest point of economic activity before growth begins to slow.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Recession</h3>
+<p>
+A period of declining economic activity and rising unemployment.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Recovery</h3>
+<p>
+Economic improvement following a recession.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Real-World Applications -->
+
+<section>
+
+<div class="section-title">
+<h2>Real-World AD-AS Applications</h2>
+<p>
+The AD-AS model helps economists understand major economic events and policy decisions.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>COVID-19 Pandemic</h3>
+<p>
+Global supply disruptions shifted SRAS left while reduced spending affected Aggregate Demand.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Government Stimulus</h3>
+<p>
+Fiscal stimulus programs increase Aggregate Demand by boosting spending.
+</p>
+</div>
+
+<div class="info-card">
+<h3>Technological Innovation</h3>
+<p>
+Advances in technology increase productivity and shift LRAS outward.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- AP Economics Connections -->
+
+<section>
+
+<div class="section-title">
+<h2>AP Economics Connections</h2>
+<p>
+Aggregate Demand and Aggregate Supply form one of the most important models in AP Macroeconomics.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Students should be able to draw AD-AS graphs, identify shifts, analyze recessionary and inflationary gaps, and explain the effects of fiscal and monetary policies on output and price levels.
+</p>
+
+<br>
+
+<p>
+AD-AS analysis frequently appears in both Multiple-Choice Questions (MCQs) and Free-Response Questions (FRQs) on the AP Macroeconomics exam.
+</p>
+
+</div>
+
+</section>
+<!-- SUMMARY -->
+
+<section>
+
+<div class="section-title">
+<h2>Summary</h2>
+<p>
+Aggregate Demand and Aggregate Supply form the foundation of modern macroeconomic analysis. Understanding how spending, production, and price levels interact helps economists explain inflation, unemployment, economic growth, and business cycles.
+</p>
+</div>
+
+<div class="glass-card">
+
+<p>
+Aggregate Demand represents total spending within an economy, while Aggregate Supply represents total production. Their interaction determines equilibrium output and the overall price level.
+</p>
+
+<br>
+
+<p>
+Changes in consumer spending, investment, government purchases, and net exports can shift Aggregate Demand. Changes in production costs, resource availability, and productivity can shift Aggregate Supply.
+</p>
+
+<br>
+
+<p>
+Understanding recessionary and inflationary gaps allows policymakers to evaluate economic conditions and design appropriate fiscal and monetary policies.
+</p>
+
+</div>
+
+</section>
+
+<!-- KEY TERMS -->
+
+<section>
+
+<div class="section-title">
+<h2>Key Terms</h2>
+<p>
+Important vocabulary from Chapter 14.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>Aggregate Demand (AD)</h3>
+<p>Total demand for goods and services in an economy.</p>
+</div>
+
+<div class="info-card">
+<h3>Aggregate Supply (AS)</h3>
+<p>Total output firms are willing to produce.</p>
+</div>
+
+<div class="info-card">
+<h3>SRAS</h3>
+<p>Short-Run Aggregate Supply.</p>
+</div>
+
+<div class="info-card">
+<h3>LRAS</h3>
+<p>Long-Run Aggregate Supply.</p>
+</div>
+
+<div class="info-card">
+<h3>Recessionary Gap</h3>
+<p>Output below full-employment GDP.</p>
+</div>
+
+<div class="info-card">
+<h3>Inflationary Gap</h3>
+<p>Output above full-employment GDP.</p>
+</div>
+
+<div class="info-card">
+<h3>Equilibrium Output</h3>
+<p>The level of GDP where AD equals AS.</p>
+</div>
+
+<div class="info-card">
+<h3>Business Cycle</h3>
+<p>Fluctuations in economic activity over time.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MCQ REVIEW -->
+
+<section>
+
+<div class="section-title">
+<h2>Multiple-Choice Review Questions</h2>
+<p>
+Test your understanding of Aggregate Demand and Aggregate Supply.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ol>
+
+<li>
+Which component is NOT part of Aggregate Demand?
+<br><br>
+A. Consumption
+<br>
+B. Investment
+<br>
+C. Government Spending
+<br>
+D. Production Costs
+</li>
+
+<br>
+
+<li>
+A decrease in interest rates is most likely to:
+<br><br>
+A. Shift AD left
+<br>
+B. Shift AD right
+<br>
+C. Shift SRAS left
+<br>
+D. Shift LRAS left
+</li>
+
+<br>
+
+<li>
+The Long-Run Aggregate Supply curve is:
+<br><br>
+A. Upward sloping
+<br>
+B. Downward sloping
+<br>
+C. Vertical
+<br>
+D. Horizontal
+</li>
+
+<br>
+
+<li>
+A recessionary gap occurs when:
+<br><br>
+A. Actual GDP exceeds potential GDP
+<br>
+B. Actual GDP equals potential GDP
+<br>
+C. Actual GDP falls below potential GDP
+<br>
+D. Inflation reaches zero
+</li>
+
+<br>
+
+<li>
+An inflationary gap typically leads to:
+<br><br>
+A. Lower prices
+<br>
+B. Higher unemployment
+<br>
+C. Downward pressure on prices
+<br>
+D. Upward pressure on prices
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- FRQ REVIEW -->
+
+<section>
+
+<div class="section-title">
+<h2>Free-Response Review Questions</h2>
+<p>
+Practice AP-style written responses.
+</p>
+</div>
+
+<div class="glass-card">
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+FRQ 1
+</h3>
+
+<p>
+Assume consumer confidence rises significantly.
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Explain how Aggregate Demand will change.</li>
+
+<li>Illustrate the change using an AD-AS graph.</li>
+
+<li>Describe the impact on real GDP and price level.</li>
+
+</ul>
+
+<br>
+
+<h3 style="color:var(--primary); margin-bottom:15px;">
+FRQ 2
+</h3>
+
+<p>
+Suppose energy prices increase dramatically.
+</p>
+
+<ul style="margin-left:25px;">
+
+<li>Explain the impact on Short-Run Aggregate Supply.</li>
+
+<li>Describe changes in equilibrium output.</li>
+
+<li>Describe changes in the price level.</li>
+
+<li>Identify whether the economy experiences inflationary pressure or recessionary pressure.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- CHAPTER SUMMARY -->
+
+<section>
+
+<div class="section-title">
+<h2>Chapter Summary</h2>
+<p>
+Essential ideas from Chapter 14.
+</p>
+</div>
+
+<div class="glass-card">
+
+<ul style="margin-left:25px;">
+
+<li>Aggregate Demand measures total spending within an economy.</li>
+
+<li>Consumption, Investment, Government Spending, and Net Exports determine AD.</li>
+
+<li>Aggregate Supply measures total production.</li>
+
+<li>SRAS and LRAS describe production in different time horizons.</li>
+
+<li>Equilibrium occurs where AD and AS intersect.</li>
+
+<li>Recessionary gaps indicate economic weakness.</li>
+
+<li>Inflationary gaps indicate excessive economic expansion.</li>
+
+<li>Business cycles reflect fluctuations in economic activity.</li>
+
+<li>Policymakers use AD-AS analysis to evaluate economic conditions.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- CHAPTER NAVIGATION -->
+
+<section>
+
+<div class="section-title">
+<h2>Continue Your AP Macroeconomics Journey</h2>
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+<h3>← Previous Chapter</h3>
+<p>
+<a href="chapter13.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 13: Inflation and Unemployment
+</a>
+</p>
+</div>
+
+<div class="info-card">
+<h3>Next Chapter →</h3>
+<p>
+<a href="chapter15.html" style="color:var(--secondary);font-weight:700;text-decoration:none;">
+Chapter 15: Fiscal Policy
+</a>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>EconoVerse AP</h3>
+
+<br>
+
+<p>
+Master AP Microeconomics and AP Macroeconomics through comprehensive lessons, AP-style practice questions, graph analysis, and exam-focused preparation.
+</p>
+
+<br>
+
+<p>
+© 2026 EconoVerse AP. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+window.addEventListener('scroll', function(){
+
+let winScroll =
+document.body.scrollTop ||
+document.documentElement.scrollTop;
+
+let height =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+
+let scrolled =
+(winScroll / height) * 100;
+
+const progressBar =
+document.getElementById('progressBar');
+
+if(progressBar){
+progressBar.style.width =
+scrolled + '%';
+}
+
+});
+
+</script>
+
+</body>
+</html>
